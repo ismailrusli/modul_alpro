@@ -20,21 +20,24 @@ print("Halo, Dunia!")
 
 Program pertama kita terdiri dari komponen-komponen berikut.
 
-1. Fungsi `print`;
-1. kurung buka;
-1. tanda kutip;
-1. kata-kata: `Halo, Dunia!`
-1. tanda kutip lagi;
-1. kurung tutup.
+1. Kata `print`;
+1. kurung buka dan kurung tutup `()`;
+1. tanda kutip `""`;
+1. teks `Halo, Dunia!`
+
 
 ![Bagian-bagian kode dalam program pertama, Halo, Dunia!](https://raw.githubusercontent.com/ismailrusli/modul_alpro/refs/heads/master/gambar/halo_dunia.png)
 
-### **Fungsi `print`**
-
 Kata `print` dalam program pertama kita adalah sebuah fungsi.
-Sederhananya, sebuah fungsi dapat
+Dalam pemrograman, sebuah fungsi adalah bagian dari kode yang punya tugas tertentu.
+Fungsi `print` tugasnya mencetak (*print*) sesuatu ke layar.
 
-1. Menyebabkan suatu efek tertentu
-1. Menentukan isi suatu data (*evaluate a value*).
+Setiap fungsi dalam python, selalu diikuti tanda kurung `()`.
+Di dalam kurung, dituliskan input untuk fungsi.
+Dalam contoh kita, yang diinputkan ke fungsi `print` adalah kata `Halo, Dunia!`.
+
+Kata `Halo, Dunia!` harus dituliskan memakai petik untuk menunjukkan bahwa
+input ke dalam `print` adalah teks (string) atau kumpulan karakter.
 
 
+![Anatomi fungsi dalam Python](https://raw.githubusercontent.com/ismailrusli/modul_alpro/refs/heads/master/gambar/blok_print.png)
