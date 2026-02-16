@@ -41,5 +41,12 @@ Kata `Halo, Dunia!` harus dituliskan memakai petik untuk menunjukkan bahwa
 input ke dalam `print` adalah teks (string) atau kumpulan karakter.
 
 <br><br>
-![Anatomi fungsi dalam Python](https://raw.githubusercontent.com/ismailrusli/modul_alpro/refs/heads/master/gambar/blok_print.png)
+![Blok diagram fungsi dalam Python](https://raw.githubusercontent.com/ismailrusli/modul_alpro/refs/heads/master/gambar/blok_print.png)
+<br><br>
+
+Secara umum, cara penulisan fungsi dalam Python adalah seperti
+dalam gambar berikut.
+
+<br><br>
+![Anatomi fungsi dalam Python](https://raw.githubusercontent.com/ismailrusli/modul_alpro/refs/heads/master/gambar/anatomi_print.png)
 <br><br>
