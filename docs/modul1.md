@@ -27,7 +27,7 @@ Program pertama kita terdiri dari komponen-komponen berikut.
 1. tanda kutip lagi;
 1. kurung tutup.
 
-![Bagian-bagian kode dalam program pertama, Halo, Dunia!](gambar/halo_dunia.png)
+![Bagian-bagian kode dalam program pertama, Halo, Dunia!](../gambar/halo_dunia.png)
 
 ### **Fungsi `print`**
 
