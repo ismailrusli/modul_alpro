@@ -34,7 +34,7 @@ Program pertama kita terdiri dari komponen-komponen berikut.
 Kata `print` dalam program pertama kita adalah sebuah fungsi.
 Sederhananya, sebuah fungsi dapat
 
-1. menerima data,
-1. melakukan operasi terhadap data tersebut, dan
-1. menghasilkan data baru hasil operasi.
+1. Menyebabkan suatu efek tertentu
+1. Menentukan isi suatu data (*evaluate a value*).
+
 
