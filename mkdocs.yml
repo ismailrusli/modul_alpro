@@ -12,6 +12,12 @@ plugins:
 
 nav:
   - modul1.md
+  - modul2.md
+  - modul3.md
+  - modul4.md
+  - modul5.md
+  - modul6.md
+  - modul7.md
       
 markdown_extensions:
   - pymdownx.highlight:
