@@ -1,5 +1,7 @@
 # Modul 5: Fungsi
 
+![Status](https://img.shields.io/badge/Status-On_Progress-yellow?style=flat-square)
+
 ## 5.1 Capaian
 
 Mampu menggunakan elemen-elemen dasar pemrograman, seperti inisialisasi variabel untuk berbagai macam tipe data, menggunakan percabangan, menggunakan pengulangan, membuat dan menggunakan fungsi, serta membuat dan menggunakan tipe data bentukan sendiri.
