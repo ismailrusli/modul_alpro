@@ -22,7 +22,7 @@
 Matakuliah Algoritma dan Pemrograman merupakan matakuliah wajib program studi yang bertujuan untuk memperkenalkan dasar-dasar pemrograman menggunakan bahasa pemrograman Python. Materi yang diajarkan mulai dari pengertian program, instalasi Python interpreter dan editor kode, penggunaan interactive shell, pemahaman akan ekspresi (untuk tipe data dasar serta tipe data komposit), statement, fungsi, menulis dan membaca ke file, penggunaan tipe data kustom, hingga penggunaan modul open-source. Di matakuliah ini, mahasiswa diharapkan dapat membuat algoritma sederhana, membuat program lengkap berbasis teks dengan modul bawaan Python, dan membuat program memanfaatkan modul open-source.
 
 ## **Capaian Pembelajaran Lulusan**
-**PLO 8**: Memiliki pengetahuan dan keahlian untuk membangun/mengembangkan aplikasi yang memanfaatkan konten multimedia dan teknologi-teknologi interaktivitas seperti: jaringan komputer, sensor dan tranduser, extended reality, serta kecerdasan buatan.
+**CPL 8**: Memiliki pengetahuan dan keahlian untuk membangun/mengembangkan aplikasi yang memanfaatkan konten multimedia dan teknologi-teknologi interaktivitas seperti: jaringan komputer, sensor dan tranduser, extended reality, serta kecerdasan buatan.
 
 ## **Capaian Pembelajaran Mata Kuliah**
 **CPMK 1**: Mampu menggunakan elemen-elemen pemrograman, yaitu variabel, percabangan, dan pengulangan untuk membuat algoritma sederhana.
