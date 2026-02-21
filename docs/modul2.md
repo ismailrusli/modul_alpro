@@ -1,6 +1,7 @@
 # **Modul 2: Variabel dan Tipe Data**
 
 ![Status](https://img.shields.io/badge/Status-On_Progress-yellow?style=flat-square)
+<!-- ![Status](https://img.shields.io/badge/Status-Finish-brightgreen?style=flat-square) -->
 
 ## **Capaian**
 

@@ -1,6 +1,7 @@
 # Modul 5: Fungsi
 
 ![Status](https://img.shields.io/badge/Status-On_Progress-yellow?style=flat-square)
+<!-- ![Status](https://img.shields.io/badge/Status-Finish-brightgreen?style=flat-square) -->
 
 ## 5.1 Capaian
 

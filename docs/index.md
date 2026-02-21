@@ -46,3 +46,4 @@ bahasa pemrograman Python.
 1. [w3schools](https://www.w3schools.com/python/)
 1. [edube](https://edube.org/)
 1. [belajarpython](https://belajarpython.com/)
+1. [Python Docs](https://docs.python.org/3/)
