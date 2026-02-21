@@ -1,5 +1,7 @@
 # **Modul 0: Instalasi Python** 
 
+![Status](https://img.shields.io/badge/Status-On_Progress-yellow?style=flat-square)
+ 
 ## **Apa itu Python?**
 
 ![Logo Python](https://www.python.org/static/img/python-logo.png)
