@@ -30,6 +30,3 @@ markdown_extensions:
   - pymdownx.superfences
   - attr_list
   - admonition
-
-plugins:
-  - mkdocs-video
