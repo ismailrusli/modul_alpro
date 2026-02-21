@@ -25,11 +25,11 @@ Matakuliah Algoritma dan Pemrograman merupakan matakuliah wajib program studi ya
 **PLO 8**: Memiliki pengetahuan dan keahlian untuk membangun/mengembangkan aplikasi yang memanfaatkan konten multimedia dan teknologi-teknologi interaktivitas seperti: jaringan komputer, sensor dan tranduser, extended reality, serta kecerdasan buatan.
 
 ## **Capaian Pembelajaran Mata Kuliah**
-**CLO 1**: Mampu menggunakan elemen-elemen pemrograman, yaitu variabel, percabangan, dan pengulangan untuk membuat algoritma sederhana.
+**CPMK 1**: Mampu menggunakan elemen-elemen pemrograman, yaitu variabel, percabangan, dan pengulangan untuk membuat algoritma sederhana.
 
-**CLO 2**: Mampu menggunakan elemen-elemen pemrograman, yaitu fungsi, I/O, dan tipe data buatan sendiri untuk membuat program sederhana berbasis teks.
+**CPMK 2**: Mampu menggunakan elemen-elemen pemrograman, yaitu fungsi, I/O, dan tipe data buatan sendiri untuk membuat program sederhana berbasis teks.
 
-**CLO 3**: Mampu membuat dan memodifikasi program sederhana dengan bantuan modul open source.
+**CPMK 3**: Mampu membuat dan memodifikasi program sederhana dengan bantuan modul open source.
 
 ## **Sertifikasi**
 
