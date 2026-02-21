@@ -80,7 +80,8 @@ print()
 print("Dunia!")
 ```
 
-> Python hanya membolehkan kita menulis maksimal satu instruksi per baris. Memanggil fungsi `print` kita anggap sebagai 1 instruksi. Jika ingin menuliskan 2 instruksi dalam 1 baris, pisahkan instruksi dengan tanda titik koma (`;`).
+!!! Catatan
+    Python hanya membolehkan kita menulis maksimal satu instruksi per baris. Memanggil fungsi `print` kita anggap sebagai 1 instruksi. Jika ingin menuliskan 2 instruksi dalam 1 baris, pisahkan instruksi dengan tanda titik koma (`;`).
 
 ---
 
@@ -173,8 +174,8 @@ print("nama saya Budi")
 print(end = '**', "Halo,") 
 print("nama saya Budi")
 ```
-> Positional argument harus selalu dituliskan terlebih dahulu sebelum
-keyword argument
+!!! Catatan
+    Positional argument harus selalu dituliskan terlebih dahulu sebelum keyword argument
 
 1. Tulis dan jalankan kode berikut. Apa yang terjadi?
 ```python
@@ -198,12 +199,12 @@ print("Halo,", "nama", "saya", "Budi", sep = '/', end = '*')
 print("Saya lahir di Bandung")
 ```
 
-> `sep` adalah nama argumen yang merupakan singkatan dari separation atau pemisah
-antarargumen. Defaultnya, `sep = ' '`.
-
-> Peletakkan keyword argument bebas, selama diletakkan setelah positional argument.
-Fungsi tahu bahwa `'/'` adalah argumen untuk `sep` dan `'*'` untuk `end` karena
-penulisannya menyertakan nama argument atau keyword.
+!!! Catatatn
+    `sep` adalah nama argumen yang merupakan singkatan dari separation
+    atau pemisah antarargumen. Defaultnya, `sep = ' '`.
+    Peletakkan keyword argument bebas, selama diletakkan setelah positional argument.
+    Fungsi tahu bahwa `'/'` adalah argumen untuk `sep` dan `'*'` untuk `end`
+    karena penulisannya menyertakan nama argument atau keyword.
 
 ---
 

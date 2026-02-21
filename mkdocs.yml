@@ -11,6 +11,7 @@ plugins:
   - search
 
 nav:
+  - modul0.md
   - modul1.md
   - modul2.md
   - modul3.md
@@ -28,3 +29,4 @@ markdown_extensions:
   - pymdownx.snippets
   - pymdownx.superfences
   - attr_list
+  - admonition
