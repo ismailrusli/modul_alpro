@@ -140,7 +140,7 @@ Sebagai contoh, fungsi `print` sebenarnya tidak hanya menerima input berupa teks
 yang akan dicetak ke layar, tapi juga menerima input
 berupa karakter terakhir untuk setiap output. 
 Secara default, karakter terakhir ini adalah escape character `\n`.
-Aka tetapi, kita bisa mengubahnya dengan memasukkan karakter baru menggunakan
+Akan tetapi, kita bisa mengubahnya dengan memasukkan karakter baru menggunakan
 keyword argument.
 
 ```python
