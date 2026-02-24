@@ -231,7 +231,7 @@ print("  *   *")
 print("  *****")
 ```
 Lalu, kerjakan perintah berikut.
-    - Buat kode menjadi 1 baris dengan memanfaatkan keyword argument `end = \n`.
+    - Buat kode menjadi 1 baris dengan memanfaatkan escape character newline (`\n`)
     - Buat ukuran panah menjadi 2x lipat lebih besar dengan proporsi yang tetap.
     - Buat menjadi 2 panah yang sama yang diletakkan bersampingan
      (Teks dapat diulang dengan mengalikan teks tersebut dengan bilangan.
