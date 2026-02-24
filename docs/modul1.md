@@ -60,7 +60,7 @@ input ke dalam `print` adalah teks (string) atau kumpulan karakter.
 ---
 **Coba**
 
-1. Tuliksan nama kamu ke layar monitor.
+1. Tuliskan nama kamu ke layar monitor.
 1. Gunakan fungsi `print` dan input kata `Halo, Bandung!` tanpa tanda kutip. Apa yang terjadi?
 1. Gunakan fungsi `print` dan input kata `Halo, Bandung!` namun dengan satu kutip `'Halo, Bandung!'`
 Apa yang terjadi?
@@ -199,7 +199,7 @@ print("Halo,", "nama", "saya", "Budi", sep = '/', end = '*')
 print("Saya lahir di Bandung")
 ```
 
-!!! Catatatn
+!!! Catatan
     `sep` adalah nama argumen yang merupakan singkatan dari separation
     atau pemisah antarargumen. Defaultnya, `sep = ' '`.
     Peletakkan keyword argument bebas, selama diletakkan setelah positional argument.
