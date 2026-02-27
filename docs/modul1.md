@@ -170,12 +170,13 @@ print("nama saya Budi")
 ```
 
 1. Tulis dan jalankan kode berikut. Apa yang terjadi?
-```python
-print(end = '**', "Halo,") 
-print("nama saya Budi")
-```
-!!! Catatan
-    Positional argument harus selalu dituliskan terlebih dahulu sebelum keyword argument
+    ```python
+    print(end = '**', "Halo,") 
+    print("nama saya Budi")
+    ```
+
+    !!! Catatan
+        Positional argument harus selalu dituliskan terlebih dahulu sebelum keyword argument
 
 1. Tulis dan jalankan kode berikut. Apa yang terjadi?
 ```python
