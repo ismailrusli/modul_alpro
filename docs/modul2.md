@@ -554,3 +554,19 @@ print(b) # hasilnya 10
     - Buat variabel baru dengan nama `total_apel` dan isi variabel ini dengan jumlah apel.
     - Cetak nilai yang ada di `total_apel` ke layar.
     - Saat mencetak ke layar, gabungkan nilai variabel dengan suatu string berisi keterangannya. Misalnya,  gabungkan antara `"Jumlah total apel adalah"` dan `total_apel`.
+
+1. Mil dan kilometer adalah satuan panjang. 1 mil = 1,6 km. Lengkapi program berikut untuk konversi dari mil ke kilometer dan sebaliknya. Hanya lengkapi kode di tempat bertanda `###`.
+    ```python
+    kilometer = 12.25
+    mil = 7.38
+
+    mil_to_kilometer = ###
+    kilometer_to_mil = ###
+
+    print(mil, "mil adalah", round(mil_to_kilometer, 2), "kilometer")
+    print(kilometer, "kilometer adalah", round(kilometer_to_mil, 2), "mil")
+    ```
+
+    !!! Catatan
+        `round` adalah fungsi untuk membulatkan suatu nilai.
+
