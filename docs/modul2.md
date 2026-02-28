@@ -1,4 +1,4 @@
-<!-- # **Modul 2: Literal dan Variabel** -->
+# **Modul 2: Literal dan Variabel**
 
 <!-- ![Status](https://img.shields.io/badge/Status-On_Progress-yellow?style=flat-square) -->
 ![Status](https://img.shields.io/badge/Status-Finish-brightgreen?style=flat-square)
@@ -30,11 +30,11 @@ Oleh karena program berkaitan erat dengan data, kita mulai juga dengan data. Ada
 
 ### **Literal**
 
-Literal adalah nilai yang eksplisit dituliskan di dalam kode.
+Literal adalah nilai dari data yang eksplisit dituliskan di dalam kode.
 Contohnya bilangan `5`.
 Contoh lain adalah huruf atau sekumpulan karakter (string), misalnya `"a"` dan `"Bandung"`.
 Keduanya ditulis dalam tanda petik untuk membedakan dengan perintah yang dipakai dalam bahasa pemrograman.
-Di kode berikut, kata `print` yang pertama adalah perintah dan kata `"print"` di dalam tanda petik adalah literal.
+Di kode berikut, kata `print` yang pertama adalah fungsi dan kata `"print"` di dalam tanda petik adalah literal.
 
 ```python
 print("print")
@@ -63,26 +63,23 @@ print(2)
 
 ### **Jenis Literal**
 
-Data tentu bermacam-macam.
-Ada data berupa bilangan bulat (Contoh `5`).
-Ada data berupa bilangan riil (Contoh `5.03`).
-Ada data berupa karakter (Contoh `"a"`).
-Ada data berupa rangkaian karakter (Contoh `"algoritma"`).
-Ada data berupa nilai kebenaran suatu ekspresi/logika (Contoh `True`).
-Ada juga data berupa kumpulan bilangan (Contoh `[1,2,3]`).
+Terdapat berbagai jenis literal.
+Ada literal bilangan bulat (Contoh `5`).
+Ada literal bilangan riil (Contoh `5.03`).
+Ada literal karakter (Contoh `"a"`).
+Ada literal rangkaian karakter (Contoh `"algoritma"`).
+Ada literal nilai kebenaran suatu ekspresi/logika (Contoh `True`).
+Ada juga literal kumpulan bilangan (Contoh `[1,2,3]`).
 
-Dalam pemrograman, setiap tipe data biasanya ada namanya.
+Dalam pemrograman, setiap jenis literal biasanya ada namanya.
 Sebagai contoh,
 
-1. untuk data berupa bilangan bulat, biasanya tipe datanya disebut **integer**.
-1. Untuk data berupa bilangan riil, disebut **float** atau **double**.
-1. Untuk karakter biasanya disebut **char**.
-1. Untuk serangkaian karakter biasanya disebut **string**.
-1. Untuk nilai kebenaran dari suatu ekspresi logika disebut **boolean**.
-1. Untuk kumpulan bilangan bisa disebut sebagai **array** atau **list** atau **set** atau lainnya.
-
-Setiap bahasa pemrograman menentukan sendiri tipe datanya.
-Pemrogram dapat juga membuat tipe data kustom sesuai kebutuhan.
+1. Untuk literal bilangan bulat, biasanya disebut **integer**.
+1. Untuk literal bilangan riil, disebut **float** atau **double**.
+1. Untuk karakter, disebut **char**.
+1. Untuk serangkaian karakter, disebut **string**.
+1. Untuk nilai kebenaran suatu ekspresi logika, disebut **boolean**.
+1. Untuk kumpulan bilangan, disebut **array**, **list**, **set**, atau lainnya.
 
 **Coba**
 
@@ -101,7 +98,7 @@ Pemrogram dapat juga membuat tipe data kustom sesuai kebutuhan.
         dari suatu data.
 
     !!! Catatan
-        Dalam bahasa pemrograman Python, tidak dibedakan antara tipe data `char` dan `string`.
+        Dalam bahasa pemrograman Python, tidak dibedakan antara `char` dan `string`.
         Keduanya dianggap sebagai `string`.
 
 1. Mana cara yang benar untuk menuliskan literal integer `seratus ribu lima ratus empat puluh tujuh`?
@@ -149,7 +146,7 @@ print(-.0002)
 print(-2e-4)
 ```
 
-1. Bagaimana cara menuliskan kalimat berikut ke layar (persis seperti ini, termasuk tanda kutipnya)?
+1. Bagaimana cara menuliskan literal string berikut ke layar (persis seperti ini, termasuk tanda kutipnya)?
     ```
     "Apa kabarmu, Bud?", tanya Surya
     ```
@@ -158,7 +155,7 @@ print(-2e-4)
         Gunakan escape character `\"` untuk menuliskan tanda kutip.
 
 
-1. Bagaimana cara menuliskan kalimat berikut ke layar (persis seperti ini, termasuk tanda kutipnya)?
+1. Bagaimana cara menuliskan literal berikut ke layar (persis seperti ini, termasuk tanda kutipnya)?
     ```
     "Darma itu panggilannya 'Si Jago Bola'", kata Andi
     ```
@@ -187,7 +184,7 @@ print("True")
 <!-- ``` -->
 
 Dua literal dapat dioperasikan menggunakan operator.
-Contohnya adalah operator-operator aritmatika berikut.
+Contohnya operator-operator aritmatika berikut.
 
 ```python
 print(5 + 2)
@@ -205,11 +202,11 @@ print(3 ** 2) # 3 pangkat 2
 
 !!! Catatan
     Tanda hashtag (`#`) dalam Python adalah penanda untuk suatu komentar.
-    Tulisan setelah tanda ini, akan dianggap sebagai komentar atau catatan
-    dan bukan dianggap sebagai bagian dari kode.
+    Tulisan setelah tanda ini, dianggap sebagai komentar atau catatan
+    dan bukan dianggap bagian dari kode.
 
 !!! Catatan
-    Operator yang mengoperasikan 2 literal disebut binary operator. Ada juga operator yang beroperasi terhadap 1 literal, disebut unary operator. Contohnya adalah operator negatif atau min (`-4`).
+    Operator yang mengoperasikan 2 literal disebut binary operator. Ada juga operator yang beroperasi terhadap 1 literal, disebut unary operator. Contohnya adalah operator negatif atau min (`-4`). Data atau nilai yang dioperasikan disebut sebagai operand.
 
 Selain operator aritmatika, dua literal juga dapat dibandingkan.
 Berikut adalah operator perbandingan.
@@ -239,7 +236,7 @@ print(True or True)
 print(not True)
 ```
 
-**coba**
+**Coba**
 
 1. Jalankan kode berikut di Python Interpreter. Apakah tipe data dari hasilnya?
 ```python
@@ -390,8 +387,8 @@ print(nama) # yang muncul adalah Budi
 ```
 
 Ketika sebuah variabel `a` di-*assign* ke variabel `b`,
-artinya adalah isi dari variabel `b`
-yang di-*assign*-kan ke variabel `a`.
+artinya isi atau nilai variabel `a`
+yang di-*assign*-kan ke variabel `b`.
 
 ```python
 a = 10
@@ -416,14 +413,14 @@ print(b) # hasilnya 10
     a = 100
     b = 50
     a = b
-    print(b)  # bilangan berapa yang akan muncul?
+    print(b) 
     ```
 
 1. Bilangan berapa yang akan muncul?
     ```python
     a = 100
     b = a
-    print(b)  # bilangan berapa yang akan muncul?
+    print(b)
     ```
 
 1. Bilangan berapa yang akan muncul?
@@ -431,14 +428,14 @@ print(b) # hasilnya 10
     a = 100
     b = a
     a = a + b
-    print(a)  # bilangan berapa yang akan muncul?
+    print(a)
     ```
 
 1. Bilangan berapa yang akan muncul?
     ```python
     a = 100
     b = a + b
-    print(b)  # bilangan berapa yang akan muncul?
+    print(b)
     ```
 
 1. Bilangan berapa yang akan muncul?
@@ -446,14 +443,14 @@ print(b) # hasilnya 10
     a = 100
     b = a
     a = b + 100
-    print(a)  # bilangan berapa yang akan muncul?
+    print(a)
     ```
 
 1. Bilangan berapa yang akan muncul?
     ```python
     a = 100
     b = 50
-    print(a + b)  # bilangan berapa yang akan muncul?
+    print(a + b)
     ```
 
 1. Bilangan berapa yang akan muncul?
@@ -463,7 +460,7 @@ print(b) # hasilnya 10
     c = 25
     d = a + b + c
 
-    print(d)  # bilangan berapa yang akan muncul?
+    print(d)
     ```
 
 1. Bilangan berapa yang akan muncul?
@@ -473,7 +470,7 @@ print(b) # hasilnya 10
     c = a + b
     a = 30
     d = c + a + b
-    print(d)  # bilangan berapa yang akan muncul?
+    print(d)
     ```
 
 1. Bilangan berapa yang akan muncul?
@@ -569,4 +566,3 @@ print(b) # hasilnya 10
 
     !!! Catatan
         `round` adalah fungsi untuk membulatkan suatu nilai.
-
