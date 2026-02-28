@@ -1,4 +1,4 @@
-# **Modul 2: Literal dan Variabel**
+<!-- # **Modul 2: Literal dan Variabel** -->
 
 <!-- ![Status](https://img.shields.io/badge/Status-On_Progress-yellow?style=flat-square) -->
 ![Status](https://img.shields.io/badge/Status-Finish-brightgreen?style=flat-square)
@@ -30,7 +30,7 @@ Oleh karena program berkaitan erat dengan data, kita mulai juga dengan data. Ada
 
 ### **Literal**
 
-Literal adalah nilai/isi data.
+Literal adalah nilai yang eksplisit dituliskan di dalam kode.
 Contohnya bilangan `5`.
 Contoh lain adalah huruf atau sekumpulan karakter (string), misalnya `"a"` dan `"Bandung"`.
 Keduanya ditulis dalam tanda petik untuk membedakan dengan perintah yang dipakai dalam bahasa pemrograman.
@@ -98,7 +98,7 @@ Pemrogram dapat juga membuat tipe data kustom sesuai kebutuhan.
     !!! Catatan
         Sebelumnya, kita sudah mengenal fungsi `print`. Di sini, kita mengenal
         fungsi lain yang namanya `type`. Fungsi `type` gunanya mencetak tipe
-        dari suatu literal.
+        dari suatu data.
 
     !!! Catatan
         Dalam bahasa pemrograman Python, tidak dibedakan antara tipe data `char` dan `string`.
@@ -241,7 +241,7 @@ print(not True)
 
 **coba**
 
-1. Jalankan kode berikut di Python Interpreter. Apakah tipe literal dari hasilnya?
+1. Jalankan kode berikut di Python Interpreter. Apakah tipe data dari hasilnya?
 ```python
 type(2 + 3.0)
 type(3 / 2)
