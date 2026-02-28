@@ -1,0 +1,978 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+        <link rel="canonical" href="https://ismailrusli.github.io/modul_alpro/tipe_data/">
+      
+      
+      
+      
+        
+      
+      
+      <link rel="icon" href="../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.3">
+    
+    
+      
+        <title>Tipe data - Modul Algoritma dan Pemrograman</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.484c7ddc.min.css">
+      
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.ab4e12ef.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#tipe-data-lanjut" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href=".." title="Modul Algoritma dan Pemrograman" class="md-header__button md-logo" aria-label="Modul Algoritma dan Pemrograman" data-md-component="logo">
+      
+  <img src="../assets/logo.png" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Modul Algoritma dan Pemrograman
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Tipe data
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12s-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="Modul Algoritma dan Pemrograman" class="md-nav__button md-logo" aria-label="Modul Algoritma dan Pemrograman" data-md-component="logo">
+      
+  <img src="../assets/logo.png" alt="logo">
+
+    </a>
+    Modul Algoritma dan Pemrograman
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../modul0/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Modul 0: Instalasi
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../modul1/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Modul 1: Halo, Dunia!
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../modul2/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Modul 2: Literal dan Variabel
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../modul3/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Modul 3: Percabangan
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../modul4/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Modul 4: Pengulangan
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../modul5/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Modul 5: Fungsi
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../modul6/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Modul 6: File
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../modul7/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Modul 7: Tipe Data Kustom
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../modul8/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Modul 8: Modul Open Source
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#tipe-data-lanjut" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Tipe Data Lanjut
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Tipe Data Lanjut">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#list" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        List
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#tuple" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Tuple
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#dictionary" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Dictionary
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#237-input" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.3.7 Input
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#238-contoh-program" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.3.8 Contoh Program
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+  <h1>Tipe data</h1>
+
+<!-- ### **Tipe Data Dasar** -->
+
+<!-- Jika kita perhatikan kode-kode sebelumnya, variabel-variabel di sana diisi bilangan bulat atau integer. -->
+<!-- Tentu saja variabel bisa diisi selain dari integer. -->
+<!-- Misalnya diisi dengan string, float, atau boolean. -->
+<!-- Integer, string, float, dan boolean disebut sebagai tipe data. -->
+<!-- Lebih jauh, keempatnya merupakan **tipe data dasar** dalam Python. -->
+
+<!-- ```python -->
+<!-- nama = "ismail" # string -->
+<!-- print(nama) -->
+<!-- ``` -->
+
+<!-- ```python -->
+<!-- a = 1.4 # float -->
+<!-- print(a) -->
+<!-- ``` -->
+
+<!-- ```python -->
+<!-- hujan = True # boolean -->
+<!-- print(hujan) -->
+<!-- ``` -->
+
+<!-- Untuk mengetahui tipe data yang terdapat dalam sebuah variabel, -->
+<!-- kita dapat menggunakan perintah `type`. -->
+
+<!-- ```python -->
+<!-- nama = "budi" -->
+<!-- umur = 20 -->
+<!-- laki_laki = True -->
+<!-- ipk = 3.9 -->
+
+<!-- print(type(nama)) -->
+<!-- print(type(umur)) -->
+<!-- print(type(laki_laki)) -->
+<!-- print(type(ipk)) -->
+<!-- ``` -->
+
+<!-- Python adalah bahasa pemrograman yang cukup fleksibel. -->
+<!-- Saat membuat variabel, kita tidak perlu menentukan tipe data dari variabel tersebut. -->
+<!-- Bahkan, sebuah variabel dapat menampung tipe data yang berbeda-bedar. -->
+
+<!-- ```python -->
+<!-- x = "budi"  # tipe data string -->
+<!-- print(x) -->
+
+<!-- x = 100  # tipe data integer -->
+<!-- print(x) -->
+<!-- ``` -->
+
+<h3 id="tipe-data-lanjut"><strong>Tipe Data Lanjut</strong></h3>
+<p>Selain tipe data dasar, seperti integer, float, string, dan boolean, terdapat juga tipe data lanjut.
+Berikut adalah beberapa contoh tipe data lanjut.</p>
+<h4 id="list"><strong>List</strong></h4>
+<p>List dapat dianggap sebagai daftar.
+Sebuah list dapat berisi daftar integer, string, float, atau boolean.
+List juga dapat berisi daftar campuran.</p>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="c1"># variabel a berisi tipe data list</span>
+</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a><span class="c1"># yang berisi 6 integer</span>
+</span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a>
+</span><span id="__span-0-4"><a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a><span class="n">a</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">,</span><span class="mi">4</span><span class="p">,</span><span class="mi">5</span><span class="p">,</span><span class="mi">6</span><span class="p">]</span>
+</span><span id="__span-0-5"><a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a><span class="nb">print</span><span class="p">(</span><span class="n">a</span><span class="p">)</span>
+</span></code></pre></div>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="n">a</span> <span class="o">=</span> <span class="p">[</span><span class="mf">1.5</span><span class="p">,</span> <span class="mf">2.3</span><span class="p">,</span> <span class="mf">0.1</span><span class="p">,</span> <span class="mf">7.9</span><span class="p">,</span> <span class="o">-</span><span class="mf">3.2</span><span class="p">]</span>
+</span><span id="__span-1-2"><a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a><span class="nb">print</span><span class="p">(</span><span class="n">a</span><span class="p">)</span>
+</span></code></pre></div>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="n">a</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;aku&#39;</span><span class="p">,</span> <span class="s1">&#39;adalah&#39;</span><span class="p">,</span> <span class="s1">&#39;indonesia&#39;</span><span class="p">]</span>
+</span><span id="__span-2-2"><a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a><span class="nb">print</span><span class="p">(</span><span class="n">a</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span> <span class="n">a</span><span class="p">[</span><span class="mi">1</span><span class="p">],</span> <span class="n">a</span><span class="p">[</span><span class="mi">2</span><span class="p">])</span>
+</span></code></pre></div>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-3-1"><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a><span class="n">a</span> <span class="o">=</span> <span class="p">[</span><span class="kc">True</span><span class="p">,</span> <span class="kc">False</span><span class="p">,</span> <span class="kc">False</span><span class="p">,</span> <span class="kc">True</span><span class="p">]</span>
+</span><span id="__span-3-2"><a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a><span class="nb">print</span><span class="p">(</span><span class="n">a</span><span class="p">)</span>
+</span></code></pre></div>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-4-1"><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a><span class="n">a</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="s2">&quot;nama&quot;</span><span class="p">,</span> <span class="mf">3.7</span><span class="p">,</span> <span class="kc">True</span><span class="p">]</span>
+</span><span id="__span-4-2"><a id="__codelineno-4-2" name="__codelineno-4-2" href="#__codelineno-4-2"></a><span class="nb">print</span><span class="p">(</span><span class="n">a</span><span class="p">)</span>
+</span></code></pre></div>
+<p>Untuk mengambil satu data dari list, gunakan kurung siku. </p>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-5-1"><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a><span class="n">a</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">,</span><span class="mi">4</span><span class="p">,</span><span class="mi">5</span><span class="p">]</span>
+</span><span id="__span-5-2"><a id="__codelineno-5-2" name="__codelineno-5-2" href="#__codelineno-5-2"></a><span class="nb">print</span><span class="p">(</span><span class="n">a</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span> <span class="n">a</span><span class="p">[</span><span class="mi">1</span><span class="p">])</span>
+</span></code></pre></div>
+<p>Untuk mengakses data pertama dalam list, gunakan indeks <code>0</code>.</p>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-6-1"><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a><span class="n">a</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;aku&#39;</span><span class="p">,</span> <span class="s1">&#39;adalah&#39;</span><span class="p">,</span> <span class="s1">&#39;indonesia&#39;</span><span class="p">]</span>
+</span><span id="__span-6-2"><a id="__codelineno-6-2" name="__codelineno-6-2" href="#__codelineno-6-2"></a><span class="nb">print</span><span class="p">(</span><span class="n">a</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span> <span class="n">a</span><span class="p">[</span><span class="mi">1</span><span class="p">],</span> <span class="n">a</span><span class="p">[</span><span class="mi">2</span><span class="p">])</span>
+</span></code></pre></div>
+<p>Untuk mengakses data terakhir dalam list,
+gunakan indeks <code>-1</code> jika kita tidak tahu ada berapa elemen di dalam list tersebut.</p>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-7-1"><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a><span class="n">a</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">,</span><span class="mi">4</span><span class="p">,</span><span class="mi">5</span><span class="p">]</span>
+</span><span id="__span-7-2"><a id="__codelineno-7-2" name="__codelineno-7-2" href="#__codelineno-7-2"></a><span class="nb">print</span><span class="p">(</span><span class="n">a</span><span class="p">[</span><span class="o">-</span><span class="mi">1</span><span class="p">])</span>
+</span></code></pre></div>
+<p>Untuk menambahkan data ke akhir list, gunakan perintah <code>append</code>.</p>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-8-1"><a id="__codelineno-8-1" name="__codelineno-8-1" href="#__codelineno-8-1"></a><span class="n">a</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">,</span><span class="mi">4</span><span class="p">,</span><span class="mi">5</span><span class="p">]</span>
+</span><span id="__span-8-2"><a id="__codelineno-8-2" name="__codelineno-8-2" href="#__codelineno-8-2"></a><span class="n">a</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="mi">6</span><span class="p">)</span>
+</span><span id="__span-8-3"><a id="__codelineno-8-3" name="__codelineno-8-3" href="#__codelineno-8-3"></a><span class="nb">print</span><span class="p">(</span><span class="n">a</span><span class="p">)</span>
+</span></code></pre></div>
+<p>Sementara untuk menambah data di sembarang posisi, gunakan perintah <code>insert</code>.</p>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-9-1"><a id="__codelineno-9-1" name="__codelineno-9-1" href="#__codelineno-9-1"></a><span class="n">a</span> <span class="o">=</span> <span class="p">[</span><span class="s2">&quot;nama&quot;</span><span class="p">,</span> <span class="s2">&quot;ismail&quot;</span><span class="p">]</span>
+</span><span id="__span-9-2"><a id="__codelineno-9-2" name="__codelineno-9-2" href="#__codelineno-9-2"></a><span class="n">a</span><span class="o">.</span><span class="n">insert</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="s2">&quot;saya&quot;</span><span class="p">)</span>
+</span><span id="__span-9-3"><a id="__codelineno-9-3" name="__codelineno-9-3" href="#__codelineno-9-3"></a><span class="nb">print</span><span class="p">(</span><span class="n">a</span><span class="p">)</span>
+</span></code></pre></div>
+<p>Untuk menghapus data di list, gunakan perintah <code>remove</code>, <code>pop</code>, atau <code>del</code>.</p>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-10-1"><a id="__codelineno-10-1" name="__codelineno-10-1" href="#__codelineno-10-1"></a><span class="n">a</span> <span class="o">=</span> <span class="p">[</span><span class="mi">21</span><span class="p">,</span><span class="mi">22</span><span class="p">,</span><span class="mi">23</span><span class="p">,</span><span class="mi">24</span><span class="p">,</span><span class="mi">25</span><span class="p">]</span>
+</span><span id="__span-10-2"><a id="__codelineno-10-2" name="__codelineno-10-2" href="#__codelineno-10-2"></a><span class="n">a</span><span class="o">.</span><span class="n">remove</span><span class="p">(</span><span class="mi">21</span><span class="p">)</span>  <span class="c1"># hapus 21</span>
+</span><span id="__span-10-3"><a id="__codelineno-10-3" name="__codelineno-10-3" href="#__codelineno-10-3"></a><span class="nb">print</span><span class="p">(</span><span class="n">a</span><span class="p">)</span>
+</span><span id="__span-10-4"><a id="__codelineno-10-4" name="__codelineno-10-4" href="#__codelineno-10-4"></a>
+</span><span id="__span-10-5"><a id="__codelineno-10-5" name="__codelineno-10-5" href="#__codelineno-10-5"></a><span class="n">a</span> <span class="o">=</span> <span class="p">[</span><span class="mi">21</span><span class="p">,</span><span class="mi">22</span><span class="p">,</span><span class="mi">23</span><span class="p">,</span><span class="mi">24</span><span class="p">,</span><span class="mi">25</span><span class="p">]</span>
+</span><span id="__span-10-6"><a id="__codelineno-10-6" name="__codelineno-10-6" href="#__codelineno-10-6"></a><span class="n">a</span><span class="o">.</span><span class="n">pop</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span>  <span class="c1"># hapus indeks ke-2, yaitu 23</span>
+</span><span id="__span-10-7"><a id="__codelineno-10-7" name="__codelineno-10-7" href="#__codelineno-10-7"></a><span class="nb">print</span><span class="p">(</span><span class="n">a</span><span class="p">)</span>
+</span><span id="__span-10-8"><a id="__codelineno-10-8" name="__codelineno-10-8" href="#__codelineno-10-8"></a>
+</span><span id="__span-10-9"><a id="__codelineno-10-9" name="__codelineno-10-9" href="#__codelineno-10-9"></a><span class="n">a</span> <span class="o">=</span> <span class="p">[</span><span class="mi">21</span><span class="p">,</span><span class="mi">22</span><span class="p">,</span><span class="mi">23</span><span class="p">,</span><span class="mi">24</span><span class="p">,</span><span class="mi">25</span><span class="p">]</span>
+</span><span id="__span-10-10"><a id="__codelineno-10-10" name="__codelineno-10-10" href="#__codelineno-10-10"></a><span class="k">del</span> <span class="n">a</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span>  <span class="c1"># hapus indeks ke-1, yaitu 22</span>
+</span><span id="__span-10-11"><a id="__codelineno-10-11" name="__codelineno-10-11" href="#__codelineno-10-11"></a><span class="nb">print</span><span class="p">(</span><span class="n">a</span><span class="p">)</span>
+</span></code></pre></div>
+<p>Dua list juga bisa digabungkan.</p>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-11-1"><a id="__codelineno-11-1" name="__codelineno-11-1" href="#__codelineno-11-1"></a><span class="n">a</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">]</span>
+</span><span id="__span-11-2"><a id="__codelineno-11-2" name="__codelineno-11-2" href="#__codelineno-11-2"></a><span class="n">b</span> <span class="o">=</span> <span class="p">[</span><span class="mi">4</span><span class="p">,</span><span class="mi">5</span><span class="p">,</span><span class="mi">6</span><span class="p">]</span>
+</span><span id="__span-11-3"><a id="__codelineno-11-3" name="__codelineno-11-3" href="#__codelineno-11-3"></a><span class="n">c</span> <span class="o">=</span> <span class="n">a</span> <span class="o">+</span> <span class="n">b</span>
+</span><span id="__span-11-4"><a id="__codelineno-11-4" name="__codelineno-11-4" href="#__codelineno-11-4"></a><span class="nb">print</span><span class="p">(</span><span class="n">c</span><span class="p">)</span>
+</span></code></pre></div>
+<p>Untuk mengetahui jumlah data dalam list, gunakan perintah <code>len</code>.</p>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-12-1"><a id="__codelineno-12-1" name="__codelineno-12-1" href="#__codelineno-12-1"></a><span class="n">a</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">,</span><span class="mi">4</span><span class="p">,</span><span class="mi">5</span><span class="p">,</span><span class="mi">6</span><span class="p">]</span>
+</span><span id="__span-12-2"><a id="__codelineno-12-2" name="__codelineno-12-2" href="#__codelineno-12-2"></a><span class="n">panjang_a</span> <span class="o">=</span> <span class="nb">len</span><span class="p">(</span><span class="n">a</span><span class="p">)</span>
+</span><span id="__span-12-3"><a id="__codelineno-12-3" name="__codelineno-12-3" href="#__codelineno-12-3"></a>
+</span><span id="__span-12-4"><a id="__codelineno-12-4" name="__codelineno-12-4" href="#__codelineno-12-4"></a><span class="nb">print</span><span class="p">(</span><span class="n">panjang_a</span><span class="p">)</span>
+</span></code></pre></div>
+<p>Sebagai latihan, coba pahami kode-kode berikut.</p>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-13-1"><a id="__codelineno-13-1" name="__codelineno-13-1" href="#__codelineno-13-1"></a><span class="n">a</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">,</span><span class="mi">4</span><span class="p">,</span><span class="mi">5</span><span class="p">]</span>
+</span><span id="__span-13-2"><a id="__codelineno-13-2" name="__codelineno-13-2" href="#__codelineno-13-2"></a><span class="n">b</span> <span class="o">=</span> <span class="p">[</span><span class="mi">5</span><span class="p">,</span><span class="mi">4</span><span class="p">,</span><span class="mi">3</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">1</span><span class="p">]</span>
+</span><span id="__span-13-3"><a id="__codelineno-13-3" name="__codelineno-13-3" href="#__codelineno-13-3"></a><span class="n">c</span> <span class="o">=</span> <span class="p">(</span><span class="n">a</span> <span class="o">==</span> <span class="n">b</span><span class="p">)</span>
+</span><span id="__span-13-4"><a id="__codelineno-13-4" name="__codelineno-13-4" href="#__codelineno-13-4"></a><span class="nb">print</span><span class="p">(</span><span class="n">c</span><span class="p">)</span> <span class="c1"># Apa hasilnya?</span>
+</span></code></pre></div>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-14-1"><a id="__codelineno-14-1" name="__codelineno-14-1" href="#__codelineno-14-1"></a><span class="n">a</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">,</span><span class="mi">4</span><span class="p">,</span><span class="mi">5</span><span class="p">]</span>
+</span><span id="__span-14-2"><a id="__codelineno-14-2" name="__codelineno-14-2" href="#__codelineno-14-2"></a><span class="n">b</span> <span class="o">=</span> <span class="p">[</span><span class="n">a</span><span class="p">[</span><span class="mi">1</span><span class="p">],</span> <span class="n">a</span><span class="p">[</span><span class="mi">3</span><span class="p">]]</span>
+</span><span id="__span-14-3"><a id="__codelineno-14-3" name="__codelineno-14-3" href="#__codelineno-14-3"></a><span class="nb">print</span><span class="p">(</span><span class="n">b</span><span class="p">)</span> <span class="c1"># Apa hasilnya?</span>
+</span></code></pre></div>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-15-1"><a id="__codelineno-15-1" name="__codelineno-15-1" href="#__codelineno-15-1"></a><span class="n">a</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">,</span><span class="mi">4</span><span class="p">,</span><span class="mi">5</span><span class="p">,</span><span class="mi">6</span><span class="p">,</span><span class="mi">7</span><span class="p">,</span><span class="mi">8</span><span class="p">,</span><span class="mi">9</span><span class="p">,</span><span class="mi">10</span><span class="p">]</span>
+</span><span id="__span-15-2"><a id="__codelineno-15-2" name="__codelineno-15-2" href="#__codelineno-15-2"></a><span class="n">b</span> <span class="o">=</span> <span class="n">a</span><span class="p">[:</span><span class="mi">3</span><span class="p">]</span>
+</span><span id="__span-15-3"><a id="__codelineno-15-3" name="__codelineno-15-3" href="#__codelineno-15-3"></a><span class="n">c</span> <span class="o">=</span> <span class="n">a</span><span class="p">[</span><span class="mi">3</span><span class="p">:]</span>
+</span><span id="__span-15-4"><a id="__codelineno-15-4" name="__codelineno-15-4" href="#__codelineno-15-4"></a><span class="n">d</span> <span class="o">=</span> <span class="n">a</span><span class="p">[</span><span class="mi">3</span><span class="p">:</span><span class="mi">6</span><span class="p">]</span>
+</span><span id="__span-15-5"><a id="__codelineno-15-5" name="__codelineno-15-5" href="#__codelineno-15-5"></a><span class="nb">print</span><span class="p">(</span><span class="n">b</span><span class="p">,</span> <span class="n">c</span><span class="p">,</span> <span class="n">d</span><span class="p">)</span> <span class="c1"># Apa hasilnya?</span>
+</span></code></pre></div>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-16-1"><a id="__codelineno-16-1" name="__codelineno-16-1" href="#__codelineno-16-1"></a><span class="n">a</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">]</span>
+</span><span id="__span-16-2"><a id="__codelineno-16-2" name="__codelineno-16-2" href="#__codelineno-16-2"></a><span class="n">b</span> <span class="o">=</span> <span class="p">[</span><span class="mi">4</span><span class="p">,</span><span class="mi">5</span><span class="p">,</span><span class="mi">6</span><span class="p">]</span>
+</span><span id="__span-16-3"><a id="__codelineno-16-3" name="__codelineno-16-3" href="#__codelineno-16-3"></a><span class="n">c</span> <span class="o">=</span> <span class="p">[</span><span class="n">a</span><span class="p">,</span> <span class="n">b</span><span class="p">]</span>
+</span><span id="__span-16-4"><a id="__codelineno-16-4" name="__codelineno-16-4" href="#__codelineno-16-4"></a><span class="nb">print</span><span class="p">(</span><span class="n">c</span><span class="p">)</span>
+</span><span id="__span-16-5"><a id="__codelineno-16-5" name="__codelineno-16-5" href="#__codelineno-16-5"></a><span class="nb">print</span><span class="p">(</span><span class="n">c</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span>
+</span><span id="__span-16-6"><a id="__codelineno-16-6" name="__codelineno-16-6" href="#__codelineno-16-6"></a><span class="nb">print</span><span class="p">(</span><span class="n">c</span><span class="p">[</span><span class="mi">0</span><span class="p">][</span><span class="mi">0</span><span class="p">])</span> <span class="c1"># Apa hasilnya?</span>
+</span></code></pre></div>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-17-1"><a id="__codelineno-17-1" name="__codelineno-17-1" href="#__codelineno-17-1"></a><span class="n">a</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">,</span><span class="mi">4</span><span class="p">,</span><span class="mi">5</span><span class="p">,</span><span class="mi">6</span><span class="p">,</span><span class="mi">7</span><span class="p">,</span><span class="mi">8</span><span class="p">,</span><span class="mi">9</span><span class="p">,</span><span class="mi">10</span><span class="p">]</span>
+</span><span id="__span-17-2"><a id="__codelineno-17-2" name="__codelineno-17-2" href="#__codelineno-17-2"></a><span class="n">a</span><span class="o">.</span><span class="n">pop</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span>
+</span><span id="__span-17-3"><a id="__codelineno-17-3" name="__codelineno-17-3" href="#__codelineno-17-3"></a><span class="n">b</span> <span class="o">=</span> <span class="n">a</span><span class="p">[</span><span class="mi">3</span><span class="p">]</span>
+</span><span id="__span-17-4"><a id="__codelineno-17-4" name="__codelineno-17-4" href="#__codelineno-17-4"></a><span class="n">c</span> <span class="o">=</span> <span class="n">b</span> <span class="o">+</span> <span class="n">a</span><span class="p">[</span><span class="mi">2</span><span class="p">]</span>
+</span><span id="__span-17-5"><a id="__codelineno-17-5" name="__codelineno-17-5" href="#__codelineno-17-5"></a><span class="n">a</span><span class="o">.</span><span class="n">insert</span><span class="p">(</span><span class="mi">3</span><span class="p">,</span> <span class="n">c</span><span class="p">)</span>
+</span><span id="__span-17-6"><a id="__codelineno-17-6" name="__codelineno-17-6" href="#__codelineno-17-6"></a><span class="nb">print</span><span class="p">(</span><span class="n">a</span><span class="p">)</span> <span class="c1"># Apa hasilnya?</span>
+</span></code></pre></div>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-18-1"><a id="__codelineno-18-1" name="__codelineno-18-1" href="#__codelineno-18-1"></a><span class="n">a</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">,</span><span class="mi">4</span><span class="p">,</span><span class="mi">5</span><span class="p">,</span><span class="mi">6</span><span class="p">,</span><span class="mi">7</span><span class="p">,</span><span class="mi">8</span><span class="p">]</span>
+</span><span id="__span-18-2"><a id="__codelineno-18-2" name="__codelineno-18-2" href="#__codelineno-18-2"></a><span class="n">b</span> <span class="o">=</span> <span class="n">a</span> <span class="o">+</span> <span class="p">[</span><span class="mi">1</span><span class="p">]</span>
+</span><span id="__span-18-3"><a id="__codelineno-18-3" name="__codelineno-18-3" href="#__codelineno-18-3"></a><span class="nb">print</span><span class="p">(</span><span class="n">b</span><span class="p">)</span> <span class="c1"># Apa hasilnya?</span>
+</span></code></pre></div>
+<h4 id="tuple"><strong>Tuple</strong></h4>
+<p>Tuple mirip seperti list hanya saja elemen di dalam tuple tidak dapat diubah.
+Tuple juga dituliskan dalam kurung biasa sementara list dituliskan dalam kurung siku.</p>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-19-1"><a id="__codelineno-19-1" name="__codelineno-19-1" href="#__codelineno-19-1"></a><span class="n">a</span> <span class="o">=</span> <span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">,</span><span class="mi">4</span><span class="p">,</span><span class="mi">5</span><span class="p">)</span>
+</span><span id="__span-19-2"><a id="__codelineno-19-2" name="__codelineno-19-2" href="#__codelineno-19-2"></a><span class="nb">print</span><span class="p">(</span><span class="n">a</span><span class="p">)</span>     <span class="c1"># print tuple</span>
+</span><span id="__span-19-3"><a id="__codelineno-19-3" name="__codelineno-19-3" href="#__codelineno-19-3"></a><span class="nb">print</span><span class="p">(</span><span class="n">a</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span>  <span class="c1"># akses data tuple</span>
+</span><span id="__span-19-4"><a id="__codelineno-19-4" name="__codelineno-19-4" href="#__codelineno-19-4"></a>
+</span><span id="__span-19-5"><a id="__codelineno-19-5" name="__codelineno-19-5" href="#__codelineno-19-5"></a><span class="n">a</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">=</span> <span class="mi">100</span>   <span class="c1"># error, element tuple tidak dapat diubah</span>
+</span><span id="__span-19-6"><a id="__codelineno-19-6" name="__codelineno-19-6" href="#__codelineno-19-6"></a><span class="nb">print</span><span class="p">(</span><span class="n">a</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span>
+</span></code></pre></div>
+<p>Dua tuple dapat digabungkan dengan menggunakan simbol <code>+</code>.</p>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-20-1"><a id="__codelineno-20-1" name="__codelineno-20-1" href="#__codelineno-20-1"></a><span class="n">a</span> <span class="o">=</span> <span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">)</span>
+</span><span id="__span-20-2"><a id="__codelineno-20-2" name="__codelineno-20-2" href="#__codelineno-20-2"></a><span class="n">b</span> <span class="o">=</span> <span class="p">(</span><span class="mi">4</span><span class="p">,</span><span class="mi">5</span><span class="p">,</span><span class="mi">6</span><span class="p">)</span>
+</span><span id="__span-20-3"><a id="__codelineno-20-3" name="__codelineno-20-3" href="#__codelineno-20-3"></a>
+</span><span id="__span-20-4"><a id="__codelineno-20-4" name="__codelineno-20-4" href="#__codelineno-20-4"></a><span class="nb">print</span><span class="p">(</span><span class="n">a</span> <span class="o">+</span> <span class="n">b</span><span class="p">)</span>
+</span></code></pre></div>
+<p>Tuple digunakan untuk merepresentasikan data yang ukurannya sudah diketahui,
+misalnya posisi objek dalam ruang 3 dimensi → <code>(x, y, z)</code>.</p>
+<h4 id="dictionary"><strong>Dictionary</strong></h4>
+<p>Dictionary, seperti artinya yaitu kamus.
+Dictionary adalah tipe data yang terdiri dari pasangan <strong>key</strong> dan <strong>value</strong>.
+Dalam kamus, misalnya kamus Indonesia-Inggris, setiap entri terdiri dari 2 item, yaitu kata dan artinya.
+Dalam dictionary juga sama.</p>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-21-1"><a id="__codelineno-21-1" name="__codelineno-21-1" href="#__codelineno-21-1"></a><span class="n">daftar_nama_umur</span> <span class="o">=</span> <span class="p">{</span>
+</span><span id="__span-21-2"><a id="__codelineno-21-2" name="__codelineno-21-2" href="#__codelineno-21-2"></a>    <span class="s1">&#39;budi&#39;</span><span class="p">:</span> <span class="mi">30</span><span class="p">,</span>
+</span><span id="__span-21-3"><a id="__codelineno-21-3" name="__codelineno-21-3" href="#__codelineno-21-3"></a>    <span class="s1">&#39;wati&#39;</span><span class="p">:</span> <span class="mi">35</span><span class="p">,</span>
+</span><span id="__span-21-4"><a id="__codelineno-21-4" name="__codelineno-21-4" href="#__codelineno-21-4"></a>    <span class="s1">&#39;amran&#39;</span><span class="p">:</span> <span class="mi">35</span>
+</span><span id="__span-21-5"><a id="__codelineno-21-5" name="__codelineno-21-5" href="#__codelineno-21-5"></a><span class="p">}</span>
+</span><span id="__span-21-6"><a id="__codelineno-21-6" name="__codelineno-21-6" href="#__codelineno-21-6"></a>
+</span><span id="__span-21-7"><a id="__codelineno-21-7" name="__codelineno-21-7" href="#__codelineno-21-7"></a><span class="nb">print</span><span class="p">(</span><span class="n">daftar_nama_umur</span><span class="p">)</span>
+</span><span id="__span-21-8"><a id="__codelineno-21-8" name="__codelineno-21-8" href="#__codelineno-21-8"></a><span class="nb">print</span><span class="p">(</span><span class="n">daftar_nama_umur</span><span class="p">[</span><span class="s1">&#39;budi&#39;</span><span class="p">])</span>
+</span></code></pre></div>
+<p>Di kode tersebut, kita lihat pasangan datanya bertipe string dan integer (<code>'budi' : 30</code>).
+Setiap pasang dalam satu dictionary tidak harus memiliki tipe data yang sama dan key tidak harus string.</p>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-22-1"><a id="__codelineno-22-1" name="__codelineno-22-1" href="#__codelineno-22-1"></a><span class="n">data_anggota</span> <span class="o">=</span> <span class="p">{</span>
+</span><span id="__span-22-2"><a id="__codelineno-22-2" name="__codelineno-22-2" href="#__codelineno-22-2"></a>    <span class="s1">&#39;nama&#39;</span><span class="p">:</span> <span class="s1">&#39;budi&#39;</span><span class="p">,</span>          <span class="c1"># string : string</span>
+</span><span id="__span-22-3"><a id="__codelineno-22-3" name="__codelineno-22-3" href="#__codelineno-22-3"></a>    <span class="s1">&#39;umur&#39;</span><span class="p">:</span> <span class="mi">30</span><span class="p">,</span>              <span class="c1"># string : integer</span>
+</span><span id="__span-22-4"><a id="__codelineno-22-4" name="__codelineno-22-4" href="#__codelineno-22-4"></a>    <span class="s1">&#39;berat&#39;</span><span class="p">:</span> <span class="mf">59.6</span><span class="p">,</span>           <span class="c1"># string : float</span>
+</span><span id="__span-22-5"><a id="__codelineno-22-5" name="__codelineno-22-5" href="#__codelineno-22-5"></a>    <span class="s1">&#39;gender&#39;</span><span class="p">:</span> <span class="kc">True</span><span class="p">,</span>          <span class="c1"># string : bool</span>
+</span><span id="__span-22-6"><a id="__codelineno-22-6" name="__codelineno-22-6" href="#__codelineno-22-6"></a>    <span class="s1">&#39;nilai&#39;</span><span class="p">:</span> <span class="p">[</span><span class="mi">9</span><span class="p">,</span> <span class="mf">8.5</span><span class="p">,</span> <span class="mi">8</span><span class="p">,</span> <span class="mf">7.7</span><span class="p">,</span> <span class="mi">10</span><span class="p">],</span>  <span class="c1"># string : list</span>
+</span><span id="__span-22-7"><a id="__codelineno-22-7" name="__codelineno-22-7" href="#__codelineno-22-7"></a>    <span class="s1">&#39;posisi&#39;</span><span class="p">:</span> <span class="p">(</span><span class="mf">3.5</span><span class="p">,</span> <span class="mf">2.0</span><span class="p">,</span> <span class="mf">45.3</span><span class="p">)</span>      <span class="c1"># string : tuple</span>
+</span><span id="__span-22-8"><a id="__codelineno-22-8" name="__codelineno-22-8" href="#__codelineno-22-8"></a><span class="p">}</span>
+</span><span id="__span-22-9"><a id="__codelineno-22-9" name="__codelineno-22-9" href="#__codelineno-22-9"></a>
+</span><span id="__span-22-10"><a id="__codelineno-22-10" name="__codelineno-22-10" href="#__codelineno-22-10"></a><span class="nb">print</span><span class="p">(</span><span class="n">data_anggota</span><span class="p">)</span>
+</span></code></pre></div>
+<p>Untuk menambah, mengganti, atau menghapus data di dictionary, perhatikan kode berikut.</p>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-23-1"><a id="__codelineno-23-1" name="__codelineno-23-1" href="#__codelineno-23-1"></a><span class="n">data_anggota</span> <span class="o">=</span> <span class="p">{</span>
+</span><span id="__span-23-2"><a id="__codelineno-23-2" name="__codelineno-23-2" href="#__codelineno-23-2"></a>    <span class="s1">&#39;nama&#39;</span><span class="p">:</span> <span class="s1">&#39;budi&#39;</span><span class="p">,</span>
+</span><span id="__span-23-3"><a id="__codelineno-23-3" name="__codelineno-23-3" href="#__codelineno-23-3"></a>    <span class="s1">&#39;umur&#39;</span><span class="p">:</span> <span class="mi">30</span><span class="p">,</span>
+</span><span id="__span-23-4"><a id="__codelineno-23-4" name="__codelineno-23-4" href="#__codelineno-23-4"></a>    <span class="s1">&#39;ttl&#39;</span><span class="p">:</span> <span class="s1">&#39;bandung, 20 januari 1900&#39;</span><span class="p">,</span>
+</span><span id="__span-23-5"><a id="__codelineno-23-5" name="__codelineno-23-5" href="#__codelineno-23-5"></a>    <span class="s1">&#39;alamat&#39;</span><span class="p">:</span> <span class="s1">&#39;jl. dimanapun no. 100&#39;</span>
+</span><span id="__span-23-6"><a id="__codelineno-23-6" name="__codelineno-23-6" href="#__codelineno-23-6"></a><span class="p">}</span>
+</span></code></pre></div>
+<p>Di Kode 2. 5, ditunjukkan dua cara untuk menghapus data dari dictionary, yaitu menggunakan perintah <code>del</code> dan <code>pop</code>.
+Selain dari kedua perintah tersebut, terdapat perintah lain juga.
+Kamu dapat mengetahui perintah-perintah yang ada di Python dengan mencarinya di <a href="https://www.3schools.com/python/default. sp">Google</a>.</p>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-24-1"><a id="__codelineno-24-1" name="__codelineno-24-1" href="#__codelineno-24-1"></a><span class="nb">print</span><span class="p">(</span><span class="s2">&quot;===== print dictionary =====&quot;</span><span class="p">)</span>
+</span><span id="__span-24-2"><a id="__codelineno-24-2" name="__codelineno-24-2" href="#__codelineno-24-2"></a><span class="nb">print</span><span class="p">(</span><span class="n">data_anggota</span><span class="p">,</span> <span class="s1">&#39;</span><span class="se">\n</span><span class="s1">&#39;</span><span class="p">)</span>
+</span><span id="__span-24-3"><a id="__codelineno-24-3" name="__codelineno-24-3" href="#__codelineno-24-3"></a>
+</span><span id="__span-24-4"><a id="__codelineno-24-4" name="__codelineno-24-4" href="#__codelineno-24-4"></a><span class="n">data_anggota</span><span class="p">[</span><span class="s1">&#39;nama&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="s1">&#39;dudi&#39;</span>
+</span><span id="__span-24-5"><a id="__codelineno-24-5" name="__codelineno-24-5" href="#__codelineno-24-5"></a><span class="nb">print</span><span class="p">(</span><span class="s2">&quot;===== ganti nama =====&quot;</span><span class="p">)</span>
+</span><span id="__span-24-6"><a id="__codelineno-24-6" name="__codelineno-24-6" href="#__codelineno-24-6"></a><span class="nb">print</span><span class="p">(</span><span class="n">data_anggota</span><span class="p">,</span> <span class="s1">&#39;</span><span class="se">\n</span><span class="s1">&#39;</span><span class="p">)</span>
+</span><span id="__span-24-7"><a id="__codelineno-24-7" name="__codelineno-24-7" href="#__codelineno-24-7"></a>
+</span><span id="__span-24-8"><a id="__codelineno-24-8" name="__codelineno-24-8" href="#__codelineno-24-8"></a><span class="n">data_anggota</span><span class="p">[</span><span class="s1">&#39;gender&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="s1">&#39;L&#39;</span>
+</span><span id="__span-24-9"><a id="__codelineno-24-9" name="__codelineno-24-9" href="#__codelineno-24-9"></a><span class="nb">print</span><span class="p">(</span><span class="s2">&quot;===== tambah gender =====&quot;</span><span class="p">)</span>
+</span><span id="__span-24-10"><a id="__codelineno-24-10" name="__codelineno-24-10" href="#__codelineno-24-10"></a><span class="nb">print</span><span class="p">(</span><span class="n">data_anggota</span><span class="p">,</span> <span class="s1">&#39;</span><span class="se">\n</span><span class="s1">&#39;</span><span class="p">)</span>
+</span><span id="__span-24-11"><a id="__codelineno-24-11" name="__codelineno-24-11" href="#__codelineno-24-11"></a>
+</span><span id="__span-24-12"><a id="__codelineno-24-12" name="__codelineno-24-12" href="#__codelineno-24-12"></a><span class="k">del</span> <span class="n">data_anggota</span><span class="p">[</span><span class="s1">&#39;alamat&#39;</span><span class="p">]</span>
+</span><span id="__span-24-13"><a id="__codelineno-24-13" name="__codelineno-24-13" href="#__codelineno-24-13"></a><span class="nb">print</span><span class="p">(</span><span class="s2">&quot;===== hapus alamat menggunakan del =====&quot;</span><span class="p">)</span>
+</span><span id="__span-24-14"><a id="__codelineno-24-14" name="__codelineno-24-14" href="#__codelineno-24-14"></a><span class="nb">print</span><span class="p">(</span><span class="n">data_anggota</span><span class="p">,</span> <span class="s1">&#39;</span><span class="se">\n</span><span class="s1">&#39;</span><span class="p">)</span>
+</span><span id="__span-24-15"><a id="__codelineno-24-15" name="__codelineno-24-15" href="#__codelineno-24-15"></a>
+</span><span id="__span-24-16"><a id="__codelineno-24-16" name="__codelineno-24-16" href="#__codelineno-24-16"></a><span class="n">data_anggota</span><span class="o">.</span><span class="n">pop</span><span class="p">(</span><span class="s1">&#39;ttl&#39;</span><span class="p">)</span>
+</span><span id="__span-24-17"><a id="__codelineno-24-17" name="__codelineno-24-17" href="#__codelineno-24-17"></a><span class="nb">print</span><span class="p">(</span><span class="s2">&quot;===== hapus ttl menggunakan pop =====&quot;</span><span class="p">)</span>
+</span><span id="__span-24-18"><a id="__codelineno-24-18" name="__codelineno-24-18" href="#__codelineno-24-18"></a><span class="nb">print</span><span class="p">(</span><span class="n">data_anggota</span><span class="p">,</span> <span class="s1">&#39;</span><span class="se">\n</span><span class="s1">&#39;</span><span class="p">)</span>
+</span><span id="__span-24-19"><a id="__codelineno-24-19" name="__codelineno-24-19" href="#__codelineno-24-19"></a>
+</span><span id="__span-24-20"><a id="__codelineno-24-20" name="__codelineno-24-20" href="#__codelineno-24-20"></a><span class="c1"># &#39;\n&#39; digunakan untuk membuat baris baru</span>
+</span></code></pre></div>
+<p>Untuk mendapatkan semua key dari dictionary, perhatikan kode berikut. </p>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-25-1"><a id="__codelineno-25-1" name="__codelineno-25-1" href="#__codelineno-25-1"></a><span class="n">data_anggota</span> <span class="o">=</span> <span class="p">{</span>
+</span><span id="__span-25-2"><a id="__codelineno-25-2" name="__codelineno-25-2" href="#__codelineno-25-2"></a>    <span class="s1">&#39;nama&#39;</span><span class="p">:</span> <span class="s1">&#39;budi&#39;</span><span class="p">,</span>
+</span><span id="__span-25-3"><a id="__codelineno-25-3" name="__codelineno-25-3" href="#__codelineno-25-3"></a>    <span class="s1">&#39;umur&#39;</span><span class="p">:</span> <span class="mi">30</span><span class="p">,</span>
+</span><span id="__span-25-4"><a id="__codelineno-25-4" name="__codelineno-25-4" href="#__codelineno-25-4"></a>    <span class="s1">&#39;ttl&#39;</span><span class="p">:</span> <span class="s1">&#39;bandung, 20 januari 1900&#39;</span><span class="p">,</span>
+</span><span id="__span-25-5"><a id="__codelineno-25-5" name="__codelineno-25-5" href="#__codelineno-25-5"></a>    <span class="s1">&#39;alamat&#39;</span><span class="p">:</span> <span class="s1">&#39;jl. dimanapun no. 100&#39;</span>
+</span><span id="__span-25-6"><a id="__codelineno-25-6" name="__codelineno-25-6" href="#__codelineno-25-6"></a><span class="p">}</span>
+</span><span id="__span-25-7"><a id="__codelineno-25-7" name="__codelineno-25-7" href="#__codelineno-25-7"></a>
+</span><span id="__span-25-8"><a id="__codelineno-25-8" name="__codelineno-25-8" href="#__codelineno-25-8"></a><span class="n">key</span> <span class="o">=</span> <span class="n">data_anggota</span><span class="o">.</span><span class="n">keys</span><span class="p">()</span>
+</span><span id="__span-25-9"><a id="__codelineno-25-9" name="__codelineno-25-9" href="#__codelineno-25-9"></a><span class="nb">print</span><span class="p">(</span><span class="nb">type</span><span class="p">(</span><span class="n">key</span><span class="p">))</span>
+</span><span id="__span-25-10"><a id="__codelineno-25-10" name="__codelineno-25-10" href="#__codelineno-25-10"></a><span class="nb">print</span><span class="p">(</span><span class="n">key</span><span class="p">)</span>
+</span></code></pre></div>
+<p>.</p>
+<h3 id="237-input">2.3.7 Input</h3>
+<p>Salah satu yang membuat sebuah program interaktif adalah program tersebut dapat menerima input dari pengguna. Perhatikan contoh di Kode 2.51. Jalankan program tersebut. Apa yang terjadi?</p>
+<p><strong>Kode 2.51: Program yang dapat menerima input dari pengguna</strong>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-26-1"><a id="__codelineno-26-1" name="__codelineno-26-1" href="#__codelineno-26-1"></a><span class="n">nama</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s2">&quot;Siapa nama Anda: &quot;</span><span class="p">)</span>
+</span><span id="__span-26-2"><a id="__codelineno-26-2" name="__codelineno-26-2" href="#__codelineno-26-2"></a><span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Salam kenal&quot;</span> <span class="o">+</span> <span class="n">nama</span><span class="p">)</span>
+</span></code></pre></div></p>
+<p>Sekarang perhatikan contoh program input lainnya di Kode 2.52. Jalankan program tersebut dan apa yang terjadi?</p>
+<p><strong>Kode 2.52: Program yang meminta pengguna input angka</strong>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-27-1"><a id="__codelineno-27-1" name="__codelineno-27-1" href="#__codelineno-27-1"></a><span class="n">a</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s2">&quot;Masukkkan angka pertama = &quot;</span><span class="p">)</span>
+</span><span id="__span-27-2"><a id="__codelineno-27-2" name="__codelineno-27-2" href="#__codelineno-27-2"></a><span class="n">b</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s2">&quot;Masukkkan angka kedua = &quot;</span><span class="p">)</span>
+</span><span id="__span-27-3"><a id="__codelineno-27-3" name="__codelineno-27-3" href="#__codelineno-27-3"></a><span class="n">c</span> <span class="o">=</span> <span class="n">a</span> <span class="o">+</span> <span class="n">b</span>
+</span><span id="__span-27-4"><a id="__codelineno-27-4" name="__codelineno-27-4" href="#__codelineno-27-4"></a><span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Jumlah 2 angka yang anda masukkan adalah &quot;</span> <span class="o">+</span> <span class="n">c</span><span class="p">)</span>
+</span></code></pre></div></p>
+<p>Apakah tipe data dari variabel <code>a</code>, <code>b</code>, dan <code>c</code> dalam Kode 2.52? Ya, betul, tipe data ketiga variabel tersebut adalah string. Agar masukan pengguna dapat kita anggap sebagai bilangan, kita harus mengubahnya dulu (<strong>type casting</strong>). Perhatikan Kode 2.53, tulis dan jalankan program tersebut.</p>
+<p><strong>Kode 2.53: Variabel <code>a</code> dan <code>b</code> diubah ke integer dan <code>c</code> diubah ke string</strong>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-28-1"><a id="__codelineno-28-1" name="__codelineno-28-1" href="#__codelineno-28-1"></a><span class="n">a</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s2">&quot;Masukkkan angka pertama = &quot;</span><span class="p">)</span>
+</span><span id="__span-28-2"><a id="__codelineno-28-2" name="__codelineno-28-2" href="#__codelineno-28-2"></a><span class="n">b</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s2">&quot;Masukkkan angka kedua = &quot;</span><span class="p">)</span>
+</span><span id="__span-28-3"><a id="__codelineno-28-3" name="__codelineno-28-3" href="#__codelineno-28-3"></a><span class="n">c</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="n">a</span><span class="p">)</span> <span class="o">+</span> <span class="nb">int</span><span class="p">(</span><span class="n">b</span><span class="p">)</span>
+</span><span id="__span-28-4"><a id="__codelineno-28-4" name="__codelineno-28-4" href="#__codelineno-28-4"></a><span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Jumlah 2 angka yang anda masukkan adalah &quot;</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">c</span><span class="p">))</span>
+</span></code></pre></div></p>
+<p>Perintah di baris 3 adalah menyuruh komputer untuk mengubah terlebih dahulu variabel <code>a</code> ke integer (<code>int(a)</code>), lalu variabel <code>b</code> ke integer (<code>int(b)</code>), kemudian menjumlahkan 2 integer tersebut dan menyimpannya di <code>c</code>.</p>
+<h3 id="238-contoh-program">2.3.8 Contoh Program</h3>
+<p>Kode 2.54 adalah contoh program sederhana memilih menu di restoran. Tulis program tersebut dan jalankan. Apa yang terjadi?</p>
+<p><strong>Kode 2.54: Program menu</strong>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-29-1"><a id="__codelineno-29-1" name="__codelineno-29-1" href="#__codelineno-29-1"></a><span class="nb">print</span><span class="p">(</span><span class="s2">&quot;&quot;</span><span class="p">)</span>
+</span><span id="__span-29-2"><a id="__codelineno-29-2" name="__codelineno-29-2" href="#__codelineno-29-2"></a><span class="nb">print</span><span class="p">(</span><span class="s2">&quot;====================================&quot;</span><span class="p">)</span>
+</span><span id="__span-29-3"><a id="__codelineno-29-3" name="__codelineno-29-3" href="#__codelineno-29-3"></a><span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Selamat datang di restoran Sukelezat.&quot;</span><span class="p">)</span>
+</span><span id="__span-29-4"><a id="__codelineno-29-4" name="__codelineno-29-4" href="#__codelineno-29-4"></a><span class="nb">print</span><span class="p">(</span><span class="s2">&quot;====================================&quot;</span><span class="p">)</span>
+</span><span id="__span-29-5"><a id="__codelineno-29-5" name="__codelineno-29-5" href="#__codelineno-29-5"></a><span class="nb">print</span><span class="p">(</span><span class="s2">&quot;&quot;</span><span class="p">)</span>
+</span><span id="__span-29-6"><a id="__codelineno-29-6" name="__codelineno-29-6" href="#__codelineno-29-6"></a>
+</span><span id="__span-29-7"><a id="__codelineno-29-7" name="__codelineno-29-7" href="#__codelineno-29-7"></a><span class="n">makanan</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s2">&quot;Silakan tuliskan makanan yang kamu pesan: &quot;</span><span class="p">)</span>
+</span><span id="__span-29-8"><a id="__codelineno-29-8" name="__codelineno-29-8" href="#__codelineno-29-8"></a>
+</span><span id="__span-29-9"><a id="__codelineno-29-9" name="__codelineno-29-9" href="#__codelineno-29-9"></a><span class="n">minuman</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s2">&quot;Sekarang, silakan tuliskan minuman yang kamu pesan: &quot;</span><span class="p">)</span>
+</span><span id="__span-29-10"><a id="__codelineno-29-10" name="__codelineno-29-10" href="#__codelineno-29-10"></a>
+</span><span id="__span-29-11"><a id="__codelineno-29-11" name="__codelineno-29-11" href="#__codelineno-29-11"></a><span class="nb">print</span><span class="p">(</span><span class="s2">&quot;&quot;</span><span class="p">)</span>
+</span><span id="__span-29-12"><a id="__codelineno-29-12" name="__codelineno-29-12" href="#__codelineno-29-12"></a><span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Terima kasih, pesanan Anda adalah &quot;</span> <span class="o">+</span> <span class="n">makanan</span> <span class="o">+</span> <span class="s2">&quot; dan &quot;</span> <span class="o">+</span> <span class="n">minuman</span><span class="p">)</span>
+</span></code></pre></div></p>
+<p><strong>Kode 2.59: Perbaiki program berikut.</strong>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-30-1"><a id="__codelineno-30-1" name="__codelineno-30-1" href="#__codelineno-30-1"></a><span class="n">a</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">]</span>
+</span><span id="__span-30-2"><a id="__codelineno-30-2" name="__codelineno-30-2" href="#__codelineno-30-2"></a><span class="n">a</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="mi">7</span><span class="p">)</span>
+</span><span id="__span-30-3"><a id="__codelineno-30-3" name="__codelineno-30-3" href="#__codelineno-30-3"></a>
+</span><span id="__span-30-4"><a id="__codelineno-30-4" name="__codelineno-30-4" href="#__codelineno-30-4"></a><span class="nb">print</span><span class="p">(</span><span class="n">a</span><span class="p">[</span><span class="mi">4</span><span class="p">])</span>
+</span></code></pre></div></p>
+<p><strong>Kode 2.60: Perbaiki program berikut.</strong>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-31-1"><a id="__codelineno-31-1" name="__codelineno-31-1" href="#__codelineno-31-1"></a><span class="n">a</span> <span class="o">=</span> <span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">,</span><span class="mi">4</span><span class="p">,</span><span class="mi">5</span><span class="p">)</span>
+</span><span id="__span-31-2"><a id="__codelineno-31-2" name="__codelineno-31-2" href="#__codelineno-31-2"></a><span class="n">a</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">=</span> <span class="mi">8</span>
+</span><span id="__span-31-3"><a id="__codelineno-31-3" name="__codelineno-31-3" href="#__codelineno-31-3"></a>
+</span><span id="__span-31-4"><a id="__codelineno-31-4" name="__codelineno-31-4" href="#__codelineno-31-4"></a><span class="nb">print</span><span class="p">(</span><span class="n">a</span><span class="p">)</span>
+</span></code></pre></div></p>
+<p><strong>Kode 2.61: Perbaiki program berikut.</strong>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-32-1"><a id="__codelineno-32-1" name="__codelineno-32-1" href="#__codelineno-32-1"></a><span class="n">a</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">]</span>
+</span><span id="__span-32-2"><a id="__codelineno-32-2" name="__codelineno-32-2" href="#__codelineno-32-2"></a><span class="n">b</span> <span class="o">=</span> <span class="p">[</span><span class="mi">4</span><span class="p">,</span><span class="mi">5</span><span class="p">,</span><span class="mi">6</span><span class="p">]</span>
+</span><span id="__span-32-3"><a id="__codelineno-32-3" name="__codelineno-32-3" href="#__codelineno-32-3"></a><span class="n">c</span> <span class="o">=</span> <span class="p">[</span><span class="mi">7</span><span class="p">,</span><span class="mi">8</span><span class="p">,</span><span class="mi">9</span><span class="p">,</span><span class="n">a</span><span class="p">,</span><span class="n">b</span><span class="p">]</span>
+</span><span id="__span-32-4"><a id="__codelineno-32-4" name="__codelineno-32-4" href="#__codelineno-32-4"></a>
+</span><span id="__span-32-5"><a id="__codelineno-32-5" name="__codelineno-32-5" href="#__codelineno-32-5"></a><span class="nb">print</span><span class="p">(</span><span class="n">c</span><span class="p">[</span><span class="mi">3</span><span class="p">][</span><span class="mi">1</span><span class="p">])</span>
+</span><span id="__span-32-6"><a id="__codelineno-32-6" name="__codelineno-32-6" href="#__codelineno-32-6"></a><span class="nb">print</span><span class="p">(</span><span class="n">c</span><span class="p">[</span><span class="mi">2</span><span class="p">][</span><span class="mi">1</span><span class="p">])</span>
+</span></code></pre></div>
+<strong>Kode 2.62: Perbaiki program berikut.</strong>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-33-1"><a id="__codelineno-33-1" name="__codelineno-33-1" href="#__codelineno-33-1"></a><span class="n">a</span> <span class="o">=</span> <span class="p">{</span><span class="s2">&quot;nama&quot;</span><span class="p">:</span> <span class="s2">&quot;budi&quot;</span><span class="p">,</span> <span class="s2">&quot;umur&quot;</span><span class="p">:</span> <span class="mi">20</span><span class="p">}</span>
+</span><span id="__span-33-2"><a id="__codelineno-33-2" name="__codelineno-33-2" href="#__codelineno-33-2"></a><span class="nb">print</span><span class="p">(</span><span class="n">a</span><span class="p">[</span><span class="s2">&quot;budi&quot;</span><span class="p">])</span>
+</span></code></pre></div>
+<strong>2.</strong> Buatlah program yang menerima input dari user berupa angka 0–9, lalu munculkan string yang bersesuaian. Misalnya, user memasukkan angka 1, maka print string <code>"satu"</code>. <em>Petunjuk: Gunakan list untuk menyimpan kata-katanya.</em></p>
+<p><strong>3.</strong> Komputer dapat menghasilkan bilangan acak seperti yang tertulis di Kode 2.63.</p>
+<p><strong>Kode 2.63: Komputer menghasilkan bilangan acak antara 1–100</strong>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-34-1"><a id="__codelineno-34-1" name="__codelineno-34-1" href="#__codelineno-34-1"></a><span class="kn">import</span><span class="w"> </span><span class="nn">random</span>
+</span><span id="__span-34-2"><a id="__codelineno-34-2" name="__codelineno-34-2" href="#__codelineno-34-2"></a>
+</span><span id="__span-34-3"><a id="__codelineno-34-3" name="__codelineno-34-3" href="#__codelineno-34-3"></a><span class="n">r</span> <span class="o">=</span> <span class="n">random</span><span class="o">.</span><span class="n">randint</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">100</span><span class="p">)</span>
+</span><span id="__span-34-4"><a id="__codelineno-34-4" name="__codelineno-34-4" href="#__codelineno-34-4"></a><span class="nb">print</span><span class="p">(</span><span class="n">r</span><span class="p">)</span>
+</span><span id="__span-34-5"><a id="__codelineno-34-5" name="__codelineno-34-5" href="#__codelineno-34-5"></a><span class="n">r</span> <span class="o">=</span> <span class="n">random</span><span class="o">.</span><span class="n">randint</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">100</span><span class="p">)</span>
+</span><span id="__span-34-6"><a id="__codelineno-34-6" name="__codelineno-34-6" href="#__codelineno-34-6"></a><span class="nb">print</span><span class="p">(</span><span class="n">r</span><span class="p">)</span>
+</span><span id="__span-34-7"><a id="__codelineno-34-7" name="__codelineno-34-7" href="#__codelineno-34-7"></a><span class="n">r</span> <span class="o">=</span> <span class="n">random</span><span class="o">.</span><span class="n">randint</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">100</span><span class="p">)</span>
+</span><span id="__span-34-8"><a id="__codelineno-34-8" name="__codelineno-34-8" href="#__codelineno-34-8"></a><span class="nb">print</span><span class="p">(</span><span class="n">r</span><span class="p">)</span>
+</span><span id="__span-34-9"><a id="__codelineno-34-9" name="__codelineno-34-9" href="#__codelineno-34-9"></a><span class="n">r</span> <span class="o">=</span> <span class="n">random</span><span class="o">.</span><span class="n">randint</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">100</span><span class="p">)</span>
+</span><span id="__span-34-10"><a id="__codelineno-34-10" name="__codelineno-34-10" href="#__codelineno-34-10"></a><span class="nb">print</span><span class="p">(</span><span class="n">r</span><span class="p">)</span>
+</span></code></pre></div></p>
+<p>Buatlah suatu game sederhana. Program men-<em>generate</em> angka acak antara 0–100. User menebak angka yang di-<em>generate</em> komputer (inputkan angkanya). Munculkan skor tebakannya dengan cara menentukan selisih antara angka komputer dan angka tebakannya. Perhatikan contoh di Kode 2.64.</p>
+<p><strong>Kode 2.64: Contoh program tebak angka.</strong>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-35-1"><a id="__codelineno-35-1" name="__codelineno-35-1" href="#__codelineno-35-1"></a>Tebak angka yang di-generate komputer: 50
+</span><span id="__span-35-2"><a id="__codelineno-35-2" name="__codelineno-35-2" href="#__codelineno-35-2"></a>Skor anda adalah: 34
+</span><span id="__span-35-3"><a id="__codelineno-35-3" name="__codelineno-35-3" href="#__codelineno-35-3"></a>Angka yang di-generate komputer adalah: 84
+</span></code></pre></div></p>
+<p><strong>4.</strong> Suatu list dapat diubah menjadi tuple, carilah caranya di Internet lalu buat program contohnya. Buat juga sebaliknya, yaitu dari tuple menjadi list.</p>
+<p><strong>5.</strong> Buat program yang memunculkan nama 5 huruf secara random dengan ketentuan, huruf ke-2 dan ke-4 vokal, sisanya konsonan. <em>Petunjuk: gunakan dua list, yaitu list untuk vokal dan list untuk konsonan. Lalu gunakan fungsi random untuk mengambil huruf dari kedua list tersebut.</em></p>
+<p><strong>6.</strong> Buat seperti program nama acak sebelumnya, tapi minta user untuk memasukkan huruf pertama nama acak tersebut.</p>
+<p><strong>7.</strong> Buat program pertandingan dengan skenario sebagai berikut.</p>
+<ul>
+<li>(a) Ketika program dijalankan, user diminta memasukkan nama pertama, lalu enter.</li>
+<li>(b) Selanjutnya, user diminta memasukkan nama ke-2, lalu enter.</li>
+<li>(c) Lalu program menuliskan nama pertama dan skornya (random antara 0–100) serta nama kedua dan skornya (dalam baris berbeda).</li>
+</ul>
+<p><strong>8.</strong> Buatlah program yang mengacak kata. Skenarionya adalah, user diminta untuk memasukkan kata, lalu tampilkan versi teracak dari kalimat tersebut (kata-katanya diacak). <em>Petunjuk: gunakan fungsi <code>split</code> untuk memisahkan kalimat ke dalam list dari kata-kata. Lalu gunakan <code>random.shuffle()</code> untuk mengacak list tersebut. Selanjutnya, gabungkan lagi kata-kata dalam list tersebut menggunakan perintah <code>" ".join(list)</code>.</em></p>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "..", "features": ["search.suggest", "search.highlight", "content.code.copy"], "search": "../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.79ae519e.min.js"></script>
+      
+    
+  </body>
+</html>

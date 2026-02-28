@@ -1,0 +1,1217 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+        <link rel="canonical" href="https://ismailrusli.github.io/modul_alpro/modul7/">
+      
+      
+        <link rel="prev" href="../modul6/">
+      
+      
+        <link rel="next" href="../modul8/">
+      
+      
+        
+      
+      
+      <link rel="icon" href="../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.3">
+    
+    
+      
+        <title>Modul 7: Tipe Data Kustom - Modul Algoritma dan Pemrograman</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.484c7ddc.min.css">
+      
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.ab4e12ef.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#modul-7-tipe-data-kustom" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href=".." title="Modul Algoritma dan Pemrograman" class="md-header__button md-logo" aria-label="Modul Algoritma dan Pemrograman" data-md-component="logo">
+      
+  <img src="../assets/logo.png" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Modul Algoritma dan Pemrograman
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Modul 7: Tipe Data Kustom
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12s-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="Modul Algoritma dan Pemrograman" class="md-nav__button md-logo" aria-label="Modul Algoritma dan Pemrograman" data-md-component="logo">
+      
+  <img src="../assets/logo.png" alt="logo">
+
+    </a>
+    Modul Algoritma dan Pemrograman
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../modul0/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Modul 0: Instalasi
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../modul1/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Modul 1: Halo, Dunia!
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../modul2/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Modul 2: Literal dan Variabel
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../modul3/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Modul 3: Percabangan
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../modul4/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Modul 4: Pengulangan
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../modul5/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Modul 5: Fungsi
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../modul6/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Modul 6: File
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Modul 7: Tipe Data Kustom
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Modul 7: Tipe Data Kustom
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#71-capaian" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        7.1 Capaian
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#72-alat-dan-bahan" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        7.2 Alat dan Bahan
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#73-materi" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        7.3 Materi
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="7.3 Materi">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#kode-71-cara-mendefinisikan-tipe-data-baru" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Kode 7.1: Cara mendefinisikan tipe data baru
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#kode-72-mengubah-nama-dan-umur" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Kode 7.2: Mengubah nama dan umur
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#kode-73-menambahkan-fungsi-hitung-tahun-lahir-di-class-biodata" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Kode 7.3: Menambahkan fungsi hitung tahun lahir di class biodata
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#731-contoh-program" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        7.3.1 Contoh Program
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="7.3.1 Contoh Program">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#kode-74-tipe-data-petarung" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Kode 7.4: Tipe data Petarung
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#kode-75-naruto-adalah-instansiasi-dari-petarung" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Kode 7.5: Naruto adalah instansiasi dari Petarung
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#kode-76-instansiasi-petarung-ke-2-objek" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Kode 7.6: Instansiasi Petarung ke 2 objek
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#kode-77-hasil-kode-76" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Kode 7.7: Hasil Kode 7.6
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#kode-78-tipe-data-tanding" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Kode 7.8: Tipe data Tanding
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#kode-79-naruto-dan-sasuke-bertanding" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Kode 7.9: Naruto dan Sasuke bertanding
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#kode-710-hasil-pertandingan" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Kode 7.10: Hasil pertandingan
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#732-kerjakan" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        7.3.2 Kerjakan
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../modul8/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Modul 8: Modul Open Source
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#71-capaian" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        7.1 Capaian
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#72-alat-dan-bahan" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        7.2 Alat dan Bahan
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#73-materi" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        7.3 Materi
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="7.3 Materi">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#kode-71-cara-mendefinisikan-tipe-data-baru" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Kode 7.1: Cara mendefinisikan tipe data baru
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#kode-72-mengubah-nama-dan-umur" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Kode 7.2: Mengubah nama dan umur
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#kode-73-menambahkan-fungsi-hitung-tahun-lahir-di-class-biodata" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Kode 7.3: Menambahkan fungsi hitung tahun lahir di class biodata
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#731-contoh-program" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        7.3.1 Contoh Program
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="7.3.1 Contoh Program">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#kode-74-tipe-data-petarung" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Kode 7.4: Tipe data Petarung
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#kode-75-naruto-adalah-instansiasi-dari-petarung" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Kode 7.5: Naruto adalah instansiasi dari Petarung
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#kode-76-instansiasi-petarung-ke-2-objek" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Kode 7.6: Instansiasi Petarung ke 2 objek
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#kode-77-hasil-kode-76" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Kode 7.7: Hasil Kode 7.6
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#kode-78-tipe-data-tanding" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Kode 7.8: Tipe data Tanding
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#kode-79-naruto-dan-sasuke-bertanding" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Kode 7.9: Naruto dan Sasuke bertanding
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#kode-710-hasil-pertandingan" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Kode 7.10: Hasil pertandingan
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#732-kerjakan" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        7.3.2 Kerjakan
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<h1 id="modul-7-tipe-data-kustom">Modul 7: Tipe Data Kustom</h1>
+<p><img alt="Status" src="https://img.shields.io/badge/Status-On_Progress-yellow?style=flat-square" /></p>
+<!-- ![Status](https://img.shields.io/badge/Status-Finish-brightgreen?style=flat-square) -->
+
+<h2 id="71-capaian">7.1 Capaian</h2>
+<p>Mampu menggunakan elemen-elemen dasar pemrograman, seperti inisialisasi variabel untuk berbagai macam tipe data, menggunakan percabangan, menggunakan pengulangan, membuat dan menggunakan fungsi, serta membuat dan menggunakan tipe data bentukan sendiri.</p>
+<hr />
+<h2 id="72-alat-dan-bahan">7.2 Alat dan Bahan</h2>
+<ol>
+<li>Laptop/komputer</li>
+<li>Internet</li>
+<li>Python 3.8+</li>
+<li>Visual Studio Code (atau editor sejenis)</li>
+</ol>
+<hr />
+<h2 id="73-materi">7.3 Materi</h2>
+<p>Kita sudah belajar 4 tipe data dasar dalam Python, yaitu integer, string, float, dan boolean. Selain itu, ada juga 3 tipe data lanjutan, yaitu list, tuple, dan dictionary.</p>
+<p>Sebagai programer, kita sebenarnya bisa membuat tipe data sendiri. Misalnya ketika membuat program untuk pengelolaan data mahasiswa, daripada menggunakan tipe data dasar untuk menampung data nama, nim, umur, gender, dan alamat, kita dapat menggabungkan data tersebut ke dalam satu tipe data kustom yang kita bikin sendiri, misalnya yang kita sebut <code>biodata</code>. Perhatikan Kode 7.1.</p>
+<h3 id="kode-71-cara-mendefinisikan-tipe-data-baru">Kode 7.1: Cara mendefinisikan tipe data baru</h3>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="k">class</span><span class="w"> </span><span class="nc">biodata</span><span class="p">:</span>
+</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>    <span class="k">def</span><span class="w"> </span><span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">nama</span><span class="p">,</span> <span class="n">nim</span><span class="p">,</span> <span class="n">umur</span><span class="p">,</span> <span class="n">gender</span><span class="p">,</span> <span class="n">alamat</span><span class="p">):</span>
+</span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a>        <span class="bp">self</span><span class="o">.</span><span class="n">nama</span> <span class="o">=</span> <span class="n">nama</span>
+</span><span id="__span-0-4"><a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a>        <span class="bp">self</span><span class="o">.</span><span class="n">nim</span> <span class="o">=</span> <span class="n">nim</span>
+</span><span id="__span-0-5"><a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a>        <span class="bp">self</span><span class="o">.</span><span class="n">umur</span> <span class="o">=</span> <span class="n">umur</span>
+</span><span id="__span-0-6"><a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a>        <span class="bp">self</span><span class="o">.</span><span class="n">gender</span> <span class="o">=</span> <span class="n">gender</span>
+</span><span id="__span-0-7"><a id="__codelineno-0-7" name="__codelineno-0-7" href="#__codelineno-0-7"></a>        <span class="bp">self</span><span class="o">.</span><span class="n">alamat</span> <span class="o">=</span> <span class="n">alamat</span>
+</span><span id="__span-0-8"><a id="__codelineno-0-8" name="__codelineno-0-8" href="#__codelineno-0-8"></a>
+</span><span id="__span-0-9"><a id="__codelineno-0-9" name="__codelineno-0-9" href="#__codelineno-0-9"></a><span class="n">anggota1</span> <span class="o">=</span> <span class="n">biodata</span><span class="p">(</span><span class="s2">&quot;budi&quot;</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">18</span><span class="p">,</span> <span class="s1">&#39;L&#39;</span><span class="p">,</span> <span class="s1">&#39;bandung&#39;</span><span class="p">)</span>
+</span><span id="__span-0-10"><a id="__codelineno-0-10" name="__codelineno-0-10" href="#__codelineno-0-10"></a><span class="n">anggota2</span> <span class="o">=</span> <span class="n">biodata</span><span class="p">(</span><span class="s2">&quot;wati&quot;</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">19</span><span class="p">,</span> <span class="s1">&#39;P&#39;</span><span class="p">,</span> <span class="s1">&#39;jakarta&#39;</span><span class="p">)</span>
+</span><span id="__span-0-11"><a id="__codelineno-0-11" name="__codelineno-0-11" href="#__codelineno-0-11"></a>
+</span><span id="__span-0-12"><a id="__codelineno-0-12" name="__codelineno-0-12" href="#__codelineno-0-12"></a><span class="nb">print</span><span class="p">(</span><span class="n">anggota1</span><span class="o">.</span><span class="n">nama</span><span class="p">,</span> <span class="n">anggota1</span><span class="o">.</span><span class="n">umur</span><span class="p">)</span>
+</span><span id="__span-0-13"><a id="__codelineno-0-13" name="__codelineno-0-13" href="#__codelineno-0-13"></a><span class="nb">print</span><span class="p">(</span><span class="n">anggota2</span><span class="o">.</span><span class="n">nama</span><span class="p">,</span> <span class="n">anggota2</span><span class="o">.</span><span class="n">umur</span><span class="p">)</span>
+</span></code></pre></div>
+<p>Fungsi <code>__init__(self, nama, nim, umur, gender, alamat)</code> disebut sebagai <strong>konstruktor</strong>. Fungsi ini dipanggil setiap kali data dengan tipe <code>biodata</code> dibuat, contohnya di baris 9 dan 10 dalam Kode 7.1.</p>
+<p>Setiap data bertipe <code>biodata</code> dibuat, kita menamakannya sebagai proses <strong>instansiasi</strong> (<em>instantiation</em>). Jadi, <code>anggota1</code> dan <code>anggota2</code> adalah hasil instansiasi dari tipe data (class) <code>biodata</code>. Variabel <code>self</code> adalah variabel yang hanya dapat diakses di dalam kelas dan merujuk ke setiap hasil instansiasi. Contohnya, <code>self</code> di <code>anggota1</code> mengacu ke <code>anggota1</code> itu sendiri dan bukan ke <code>anggota2</code>.</p>
+<h3 id="kode-72-mengubah-nama-dan-umur">Kode 7.2: Mengubah nama dan umur</h3>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="k">class</span><span class="w"> </span><span class="nc">biodata</span><span class="p">:</span>
+</span><span id="__span-1-2"><a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a>    <span class="k">def</span><span class="w"> </span><span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">nama</span><span class="p">,</span> <span class="n">nim</span><span class="p">,</span> <span class="n">umur</span><span class="p">,</span> <span class="n">gender</span><span class="p">,</span> <span class="n">alamat</span><span class="p">):</span>
+</span><span id="__span-1-3"><a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a>        <span class="bp">self</span><span class="o">.</span><span class="n">nama</span> <span class="o">=</span> <span class="n">nama</span>
+</span><span id="__span-1-4"><a id="__codelineno-1-4" name="__codelineno-1-4" href="#__codelineno-1-4"></a>        <span class="bp">self</span><span class="o">.</span><span class="n">nim</span> <span class="o">=</span> <span class="n">nim</span>
+</span><span id="__span-1-5"><a id="__codelineno-1-5" name="__codelineno-1-5" href="#__codelineno-1-5"></a>        <span class="bp">self</span><span class="o">.</span><span class="n">umur</span> <span class="o">=</span> <span class="n">umur</span>
+</span><span id="__span-1-6"><a id="__codelineno-1-6" name="__codelineno-1-6" href="#__codelineno-1-6"></a>        <span class="bp">self</span><span class="o">.</span><span class="n">gender</span> <span class="o">=</span> <span class="n">gender</span>
+</span><span id="__span-1-7"><a id="__codelineno-1-7" name="__codelineno-1-7" href="#__codelineno-1-7"></a>        <span class="bp">self</span><span class="o">.</span><span class="n">alamat</span> <span class="o">=</span> <span class="n">alamat</span>
+</span><span id="__span-1-8"><a id="__codelineno-1-8" name="__codelineno-1-8" href="#__codelineno-1-8"></a>
+</span><span id="__span-1-9"><a id="__codelineno-1-9" name="__codelineno-1-9" href="#__codelineno-1-9"></a><span class="n">anggota1</span> <span class="o">=</span> <span class="n">biodata</span><span class="p">(</span><span class="s2">&quot;budi&quot;</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">18</span><span class="p">,</span> <span class="s1">&#39;L&#39;</span><span class="p">,</span> <span class="s1">&#39;bandung&#39;</span><span class="p">)</span>
+</span><span id="__span-1-10"><a id="__codelineno-1-10" name="__codelineno-1-10" href="#__codelineno-1-10"></a><span class="nb">print</span><span class="p">(</span><span class="n">anggota1</span><span class="o">.</span><span class="n">nama</span><span class="p">,</span> <span class="n">anggota1</span><span class="o">.</span><span class="n">umur</span><span class="p">)</span>
+</span><span id="__span-1-11"><a id="__codelineno-1-11" name="__codelineno-1-11" href="#__codelineno-1-11"></a>
+</span><span id="__span-1-12"><a id="__codelineno-1-12" name="__codelineno-1-12" href="#__codelineno-1-12"></a><span class="n">anggota1</span><span class="o">.</span><span class="n">nama</span> <span class="o">=</span> <span class="s2">&quot;amir&quot;</span>
+</span><span id="__span-1-13"><a id="__codelineno-1-13" name="__codelineno-1-13" href="#__codelineno-1-13"></a><span class="n">anggota1</span><span class="o">.</span><span class="n">umur</span> <span class="o">=</span> <span class="mi">19</span>
+</span><span id="__span-1-14"><a id="__codelineno-1-14" name="__codelineno-1-14" href="#__codelineno-1-14"></a>
+</span><span id="__span-1-15"><a id="__codelineno-1-15" name="__codelineno-1-15" href="#__codelineno-1-15"></a><span class="nb">print</span><span class="p">(</span><span class="n">anggota1</span><span class="o">.</span><span class="n">nama</span><span class="p">,</span> <span class="n">anggota1</span><span class="o">.</span><span class="n">umur</span><span class="p">)</span>
+</span></code></pre></div>
+<p>Selain fungsi konstruktor, ke dalam class juga dapat kita tambahkan fungsi-fungsi lain. Misalnya kita ingin menghitung tahun kelahiran seseorang dari umurnya. Untuk itu kita buat fungsi <code>hitung_tahun_lahir</code> di dalam kelas <code>biodata</code>. Untuk menghitung tahun lahir, kita perlu memasukkan data tahun sekarang ke dalam fungsi. Perhatikan Kode 7.3.</p>
+<h3 id="kode-73-menambahkan-fungsi-hitung-tahun-lahir-di-class-biodata">Kode 7.3: Menambahkan fungsi hitung tahun lahir di class biodata</h3>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="k">class</span><span class="w"> </span><span class="nc">biodata</span><span class="p">:</span>
+</span><span id="__span-2-2"><a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a>    <span class="k">def</span><span class="w"> </span><span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">nama</span><span class="p">,</span> <span class="n">nim</span><span class="p">,</span> <span class="n">umur</span><span class="p">,</span> <span class="n">gender</span><span class="p">,</span> <span class="n">alamat</span><span class="p">):</span>
+</span><span id="__span-2-3"><a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a>        <span class="bp">self</span><span class="o">.</span><span class="n">nama</span> <span class="o">=</span> <span class="n">nama</span>
+</span><span id="__span-2-4"><a id="__codelineno-2-4" name="__codelineno-2-4" href="#__codelineno-2-4"></a>        <span class="bp">self</span><span class="o">.</span><span class="n">nim</span> <span class="o">=</span> <span class="n">nim</span>
+</span><span id="__span-2-5"><a id="__codelineno-2-5" name="__codelineno-2-5" href="#__codelineno-2-5"></a>        <span class="bp">self</span><span class="o">.</span><span class="n">umur</span> <span class="o">=</span> <span class="n">umur</span>
+</span><span id="__span-2-6"><a id="__codelineno-2-6" name="__codelineno-2-6" href="#__codelineno-2-6"></a>        <span class="bp">self</span><span class="o">.</span><span class="n">gender</span> <span class="o">=</span> <span class="n">gender</span>
+</span><span id="__span-2-7"><a id="__codelineno-2-7" name="__codelineno-2-7" href="#__codelineno-2-7"></a>        <span class="bp">self</span><span class="o">.</span><span class="n">alamat</span> <span class="o">=</span> <span class="n">alamat</span>
+</span><span id="__span-2-8"><a id="__codelineno-2-8" name="__codelineno-2-8" href="#__codelineno-2-8"></a>
+</span><span id="__span-2-9"><a id="__codelineno-2-9" name="__codelineno-2-9" href="#__codelineno-2-9"></a>    <span class="k">def</span><span class="w"> </span><span class="nf">hitung_tahun_lahir</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">tahun_sekarang</span><span class="p">):</span>
+</span><span id="__span-2-10"><a id="__codelineno-2-10" name="__codelineno-2-10" href="#__codelineno-2-10"></a>        <span class="n">tahun_lahir</span> <span class="o">=</span> <span class="n">tahun_sekarang</span> <span class="o">-</span> <span class="bp">self</span><span class="o">.</span><span class="n">umur</span>
+</span><span id="__span-2-11"><a id="__codelineno-2-11" name="__codelineno-2-11" href="#__codelineno-2-11"></a>        <span class="k">return</span> <span class="n">tahun_lahir</span>
+</span><span id="__span-2-12"><a id="__codelineno-2-12" name="__codelineno-2-12" href="#__codelineno-2-12"></a>
+</span><span id="__span-2-13"><a id="__codelineno-2-13" name="__codelineno-2-13" href="#__codelineno-2-13"></a><span class="n">anggota1</span> <span class="o">=</span> <span class="n">biodata</span><span class="p">(</span><span class="s2">&quot;budi&quot;</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">18</span><span class="p">,</span> <span class="s1">&#39;L&#39;</span><span class="p">,</span> <span class="s1">&#39;bandung&#39;</span><span class="p">)</span>
+</span><span id="__span-2-14"><a id="__codelineno-2-14" name="__codelineno-2-14" href="#__codelineno-2-14"></a>
+</span><span id="__span-2-15"><a id="__codelineno-2-15" name="__codelineno-2-15" href="#__codelineno-2-15"></a><span class="n">lahir</span> <span class="o">=</span> <span class="n">anggota1</span><span class="o">.</span><span class="n">hitung_tahun_lahir</span><span class="p">(</span><span class="mi">2024</span><span class="p">)</span>
+</span><span id="__span-2-16"><a id="__codelineno-2-16" name="__codelineno-2-16" href="#__codelineno-2-16"></a>
+</span><span id="__span-2-17"><a id="__codelineno-2-17" name="__codelineno-2-17" href="#__codelineno-2-17"></a><span class="nb">print</span><span class="p">(</span><span class="s2">&quot;tahun lahir&quot;</span><span class="p">,</span> <span class="n">anggota1</span><span class="o">.</span><span class="n">nama</span><span class="p">,</span> <span class="s2">&quot;adalah&quot;</span><span class="p">,</span> <span class="n">lahir</span><span class="p">)</span>
+</span></code></pre></div>
+<hr />
+<h3 id="731-contoh-program">7.3.1 Contoh Program</h3>
+<p>Misalkan kita akan membuat game pertarungan antara jago bela diri. Pertama, kita bisa membuat tipe data baru berupa petarung. Mari kita namakan tipe data ini <code>Petarung</code>. Apa sajakah yang dimiliki oleh seorang petarung? Perhatikan Kode 7.4 dan hasilnya di Kode 7.5.</p>
+<h4 id="kode-74-tipe-data-petarung">Kode 7.4: Tipe data Petarung</h4>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-3-1"><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a><span class="kn">import</span><span class="w"> </span><span class="nn">random</span>
+</span><span id="__span-3-2"><a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a>
+</span><span id="__span-3-3"><a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a><span class="k">class</span><span class="w"> </span><span class="nc">Petarung</span><span class="p">:</span>
+</span><span id="__span-3-4"><a id="__codelineno-3-4" name="__codelineno-3-4" href="#__codelineno-3-4"></a>    <span class="k">def</span><span class="w"> </span><span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">nama</span><span class="p">):</span>
+</span><span id="__span-3-5"><a id="__codelineno-3-5" name="__codelineno-3-5" href="#__codelineno-3-5"></a>        <span class="bp">self</span><span class="o">.</span><span class="n">nama</span> <span class="o">=</span> <span class="n">nama</span>
+</span><span id="__span-3-6"><a id="__codelineno-3-6" name="__codelineno-3-6" href="#__codelineno-3-6"></a>        <span class="bp">self</span><span class="o">.</span><span class="n">kesehatan</span> <span class="o">=</span> <span class="mi">100</span>
+</span><span id="__span-3-7"><a id="__codelineno-3-7" name="__codelineno-3-7" href="#__codelineno-3-7"></a>        <span class="bp">self</span><span class="o">.</span><span class="n">kekuatan</span> <span class="o">=</span> <span class="n">random</span><span class="o">.</span><span class="n">randint</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">100</span><span class="p">)</span>
+</span><span id="__span-3-8"><a id="__codelineno-3-8" name="__codelineno-3-8" href="#__codelineno-3-8"></a>        <span class="bp">self</span><span class="o">.</span><span class="n">kecerdasan</span> <span class="o">=</span> <span class="n">random</span><span class="o">.</span><span class="n">randint</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">100</span><span class="p">)</span>
+</span><span id="__span-3-9"><a id="__codelineno-3-9" name="__codelineno-3-9" href="#__codelineno-3-9"></a>        <span class="bp">self</span><span class="o">.</span><span class="n">kelincahan</span> <span class="o">=</span> <span class="n">random</span><span class="o">.</span><span class="n">randint</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">100</span><span class="p">)</span>
+</span><span id="__span-3-10"><a id="__codelineno-3-10" name="__codelineno-3-10" href="#__codelineno-3-10"></a>        <span class="bp">self</span><span class="o">.</span><span class="n">senjata</span> <span class="o">=</span> <span class="n">random</span><span class="o">.</span><span class="n">randint</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">100</span><span class="p">)</span>
+</span><span id="__span-3-11"><a id="__codelineno-3-11" name="__codelineno-3-11" href="#__codelineno-3-11"></a>
+</span><span id="__span-3-12"><a id="__codelineno-3-12" name="__codelineno-3-12" href="#__codelineno-3-12"></a>    <span class="k">def</span><span class="w"> </span><span class="nf">print_data</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+</span><span id="__span-3-13"><a id="__codelineno-3-13" name="__codelineno-3-13" href="#__codelineno-3-13"></a>        <span class="nb">print</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">nama</span><span class="p">)</span>
+</span><span id="__span-3-14"><a id="__codelineno-3-14" name="__codelineno-3-14" href="#__codelineno-3-14"></a>        <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Kesehatan = &quot;</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">kesehatan</span><span class="p">)</span>
+</span><span id="__span-3-15"><a id="__codelineno-3-15" name="__codelineno-3-15" href="#__codelineno-3-15"></a>        <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Kekuatan = &quot;</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">kekuatan</span><span class="p">)</span>
+</span><span id="__span-3-16"><a id="__codelineno-3-16" name="__codelineno-3-16" href="#__codelineno-3-16"></a>        <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Kecerdasan = &quot;</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">kecerdasan</span><span class="p">)</span>
+</span><span id="__span-3-17"><a id="__codelineno-3-17" name="__codelineno-3-17" href="#__codelineno-3-17"></a>        <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Kelincahan = &quot;</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">kelincahan</span><span class="p">)</span>
+</span><span id="__span-3-18"><a id="__codelineno-3-18" name="__codelineno-3-18" href="#__codelineno-3-18"></a>        <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Senjata = &quot;</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">senjata</span><span class="p">)</span>
+</span><span id="__span-3-19"><a id="__codelineno-3-19" name="__codelineno-3-19" href="#__codelineno-3-19"></a>
+</span><span id="__span-3-20"><a id="__codelineno-3-20" name="__codelineno-3-20" href="#__codelineno-3-20"></a><span class="n">naruto</span> <span class="o">=</span> <span class="n">Petarung</span><span class="p">(</span><span class="s2">&quot;Naruto&quot;</span><span class="p">)</span>
+</span><span id="__span-3-21"><a id="__codelineno-3-21" name="__codelineno-3-21" href="#__codelineno-3-21"></a><span class="n">naruto</span><span class="o">.</span><span class="n">print_data</span><span class="p">()</span>
+</span></code></pre></div>
+<h4 id="kode-75-naruto-adalah-instansiasi-dari-petarung">Kode 7.5: Naruto adalah instansiasi dari Petarung</h4>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-4-1"><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a>Naruto
+</span><span id="__span-4-2"><a id="__codelineno-4-2" name="__codelineno-4-2" href="#__codelineno-4-2"></a>Kesehatan = 100
+</span><span id="__span-4-3"><a id="__codelineno-4-3" name="__codelineno-4-3" href="#__codelineno-4-3"></a>Kekuatan = 98
+</span><span id="__span-4-4"><a id="__codelineno-4-4" name="__codelineno-4-4" href="#__codelineno-4-4"></a>Kecerdasan = 94
+</span><span id="__span-4-5"><a id="__codelineno-4-5" name="__codelineno-4-5" href="#__codelineno-4-5"></a>Kelincahan = 51
+</span><span id="__span-4-6"><a id="__codelineno-4-6" name="__codelineno-4-6" href="#__codelineno-4-6"></a>Senjata = 45
+</span></code></pre></div>
+<p>Mari sekarang kita bikin Sasuke.</p>
+<h4 id="kode-76-instansiasi-petarung-ke-2-objek">Kode 7.6: Instansiasi Petarung ke 2 objek</h4>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-5-1"><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a><span class="c1"># saya pindahkan class Petarung ke file petarung.py</span>
+</span><span id="__span-5-2"><a id="__codelineno-5-2" name="__codelineno-5-2" href="#__codelineno-5-2"></a><span class="c1"># lalu saya import</span>
+</span><span id="__span-5-3"><a id="__codelineno-5-3" name="__codelineno-5-3" href="#__codelineno-5-3"></a><span class="kn">from</span><span class="w"> </span><span class="nn">petarung</span><span class="w"> </span><span class="kn">import</span> <span class="n">Petarung</span>
+</span><span id="__span-5-4"><a id="__codelineno-5-4" name="__codelineno-5-4" href="#__codelineno-5-4"></a>
+</span><span id="__span-5-5"><a id="__codelineno-5-5" name="__codelineno-5-5" href="#__codelineno-5-5"></a><span class="n">naruto</span> <span class="o">=</span> <span class="n">Petarung</span><span class="p">(</span><span class="s2">&quot;Naruto&quot;</span><span class="p">)</span>
+</span><span id="__span-5-6"><a id="__codelineno-5-6" name="__codelineno-5-6" href="#__codelineno-5-6"></a><span class="n">sasuke</span> <span class="o">=</span> <span class="n">Petarung</span><span class="p">(</span><span class="s2">&quot;Sasuke&quot;</span><span class="p">)</span>
+</span><span id="__span-5-7"><a id="__codelineno-5-7" name="__codelineno-5-7" href="#__codelineno-5-7"></a>
+</span><span id="__span-5-8"><a id="__codelineno-5-8" name="__codelineno-5-8" href="#__codelineno-5-8"></a><span class="n">naruto</span><span class="o">.</span><span class="n">print_data</span><span class="p">()</span>
+</span><span id="__span-5-9"><a id="__codelineno-5-9" name="__codelineno-5-9" href="#__codelineno-5-9"></a><span class="nb">print</span><span class="p">(</span><span class="s2">&quot;----------------------&quot;</span><span class="p">)</span>
+</span><span id="__span-5-10"><a id="__codelineno-5-10" name="__codelineno-5-10" href="#__codelineno-5-10"></a><span class="n">sasuke</span><span class="o">.</span><span class="n">print_data</span><span class="p">()</span>
+</span></code></pre></div>
+<h4 id="kode-77-hasil-kode-76">Kode 7.7: Hasil Kode 7.6</h4>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-6-1"><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a>Naruto
+</span><span id="__span-6-2"><a id="__codelineno-6-2" name="__codelineno-6-2" href="#__codelineno-6-2"></a>Kesehatan = 100
+</span><span id="__span-6-3"><a id="__codelineno-6-3" name="__codelineno-6-3" href="#__codelineno-6-3"></a>Kekuatan = 62
+</span><span id="__span-6-4"><a id="__codelineno-6-4" name="__codelineno-6-4" href="#__codelineno-6-4"></a>Kecerdasan = 94
+</span><span id="__span-6-5"><a id="__codelineno-6-5" name="__codelineno-6-5" href="#__codelineno-6-5"></a>Kelincahan = 13
+</span><span id="__span-6-6"><a id="__codelineno-6-6" name="__codelineno-6-6" href="#__codelineno-6-6"></a>Senjata = 44
+</span><span id="__span-6-7"><a id="__codelineno-6-7" name="__codelineno-6-7" href="#__codelineno-6-7"></a>----------------------
+</span><span id="__span-6-8"><a id="__codelineno-6-8" name="__codelineno-6-8" href="#__codelineno-6-8"></a>Sasuke
+</span><span id="__span-6-9"><a id="__codelineno-6-9" name="__codelineno-6-9" href="#__codelineno-6-9"></a>Kesehatan = 100
+</span><span id="__span-6-10"><a id="__codelineno-6-10" name="__codelineno-6-10" href="#__codelineno-6-10"></a>Kekuatan = 66
+</span><span id="__span-6-11"><a id="__codelineno-6-11" name="__codelineno-6-11" href="#__codelineno-6-11"></a>Kecerdasan = 49
+</span><span id="__span-6-12"><a id="__codelineno-6-12" name="__codelineno-6-12" href="#__codelineno-6-12"></a>Kelincahan = 44
+</span><span id="__span-6-13"><a id="__codelineno-6-13" name="__codelineno-6-13" href="#__codelineno-6-13"></a>Senjata = 51
+</span></code></pre></div>
+<p>Sekarang, mari kita tandingkan antara Naruto dan Sasuke. Untuk itu, kita buat tipe data <code>Tanding</code> seperti di Kode 7.8 dan kita tandingkan seperti di Kode 7.9. Hasilnya dapat dilihat di Kode 7.10.</p>
+<h4 id="kode-78-tipe-data-tanding">Kode 7.8: Tipe data Tanding</h4>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-7-1"><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a><span class="k">class</span><span class="w"> </span><span class="nc">Tanding</span><span class="p">:</span>
+</span><span id="__span-7-2"><a id="__codelineno-7-2" name="__codelineno-7-2" href="#__codelineno-7-2"></a>    <span class="k">def</span><span class="w"> </span><span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">petarung1</span><span class="p">,</span> <span class="n">petarung2</span><span class="p">):</span>
+</span><span id="__span-7-3"><a id="__codelineno-7-3" name="__codelineno-7-3" href="#__codelineno-7-3"></a>        <span class="bp">self</span><span class="o">.</span><span class="n">petarung1</span> <span class="o">=</span> <span class="n">petarung1</span>
+</span><span id="__span-7-4"><a id="__codelineno-7-4" name="__codelineno-7-4" href="#__codelineno-7-4"></a>        <span class="bp">self</span><span class="o">.</span><span class="n">petarung2</span> <span class="o">=</span> <span class="n">petarung2</span>
+</span><span id="__span-7-5"><a id="__codelineno-7-5" name="__codelineno-7-5" href="#__codelineno-7-5"></a>        <span class="bp">self</span><span class="o">.</span><span class="n">pemenang</span> <span class="o">=</span> <span class="s2">&quot;&quot;</span>
+</span><span id="__span-7-6"><a id="__codelineno-7-6" name="__codelineno-7-6" href="#__codelineno-7-6"></a>
+</span><span id="__span-7-7"><a id="__codelineno-7-7" name="__codelineno-7-7" href="#__codelineno-7-7"></a>    <span class="k">def</span><span class="w"> </span><span class="nf">mulai</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+</span><span id="__span-7-8"><a id="__codelineno-7-8" name="__codelineno-7-8" href="#__codelineno-7-8"></a><span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
+</span><span id="__span-7-9"><a id="__codelineno-7-9" name="__codelineno-7-9" href="#__codelineno-7-9"></a><span class="sd">        pemenang pertarungan ditentukan dengan cara sbb.</span>
+</span><span id="__span-7-10"><a id="__codelineno-7-10" name="__codelineno-7-10" href="#__codelineno-7-10"></a><span class="sd">        setiap sifat antara 2 petarung dibandingkan</span>
+</span><span id="__span-7-11"><a id="__codelineno-7-11" name="__codelineno-7-11" href="#__codelineno-7-11"></a><span class="sd">        yang lebih besar mendapatkan 1 point.</span>
+</span><span id="__span-7-12"><a id="__codelineno-7-12" name="__codelineno-7-12" href="#__codelineno-7-12"></a><span class="sd">        pemenang adalah petarung yang memiliki</span>
+</span><span id="__span-7-13"><a id="__codelineno-7-13" name="__codelineno-7-13" href="#__codelineno-7-13"></a><span class="sd">        point paling besar.</span>
+</span><span id="__span-7-14"><a id="__codelineno-7-14" name="__codelineno-7-14" href="#__codelineno-7-14"></a><span class="sd">        &quot;&quot;&quot;</span>
+</span><span id="__span-7-15"><a id="__codelineno-7-15" name="__codelineno-7-15" href="#__codelineno-7-15"></a>        <span class="n">nilai_petarung1</span> <span class="o">=</span> <span class="mi">0</span>
+</span><span id="__span-7-16"><a id="__codelineno-7-16" name="__codelineno-7-16" href="#__codelineno-7-16"></a>        <span class="n">nilai_petarung2</span> <span class="o">=</span> <span class="mi">0</span>
+</span><span id="__span-7-17"><a id="__codelineno-7-17" name="__codelineno-7-17" href="#__codelineno-7-17"></a>
+</span><span id="__span-7-18"><a id="__codelineno-7-18" name="__codelineno-7-18" href="#__codelineno-7-18"></a>        <span class="k">if</span> <span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">petarung1</span><span class="o">.</span><span class="n">kekuatan</span> <span class="o">&gt;</span> <span class="bp">self</span><span class="o">.</span><span class="n">petarung2</span><span class="o">.</span><span class="n">kekuatan</span><span class="p">):</span>
+</span><span id="__span-7-19"><a id="__codelineno-7-19" name="__codelineno-7-19" href="#__codelineno-7-19"></a>            <span class="n">nilai_petarung1</span> <span class="o">=</span> <span class="n">nilai_petarung1</span> <span class="o">+</span> <span class="mi">1</span>
+</span><span id="__span-7-20"><a id="__codelineno-7-20" name="__codelineno-7-20" href="#__codelineno-7-20"></a>        <span class="k">elif</span> <span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">petarung1</span><span class="o">.</span><span class="n">kekuatan</span> <span class="o">&lt;</span> <span class="bp">self</span><span class="o">.</span><span class="n">petarung2</span><span class="o">.</span><span class="n">kekuatan</span><span class="p">):</span>
+</span><span id="__span-7-21"><a id="__codelineno-7-21" name="__codelineno-7-21" href="#__codelineno-7-21"></a>            <span class="n">nilai_petarung2</span> <span class="o">=</span> <span class="n">nilai_petarung2</span> <span class="o">+</span> <span class="mi">1</span>
+</span><span id="__span-7-22"><a id="__codelineno-7-22" name="__codelineno-7-22" href="#__codelineno-7-22"></a>
+</span><span id="__span-7-23"><a id="__codelineno-7-23" name="__codelineno-7-23" href="#__codelineno-7-23"></a>        <span class="c1"># dan seterusnya untuk kecerdasan, kelincahan,</span>
+</span><span id="__span-7-24"><a id="__codelineno-7-24" name="__codelineno-7-24" href="#__codelineno-7-24"></a>        <span class="c1"># dan juga senjata</span>
+</span><span id="__span-7-25"><a id="__codelineno-7-25" name="__codelineno-7-25" href="#__codelineno-7-25"></a>
+</span><span id="__span-7-26"><a id="__codelineno-7-26" name="__codelineno-7-26" href="#__codelineno-7-26"></a>        <span class="k">if</span> <span class="p">(</span><span class="n">nilai_petarung1</span> <span class="o">&gt;</span> <span class="n">nilai_petarung2</span><span class="p">):</span>
+</span><span id="__span-7-27"><a id="__codelineno-7-27" name="__codelineno-7-27" href="#__codelineno-7-27"></a>            <span class="bp">self</span><span class="o">.</span><span class="n">pemenang</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">petarung1</span><span class="o">.</span><span class="n">nama</span>
+</span><span id="__span-7-28"><a id="__codelineno-7-28" name="__codelineno-7-28" href="#__codelineno-7-28"></a>        <span class="k">elif</span> <span class="p">(</span><span class="n">nilai_petarung1</span> <span class="o">&lt;</span> <span class="n">nilai_petarung2</span><span class="p">):</span>
+</span><span id="__span-7-29"><a id="__codelineno-7-29" name="__codelineno-7-29" href="#__codelineno-7-29"></a>            <span class="bp">self</span><span class="o">.</span><span class="n">pemenang</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">petarung2</span><span class="o">.</span><span class="n">nama</span>
+</span><span id="__span-7-30"><a id="__codelineno-7-30" name="__codelineno-7-30" href="#__codelineno-7-30"></a>        <span class="k">else</span><span class="p">:</span>
+</span><span id="__span-7-31"><a id="__codelineno-7-31" name="__codelineno-7-31" href="#__codelineno-7-31"></a>            <span class="bp">self</span><span class="o">.</span><span class="n">pemenang</span> <span class="o">=</span> <span class="s2">&quot;&quot;</span>
+</span><span id="__span-7-32"><a id="__codelineno-7-32" name="__codelineno-7-32" href="#__codelineno-7-32"></a>
+</span><span id="__span-7-33"><a id="__codelineno-7-33" name="__codelineno-7-33" href="#__codelineno-7-33"></a>    <span class="k">def</span><span class="w"> </span><span class="nf">print_pemenang</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+</span><span id="__span-7-34"><a id="__codelineno-7-34" name="__codelineno-7-34" href="#__codelineno-7-34"></a>        <span class="k">if</span> <span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">pemenang</span> <span class="o">!=</span> <span class="s2">&quot;&quot;</span><span class="p">):</span>
+</span><span id="__span-7-35"><a id="__codelineno-7-35" name="__codelineno-7-35" href="#__codelineno-7-35"></a>            <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Pemenangnya: &quot;</span> <span class="o">+</span> <span class="bp">self</span><span class="o">.</span><span class="n">pemenang</span><span class="p">)</span>
+</span><span id="__span-7-36"><a id="__codelineno-7-36" name="__codelineno-7-36" href="#__codelineno-7-36"></a>        <span class="k">else</span><span class="p">:</span>
+</span><span id="__span-7-37"><a id="__codelineno-7-37" name="__codelineno-7-37" href="#__codelineno-7-37"></a>            <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Seri!!&quot;</span><span class="p">)</span>
+</span></code></pre></div>
+<h4 id="kode-79-naruto-dan-sasuke-bertanding">Kode 7.9: Naruto dan Sasuke bertanding</h4>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-8-1"><a id="__codelineno-8-1" name="__codelineno-8-1" href="#__codelineno-8-1"></a><span class="kn">from</span><span class="w"> </span><span class="nn">petarung</span><span class="w"> </span><span class="kn">import</span> <span class="n">Petarung</span>
+</span><span id="__span-8-2"><a id="__codelineno-8-2" name="__codelineno-8-2" href="#__codelineno-8-2"></a><span class="kn">from</span><span class="w"> </span><span class="nn">tanding</span><span class="w"> </span><span class="kn">import</span> <span class="n">Tanding</span>
+</span><span id="__span-8-3"><a id="__codelineno-8-3" name="__codelineno-8-3" href="#__codelineno-8-3"></a>
+</span><span id="__span-8-4"><a id="__codelineno-8-4" name="__codelineno-8-4" href="#__codelineno-8-4"></a><span class="n">naruto</span> <span class="o">=</span> <span class="n">Petarung</span><span class="p">(</span><span class="s2">&quot;Naruto&quot;</span><span class="p">)</span>
+</span><span id="__span-8-5"><a id="__codelineno-8-5" name="__codelineno-8-5" href="#__codelineno-8-5"></a><span class="n">sasuke</span> <span class="o">=</span> <span class="n">Petarung</span><span class="p">(</span><span class="s2">&quot;Sasuke&quot;</span><span class="p">)</span>
+</span><span id="__span-8-6"><a id="__codelineno-8-6" name="__codelineno-8-6" href="#__codelineno-8-6"></a><span class="n">berantem</span> <span class="o">=</span> <span class="n">Tanding</span><span class="p">(</span><span class="n">naruto</span><span class="p">,</span> <span class="n">sasuke</span><span class="p">)</span>
+</span><span id="__span-8-7"><a id="__codelineno-8-7" name="__codelineno-8-7" href="#__codelineno-8-7"></a><span class="n">berantem</span><span class="o">.</span><span class="n">mulai</span><span class="p">()</span>
+</span><span id="__span-8-8"><a id="__codelineno-8-8" name="__codelineno-8-8" href="#__codelineno-8-8"></a>
+</span><span id="__span-8-9"><a id="__codelineno-8-9" name="__codelineno-8-9" href="#__codelineno-8-9"></a><span class="nb">print</span><span class="p">(</span><span class="s2">&quot;--------------------&quot;</span><span class="p">)</span>
+</span><span id="__span-8-10"><a id="__codelineno-8-10" name="__codelineno-8-10" href="#__codelineno-8-10"></a><span class="n">naruto</span><span class="o">.</span><span class="n">print_data</span><span class="p">()</span>
+</span><span id="__span-8-11"><a id="__codelineno-8-11" name="__codelineno-8-11" href="#__codelineno-8-11"></a><span class="nb">print</span><span class="p">(</span><span class="s2">&quot;--------------------&quot;</span><span class="p">)</span>
+</span><span id="__span-8-12"><a id="__codelineno-8-12" name="__codelineno-8-12" href="#__codelineno-8-12"></a><span class="n">sasuke</span><span class="o">.</span><span class="n">print_data</span><span class="p">()</span>
+</span><span id="__span-8-13"><a id="__codelineno-8-13" name="__codelineno-8-13" href="#__codelineno-8-13"></a><span class="nb">print</span><span class="p">(</span><span class="s2">&quot;--------------------&quot;</span><span class="p">)</span>
+</span><span id="__span-8-14"><a id="__codelineno-8-14" name="__codelineno-8-14" href="#__codelineno-8-14"></a><span class="n">berantem</span><span class="o">.</span><span class="n">print_pemenang</span><span class="p">()</span>
+</span><span id="__span-8-15"><a id="__codelineno-8-15" name="__codelineno-8-15" href="#__codelineno-8-15"></a><span class="nb">print</span><span class="p">(</span><span class="s2">&quot;--------------------&quot;</span><span class="p">)</span>
+</span></code></pre></div>
+<h4 id="kode-710-hasil-pertandingan">Kode 7.10: Hasil pertandingan</h4>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-9-1"><a id="__codelineno-9-1" name="__codelineno-9-1" href="#__codelineno-9-1"></a>--------------------
+</span><span id="__span-9-2"><a id="__codelineno-9-2" name="__codelineno-9-2" href="#__codelineno-9-2"></a>Naruto
+</span><span id="__span-9-3"><a id="__codelineno-9-3" name="__codelineno-9-3" href="#__codelineno-9-3"></a>Kesehatan = 100
+</span><span id="__span-9-4"><a id="__codelineno-9-4" name="__codelineno-9-4" href="#__codelineno-9-4"></a>Kekuatan = 58
+</span><span id="__span-9-5"><a id="__codelineno-9-5" name="__codelineno-9-5" href="#__codelineno-9-5"></a>Kecerdasan = 43
+</span><span id="__span-9-6"><a id="__codelineno-9-6" name="__codelineno-9-6" href="#__codelineno-9-6"></a>Kelincahan = 95
+</span><span id="__span-9-7"><a id="__codelineno-9-7" name="__codelineno-9-7" href="#__codelineno-9-7"></a>Senjata = 70
+</span><span id="__span-9-8"><a id="__codelineno-9-8" name="__codelineno-9-8" href="#__codelineno-9-8"></a>--------------------
+</span><span id="__span-9-9"><a id="__codelineno-9-9" name="__codelineno-9-9" href="#__codelineno-9-9"></a>Sasuke
+</span><span id="__span-9-10"><a id="__codelineno-9-10" name="__codelineno-9-10" href="#__codelineno-9-10"></a>Kesehatan = 100
+</span><span id="__span-9-11"><a id="__codelineno-9-11" name="__codelineno-9-11" href="#__codelineno-9-11"></a>Kekuatan = 28
+</span><span id="__span-9-12"><a id="__codelineno-9-12" name="__codelineno-9-12" href="#__codelineno-9-12"></a>Kecerdasan = 20
+</span><span id="__span-9-13"><a id="__codelineno-9-13" name="__codelineno-9-13" href="#__codelineno-9-13"></a>Kelincahan = 16
+</span><span id="__span-9-14"><a id="__codelineno-9-14" name="__codelineno-9-14" href="#__codelineno-9-14"></a>Senjata = 92
+</span><span id="__span-9-15"><a id="__codelineno-9-15" name="__codelineno-9-15" href="#__codelineno-9-15"></a>--------------------
+</span><span id="__span-9-16"><a id="__codelineno-9-16" name="__codelineno-9-16" href="#__codelineno-9-16"></a>Pemenangnya: Naruto
+</span><span id="__span-9-17"><a id="__codelineno-9-17" name="__codelineno-9-17" href="#__codelineno-9-17"></a>--------------------
+</span></code></pre></div>
+<hr />
+<h3 id="732-kerjakan">7.3.2 Kerjakan</h3>
+<ol>
+<li>
+<p>Lengkapi Kode 7.8 dengan bagian perhitungan untuk <strong>kecerdasan</strong>, <strong>kelincahan</strong>, dan juga <strong>senjata</strong>.</p>
+</li>
+<li>
+<p>Lengkapi setiap petarung dengan data <strong>skor</strong>.</p>
+</li>
+<li>
+<p>Buatlah program pertarungan ini agar dilakukan berulang-ulang sampai pemain memutuskan untuk keluar program. Tambahkan menu seperti berikut:</p>
+</li>
+<li>(a) Lihat petarung</li>
+<li>(b) Edit petarung</li>
+<li>(c) Tambah petarung</li>
+<li>(d) Hapus petarung</li>
+<li>(e) Bertanding</li>
+<li>(f) Keluar</li>
+</ol>
+<p>Untuk menu <strong>Lihat petarung</strong>, tampilkan datanya juga. Selain itu, simpan data setiap petarung dalam file (Gunakan 1 file untuk setiap petarung). Untuk menu <strong>Bertanding</strong>, ketika dipilih menu dilanjutkan dengan pemilihan 2 nama petarung.</p>
+<ol>
+<li>
+<p>Tambahkan data jumlah <strong>kalah</strong>, <strong>menang</strong>, dan <strong>seri</strong> untuk setiap petarung.</p>
+</li>
+<li>
+<p>Buatlah agar <strong>kesehatan</strong> setiap petarung yang kalah dikurangi <strong>5 poin</strong>.</p>
+</li>
+<li>
+<p>Buatlah agar setiap kali seorang petarung menang, <strong>kekuatannya bertambah</strong> secara acak antara <strong>1–5 poin</strong>.</p>
+</li>
+<li>
+<p>Buatlah satu fungsi di class <code>Petarung</code> untuk <strong>men-generate ulang</strong> nilai-nilai kekuatan, kecerdasan, kelincahan, dan senjatanya namun dengan biaya <strong>kesehatannya dikurangi 10 poin</strong>.</p>
+</li>
+</ol>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "..", "features": ["search.suggest", "search.highlight", "content.code.copy"], "search": "../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.79ae519e.min.js"></script>
+      
+    
+  </body>
+</html>

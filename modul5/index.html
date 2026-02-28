@@ -1,0 +1,921 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+        <link rel="canonical" href="https://ismailrusli.github.io/modul_alpro/modul5/">
+      
+      
+        <link rel="prev" href="../modul4/">
+      
+      
+        <link rel="next" href="../modul6/">
+      
+      
+        
+      
+      
+      <link rel="icon" href="../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.3">
+    
+    
+      
+        <title>Modul 5: Fungsi - Modul Algoritma dan Pemrograman</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.484c7ddc.min.css">
+      
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.ab4e12ef.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#modul-5-fungsi" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href=".." title="Modul Algoritma dan Pemrograman" class="md-header__button md-logo" aria-label="Modul Algoritma dan Pemrograman" data-md-component="logo">
+      
+  <img src="../assets/logo.png" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Modul Algoritma dan Pemrograman
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Modul 5: Fungsi
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12s-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="Modul Algoritma dan Pemrograman" class="md-nav__button md-logo" aria-label="Modul Algoritma dan Pemrograman" data-md-component="logo">
+      
+  <img src="../assets/logo.png" alt="logo">
+
+    </a>
+    Modul Algoritma dan Pemrograman
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../modul0/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Modul 0: Instalasi
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../modul1/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Modul 1: Halo, Dunia!
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../modul2/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Modul 2: Literal dan Variabel
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../modul3/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Modul 3: Percabangan
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../modul4/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Modul 4: Pengulangan
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Modul 5: Fungsi
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Modul 5: Fungsi
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#51-capaian" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5.1 Capaian
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#52-alat-dan-bahan" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5.2 Alat dan Bahan
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#53-materi" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5.3 Materi
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="5.3 Materi">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#531-kerjakan" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5.3.1 Kerjakan
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../modul6/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Modul 6: File
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../modul7/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Modul 7: Tipe Data Kustom
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../modul8/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Modul 8: Modul Open Source
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#51-capaian" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5.1 Capaian
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#52-alat-dan-bahan" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5.2 Alat dan Bahan
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#53-materi" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5.3 Materi
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="5.3 Materi">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#531-kerjakan" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5.3.1 Kerjakan
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<h1 id="modul-5-fungsi">Modul 5: Fungsi</h1>
+<p><img alt="Status" src="https://img.shields.io/badge/Status-On_Progress-yellow?style=flat-square" /></p>
+<!-- ![Status](https://img.shields.io/badge/Status-Finish-brightgreen?style=flat-square) -->
+
+<h2 id="51-capaian">5.1 Capaian</h2>
+<p>Mampu menggunakan elemen-elemen dasar pemrograman, seperti inisialisasi variabel untuk berbagai macam tipe data, menggunakan percabangan, menggunakan pengulangan, membuat dan menggunakan fungsi, serta membuat dan menggunakan tipe data bentukan sendiri.</p>
+<hr />
+<h2 id="52-alat-dan-bahan">5.2 Alat dan Bahan</h2>
+<ol>
+<li>Laptop/komputer</li>
+<li>Internet</li>
+<li>Python 3.8+</li>
+<li>Visual Studio Code (atau editor sejenis)</li>
+</ol>
+<hr />
+<h2 id="53-materi">5.3 Materi</h2>
+<p>Perhatikan Kode 5.1 berikut. Kode 5.1 adalah program yang mencetak 10 baris keluaran. Setiap baris mencetak karakter bintang sebanyak posisi barisnya. Jadi, misalnya baris ke-1, akan mencetak karakter <code>*</code>. Baris ke-2 mencetak <code>**</code>. Baris ke-3, <code>***</code>, dan seterusnya.</p>
+<p><strong>Kode 5.1: Print 10 baris bintang menggunakan loop</strong></p>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">11</span><span class="p">):</span>
+</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>    <span class="n">x</span> <span class="o">=</span> <span class="s2">&quot;&quot;</span>
+</span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a>    <span class="k">for</span> <span class="n">j</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">i</span><span class="p">):</span>
+</span><span id="__span-0-4"><a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a>        <span class="n">x</span> <span class="o">=</span> <span class="n">x</span> <span class="o">+</span> <span class="s2">&quot;*&quot;</span>
+</span><span id="__span-0-5"><a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a>    <span class="nb">print</span><span class="p">(</span><span class="n">x</span><span class="p">)</span>
+</span></code></pre></div>
+<p>Baris 2, 3, dan 4 dalam kode tersebut berfungsi untuk membuat string dengan karakter bintang sebanyak posisi baris dan menyimpannya di <code>x</code>. Kita bisa memisahkan 3 baris kode ini dan memberi nama sesuai tugasnya, yaitu membuat bintang sebanyak yang diinginkan. Perhatikan Kode 5.2.</p>
+<p><strong>Kode 5.2: Fungsi untuk membuat bintang</strong></p>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="k">def</span><span class="w"> </span><span class="nf">buat_bintang</span><span class="p">(</span><span class="n">n</span><span class="p">):</span>
+</span><span id="__span-1-2"><a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a>    <span class="n">x</span> <span class="o">=</span> <span class="s2">&quot;&quot;</span>
+</span><span id="__span-1-3"><a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a>    <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">n</span><span class="p">):</span>
+</span><span id="__span-1-4"><a id="__codelineno-1-4" name="__codelineno-1-4" href="#__codelineno-1-4"></a>        <span class="n">x</span> <span class="o">=</span> <span class="n">x</span> <span class="o">+</span> <span class="s2">&quot;*&quot;</span>
+</span><span id="__span-1-5"><a id="__codelineno-1-5" name="__codelineno-1-5" href="#__codelineno-1-5"></a>    <span class="k">return</span> <span class="n">x</span>
+</span></code></pre></div>
+<p>Di Kode 5.2, baris 2, 3, dan 4 dari Kode 5.1 dimasukkan ke dalam suatu fungsi yang namanya <code>buat_bintang</code>. Fungsi dapat dianggap sebagai sebuah mesin yang menerima input, memprosesnya, dan mengeluarkan output (hasilnya). Dalam fungsi <code>buat_bintang</code>, inputnya adalah variabel <code>n</code>. Sementara, outputnya ada di baris 5, yaitu <code>x</code>. Variabel <code>x</code> berisi string bintang sebanyak <code>n</code>. Kata kunci <code>return</code> menunjukkan data (dalam hal ini <code>x</code>) yang dihasilkan fungsi <code>buat_bintang</code>.</p>
+<blockquote>
+<p><strong>Gambar 5.1:</strong> Fungsi <code>buat_bintang</code> menerima <code>n</code> dan mengeluarkan <code>x</code></p>
+<p><code>n</code> → [ loop untuk buat bintang sebanyak n, lalu simpan di x ] → <code>x</code></p>
+</blockquote>
+<p>Dengan fungsi <code>buat_bintang</code> kita bisa membuat program di Kode 5.1 menjadi tampak lebih sederhana dan rapi serta bersih. Perhatikan Kode 5.3 terutama baris 7-9.</p>
+<p><strong>Kode 5.3: Kode 5.1 menjadi lebih mudah dibaca dengan fungsi</strong></p>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="k">def</span><span class="w"> </span><span class="nf">buat_bintang</span><span class="p">(</span><span class="n">n</span><span class="p">):</span>
+</span><span id="__span-2-2"><a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a>    <span class="n">x</span> <span class="o">=</span> <span class="s2">&quot;&quot;</span>
+</span><span id="__span-2-3"><a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a>    <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">n</span><span class="p">):</span>
+</span><span id="__span-2-4"><a id="__codelineno-2-4" name="__codelineno-2-4" href="#__codelineno-2-4"></a>        <span class="n">x</span> <span class="o">=</span> <span class="n">x</span> <span class="o">+</span> <span class="s2">&quot;*&quot;</span>
+</span><span id="__span-2-5"><a id="__codelineno-2-5" name="__codelineno-2-5" href="#__codelineno-2-5"></a>    <span class="k">return</span> <span class="n">x</span>
+</span><span id="__span-2-6"><a id="__codelineno-2-6" name="__codelineno-2-6" href="#__codelineno-2-6"></a>
+</span><span id="__span-2-7"><a id="__codelineno-2-7" name="__codelineno-2-7" href="#__codelineno-2-7"></a><span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">11</span><span class="p">):</span>
+</span><span id="__span-2-8"><a id="__codelineno-2-8" name="__codelineno-2-8" href="#__codelineno-2-8"></a>    <span class="n">bintang</span> <span class="o">=</span> <span class="n">buat_bintang</span><span class="p">(</span><span class="n">i</span><span class="p">)</span>
+</span><span id="__span-2-9"><a id="__codelineno-2-9" name="__codelineno-2-9" href="#__codelineno-2-9"></a>    <span class="nb">print</span><span class="p">(</span><span class="n">bintang</span><span class="p">)</span>
+</span></code></pre></div>
+<hr />
+<p><strong>Kode 5.4: Kerjakan</strong></p>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-3-1"><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a><span class="k">def</span><span class="w"> </span><span class="nf">buat_bintang</span><span class="p">(</span><span class="n">n</span><span class="p">):</span>
+</span><span id="__span-3-2"><a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a>    <span class="n">x</span> <span class="o">=</span> <span class="s2">&quot;&quot;</span>
+</span><span id="__span-3-3"><a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a>    <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">n</span><span class="p">):</span>
+</span><span id="__span-3-4"><a id="__codelineno-3-4" name="__codelineno-3-4" href="#__codelineno-3-4"></a>        <span class="n">x</span> <span class="o">=</span> <span class="n">x</span> <span class="o">+</span> <span class="s2">&quot;*&quot;</span>
+</span><span id="__span-3-5"><a id="__codelineno-3-5" name="__codelineno-3-5" href="#__codelineno-3-5"></a>    <span class="k">return</span> <span class="n">x</span>
+</span><span id="__span-3-6"><a id="__codelineno-3-6" name="__codelineno-3-6" href="#__codelineno-3-6"></a>
+</span><span id="__span-3-7"><a id="__codelineno-3-7" name="__codelineno-3-7" href="#__codelineno-3-7"></a><span class="c1"># printlah bintang sebanyak 5 bintang</span>
+</span><span id="__span-3-8"><a id="__codelineno-3-8" name="__codelineno-3-8" href="#__codelineno-3-8"></a><span class="c1"># dengan menggunakan fungsi buat_bintang</span>
+</span></code></pre></div>
+<hr />
+<p>Kita bisa menyimpan fungsi <code>buat_bintang</code> di file terpisah sehingga fungsi ini dapat digunakan oleh kode lain juga. Jika demikian, fungsi <code>buat_bintang</code> harus diimpor terlebih dahulu. Misalkan kita simpan fungsi <code>buat_bintang</code> di file yang namanya <code>bintang.py</code>. Perhatikan Kode 5.5.</p>
+<p><strong>Kode 5.5: Menggunakan <code>buat_bintang</code> dari file <code>bintang.py</code></strong></p>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-4-1"><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a><span class="kn">from</span><span class="w"> </span><span class="nn">bintang</span><span class="w"> </span><span class="kn">import</span> <span class="n">buat_bintang</span>
+</span><span id="__span-4-2"><a id="__codelineno-4-2" name="__codelineno-4-2" href="#__codelineno-4-2"></a>
+</span><span id="__span-4-3"><a id="__codelineno-4-3" name="__codelineno-4-3" href="#__codelineno-4-3"></a><span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">11</span><span class="p">):</span>
+</span><span id="__span-4-4"><a id="__codelineno-4-4" name="__codelineno-4-4" href="#__codelineno-4-4"></a>    <span class="n">bintang</span> <span class="o">=</span> <span class="n">buat_bintang</span><span class="p">(</span><span class="n">i</span><span class="p">)</span>
+</span><span id="__span-4-5"><a id="__codelineno-4-5" name="__codelineno-4-5" href="#__codelineno-4-5"></a>    <span class="nb">print</span><span class="p">(</span><span class="n">bintang</span><span class="p">)</span>
+</span></code></pre></div>
+<p>Baris 1 Kode 5.5 menyatakan bahwa kita mengimport dari file <code>bintang.py</code> fungsi <code>buat_bintang</code>.</p>
+<hr />
+<p><strong>Kode 5.6: Kerjakan — Buat program yang hasilnya seperti berikut:</strong></p>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-5-1"><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a>*
+</span><span id="__span-5-2"><a id="__codelineno-5-2" name="__codelineno-5-2" href="#__codelineno-5-2"></a>**
+</span><span id="__span-5-3"><a id="__codelineno-5-3" name="__codelineno-5-3" href="#__codelineno-5-3"></a>***
+</span><span id="__span-5-4"><a id="__codelineno-5-4" name="__codelineno-5-4" href="#__codelineno-5-4"></a>****
+</span><span id="__span-5-5"><a id="__codelineno-5-5" name="__codelineno-5-5" href="#__codelineno-5-5"></a>***
+</span><span id="__span-5-6"><a id="__codelineno-5-6" name="__codelineno-5-6" href="#__codelineno-5-6"></a>**
+</span><span id="__span-5-7"><a id="__codelineno-5-7" name="__codelineno-5-7" href="#__codelineno-5-7"></a>*
+</span></code></pre></div>
+<hr />
+<p>Kita dapat menambah fitur ke fungsi <code>buat_bintang</code>, yaitu dengan menentukan karakter yang akan dicetak. Dengan demikian, kita ubah nama fungsinya menjadi <code>buat_n_karakter</code>. Perhatikan Kode 5.7.</p>
+<p><strong>Kode 5.7: Fungsi <code>buat_n_karakter</code></strong></p>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-6-1"><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a><span class="k">def</span><span class="w"> </span><span class="nf">buat_n_karakter</span><span class="p">(</span><span class="n">karakter</span><span class="p">,</span> <span class="n">n</span><span class="p">):</span>
+</span><span id="__span-6-2"><a id="__codelineno-6-2" name="__codelineno-6-2" href="#__codelineno-6-2"></a>    <span class="n">x</span> <span class="o">=</span> <span class="s2">&quot;&quot;</span>
+</span><span id="__span-6-3"><a id="__codelineno-6-3" name="__codelineno-6-3" href="#__codelineno-6-3"></a>    <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">n</span><span class="p">):</span>
+</span><span id="__span-6-4"><a id="__codelineno-6-4" name="__codelineno-6-4" href="#__codelineno-6-4"></a>        <span class="n">x</span> <span class="o">=</span> <span class="n">x</span> <span class="o">+</span> <span class="n">karakter</span>
+</span><span id="__span-6-5"><a id="__codelineno-6-5" name="__codelineno-6-5" href="#__codelineno-6-5"></a>    <span class="k">return</span> <span class="n">x</span>
+</span><span id="__span-6-6"><a id="__codelineno-6-6" name="__codelineno-6-6" href="#__codelineno-6-6"></a>
+</span><span id="__span-6-7"><a id="__codelineno-6-7" name="__codelineno-6-7" href="#__codelineno-6-7"></a><span class="nb">print</span><span class="p">(</span><span class="n">buat_n_karakter</span><span class="p">(</span><span class="s2">&quot;*&quot;</span><span class="p">,</span> <span class="mi">2</span><span class="p">))</span>
+</span><span id="__span-6-8"><a id="__codelineno-6-8" name="__codelineno-6-8" href="#__codelineno-6-8"></a><span class="nb">print</span><span class="p">(</span><span class="n">buat_n_karakter</span><span class="p">(</span><span class="s2">&quot;+&quot;</span><span class="p">,</span> <span class="mi">4</span><span class="p">))</span>
+</span><span id="__span-6-9"><a id="__codelineno-6-9" name="__codelineno-6-9" href="#__codelineno-6-9"></a><span class="nb">print</span><span class="p">(</span><span class="n">buat_n_karakter</span><span class="p">(</span><span class="s2">&quot;%&quot;</span><span class="p">,</span> <span class="mi">6</span><span class="p">))</span>
+</span></code></pre></div>
+<hr />
+<p><strong>Kode 5.8: Kerjakan</strong></p>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-7-1"><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a><span class="c1"># Buat fungsi untuk menghitung kuadrat dari sebuah angka</span>
+</span><span id="__span-7-2"><a id="__codelineno-7-2" name="__codelineno-7-2" href="#__codelineno-7-2"></a><span class="k">def</span><span class="w"> </span><span class="nf">kuadrat</span><span class="p">(</span><span class="n">angka</span><span class="p">):</span>
+</span><span id="__span-7-3"><a id="__codelineno-7-3" name="__codelineno-7-3" href="#__codelineno-7-3"></a>    <span class="k">pass</span>  <span class="c1"># Ganti dengan kode</span>
+</span><span id="__span-7-4"><a id="__codelineno-7-4" name="__codelineno-7-4" href="#__codelineno-7-4"></a>
+</span><span id="__span-7-5"><a id="__codelineno-7-5" name="__codelineno-7-5" href="#__codelineno-7-5"></a><span class="n">a</span> <span class="o">=</span> <span class="n">kuadrat</span><span class="p">(</span><span class="mi">4</span><span class="p">)</span>
+</span><span id="__span-7-6"><a id="__codelineno-7-6" name="__codelineno-7-6" href="#__codelineno-7-6"></a><span class="nb">print</span><span class="p">(</span><span class="n">a</span><span class="p">)</span>  <span class="c1"># hasilnya 16</span>
+</span><span id="__span-7-7"><a id="__codelineno-7-7" name="__codelineno-7-7" href="#__codelineno-7-7"></a>
+</span><span id="__span-7-8"><a id="__codelineno-7-8" name="__codelineno-7-8" href="#__codelineno-7-8"></a><span class="n">b</span> <span class="o">=</span> <span class="n">kuadrat</span><span class="p">(</span><span class="mi">5</span><span class="p">)</span>
+</span><span id="__span-7-9"><a id="__codelineno-7-9" name="__codelineno-7-9" href="#__codelineno-7-9"></a><span class="nb">print</span><span class="p">(</span><span class="n">b</span><span class="p">)</span>  <span class="c1"># hasilnya 25</span>
+</span></code></pre></div>
+<hr />
+<h3 id="531-kerjakan">5.3.1 Kerjakan</h3>
+<p><strong>1.</strong> Buatlah fungsi yang menerima karakter dan jumlah karakter serta mengembalikan string yang berisi rentetan karakter sebanyak jumlah karakter yang dimasukkan.</p>
+<p><strong>Kode 5.9: Kerangka kode untuk soal no. 1</strong></p>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-8-1"><a id="__codelineno-8-1" name="__codelineno-8-1" href="#__codelineno-8-1"></a><span class="k">def</span><span class="w"> </span><span class="nf">nkarakter</span><span class="p">(</span><span class="n">karakter</span><span class="p">,</span> <span class="n">jumlah</span><span class="p">):</span>
+</span><span id="__span-8-2"><a id="__codelineno-8-2" name="__codelineno-8-2" href="#__codelineno-8-2"></a>    <span class="c1"># tulis kode di sini</span>
+</span><span id="__span-8-3"><a id="__codelineno-8-3" name="__codelineno-8-3" href="#__codelineno-8-3"></a>
+</span><span id="__span-8-4"><a id="__codelineno-8-4" name="__codelineno-8-4" href="#__codelineno-8-4"></a><span class="c1"># contoh penggunaan</span>
+</span><span id="__span-8-5"><a id="__codelineno-8-5" name="__codelineno-8-5" href="#__codelineno-8-5"></a><span class="n">x</span> <span class="o">=</span> <span class="n">nkarakter</span><span class="p">(</span><span class="s2">&quot;#&quot;</span><span class="p">,</span> <span class="mi">5</span><span class="p">)</span>
+</span><span id="__span-8-6"><a id="__codelineno-8-6" name="__codelineno-8-6" href="#__codelineno-8-6"></a>
+</span><span id="__span-8-7"><a id="__codelineno-8-7" name="__codelineno-8-7" href="#__codelineno-8-7"></a><span class="c1"># perintah ini mencetak ##### ke layar</span>
+</span><span id="__span-8-8"><a id="__codelineno-8-8" name="__codelineno-8-8" href="#__codelineno-8-8"></a><span class="nb">print</span><span class="p">(</span><span class="n">x</span><span class="p">)</span>
+</span></code></pre></div>
+<hr />
+<p><strong>2.</strong> Buatlah fungsi yang menerima string lalu mengembalikan jumlah karakter dalam string tersebut.</p>
+<p><strong>Kode 5.10: Kerangka kode untuk soal no. 2</strong></p>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-9-1"><a id="__codelineno-9-1" name="__codelineno-9-1" href="#__codelineno-9-1"></a><span class="k">def</span><span class="w"> </span><span class="nf">jumlah_karakter</span><span class="p">(</span><span class="n">input_string</span><span class="p">):</span>
+</span><span id="__span-9-2"><a id="__codelineno-9-2" name="__codelineno-9-2" href="#__codelineno-9-2"></a>    <span class="n">n_karakter</span> <span class="o">=</span> <span class="mi">0</span>
+</span><span id="__span-9-3"><a id="__codelineno-9-3" name="__codelineno-9-3" href="#__codelineno-9-3"></a>    <span class="c1"># tulis kode di sini</span>
+</span><span id="__span-9-4"><a id="__codelineno-9-4" name="__codelineno-9-4" href="#__codelineno-9-4"></a>
+</span><span id="__span-9-5"><a id="__codelineno-9-5" name="__codelineno-9-5" href="#__codelineno-9-5"></a>    <span class="k">return</span> <span class="n">n_karakter</span>
+</span><span id="__span-9-6"><a id="__codelineno-9-6" name="__codelineno-9-6" href="#__codelineno-9-6"></a>
+</span><span id="__span-9-7"><a id="__codelineno-9-7" name="__codelineno-9-7" href="#__codelineno-9-7"></a><span class="c1"># contoh penggunaan</span>
+</span><span id="__span-9-8"><a id="__codelineno-9-8" name="__codelineno-9-8" href="#__codelineno-9-8"></a><span class="n">x</span> <span class="o">=</span> <span class="n">jumlah_karakter</span><span class="p">(</span><span class="s2">&quot;multimedia&quot;</span><span class="p">)</span>
+</span><span id="__span-9-9"><a id="__codelineno-9-9" name="__codelineno-9-9" href="#__codelineno-9-9"></a>
+</span><span id="__span-9-10"><a id="__codelineno-9-10" name="__codelineno-9-10" href="#__codelineno-9-10"></a><span class="c1"># perintah ini harus mencetak angka 10 ke layar</span>
+</span><span id="__span-9-11"><a id="__codelineno-9-11" name="__codelineno-9-11" href="#__codelineno-9-11"></a><span class="nb">print</span><span class="p">(</span><span class="n">x</span><span class="p">)</span>
+</span></code></pre></div>
+<hr />
+<p><strong>3.</strong> Sebuah robot berada di koordinat (0,0). Buatlah 4 fungsi, yaitu <code>maju()</code> untuk menambah x satu satuan, <code>mundur()</code> untuk mengurangi x satu satuan, <code>belok_kanan()</code> untuk menambah y satu satuan, dan <code>belok_kiri()</code> untuk mengurangi y satu satuan. Perhatikan kerangka program di Kode 5.11.</p>
+<p><strong>Kode 5.11: Kerangka kode untuk soal no. 3</strong></p>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-10-1"><a id="__codelineno-10-1" name="__codelineno-10-1" href="#__codelineno-10-1"></a><span class="k">def</span><span class="w"> </span><span class="nf">maju</span><span class="p">(</span><span class="n">posisi</span><span class="p">):</span>
+</span><span id="__span-10-2"><a id="__codelineno-10-2" name="__codelineno-10-2" href="#__codelineno-10-2"></a>    <span class="c1"># kode di sini</span>
+</span><span id="__span-10-3"><a id="__codelineno-10-3" name="__codelineno-10-3" href="#__codelineno-10-3"></a>
+</span><span id="__span-10-4"><a id="__codelineno-10-4" name="__codelineno-10-4" href="#__codelineno-10-4"></a><span class="k">def</span><span class="w"> </span><span class="nf">mundur</span><span class="p">(</span><span class="n">posisi</span><span class="p">):</span>
+</span><span id="__span-10-5"><a id="__codelineno-10-5" name="__codelineno-10-5" href="#__codelineno-10-5"></a>    <span class="c1"># kode di sini</span>
+</span><span id="__span-10-6"><a id="__codelineno-10-6" name="__codelineno-10-6" href="#__codelineno-10-6"></a>
+</span><span id="__span-10-7"><a id="__codelineno-10-7" name="__codelineno-10-7" href="#__codelineno-10-7"></a><span class="k">def</span><span class="w"> </span><span class="nf">belok_kanan</span><span class="p">(</span><span class="n">posisi</span><span class="p">):</span>
+</span><span id="__span-10-8"><a id="__codelineno-10-8" name="__codelineno-10-8" href="#__codelineno-10-8"></a>    <span class="c1"># kode di sini</span>
+</span><span id="__span-10-9"><a id="__codelineno-10-9" name="__codelineno-10-9" href="#__codelineno-10-9"></a>
+</span><span id="__span-10-10"><a id="__codelineno-10-10" name="__codelineno-10-10" href="#__codelineno-10-10"></a><span class="k">def</span><span class="w"> </span><span class="nf">belok_kiri</span><span class="p">(</span><span class="n">posisi</span><span class="p">):</span>
+</span><span id="__span-10-11"><a id="__codelineno-10-11" name="__codelineno-10-11" href="#__codelineno-10-11"></a>    <span class="c1"># kode di sini</span>
+</span><span id="__span-10-12"><a id="__codelineno-10-12" name="__codelineno-10-12" href="#__codelineno-10-12"></a>
+</span><span id="__span-10-13"><a id="__codelineno-10-13" name="__codelineno-10-13" href="#__codelineno-10-13"></a><span class="n">selesai</span> <span class="o">=</span> <span class="kc">False</span>
+</span><span id="__span-10-14"><a id="__codelineno-10-14" name="__codelineno-10-14" href="#__codelineno-10-14"></a><span class="n">posisi_robot</span> <span class="o">=</span> <span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">)</span>  <span class="c1"># tuple</span>
+</span><span id="__span-10-15"><a id="__codelineno-10-15" name="__codelineno-10-15" href="#__codelineno-10-15"></a><span class="k">while</span> <span class="n">selesai</span> <span class="o">==</span> <span class="kc">False</span><span class="p">:</span>
+</span><span id="__span-10-16"><a id="__codelineno-10-16" name="__codelineno-10-16" href="#__codelineno-10-16"></a>    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;---------------&quot;</span><span class="p">)</span>
+</span><span id="__span-10-17"><a id="__codelineno-10-17" name="__codelineno-10-17" href="#__codelineno-10-17"></a>    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Pilih perintah untuk robot.&quot;</span><span class="p">)</span>
+</span><span id="__span-10-18"><a id="__codelineno-10-18" name="__codelineno-10-18" href="#__codelineno-10-18"></a>    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;1. maju&quot;</span><span class="p">)</span>
+</span><span id="__span-10-19"><a id="__codelineno-10-19" name="__codelineno-10-19" href="#__codelineno-10-19"></a>    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;2. mundur&quot;</span><span class="p">)</span>
+</span><span id="__span-10-20"><a id="__codelineno-10-20" name="__codelineno-10-20" href="#__codelineno-10-20"></a>    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;3. belok kanan&quot;</span><span class="p">)</span>
+</span><span id="__span-10-21"><a id="__codelineno-10-21" name="__codelineno-10-21" href="#__codelineno-10-21"></a>    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;4. belok kiri&quot;</span><span class="p">)</span>
+</span><span id="__span-10-22"><a id="__codelineno-10-22" name="__codelineno-10-22" href="#__codelineno-10-22"></a>    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;5. selesai&quot;</span><span class="p">)</span>
+</span><span id="__span-10-23"><a id="__codelineno-10-23" name="__codelineno-10-23" href="#__codelineno-10-23"></a>    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;---------------&quot;</span><span class="p">)</span>
+</span><span id="__span-10-24"><a id="__codelineno-10-24" name="__codelineno-10-24" href="#__codelineno-10-24"></a>    <span class="n">perintah</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s2">&quot;Masukkan perintah&quot;</span><span class="p">)</span>
+</span><span id="__span-10-25"><a id="__codelineno-10-25" name="__codelineno-10-25" href="#__codelineno-10-25"></a>    <span class="n">perintah</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="n">perintah</span><span class="p">)</span>
+</span><span id="__span-10-26"><a id="__codelineno-10-26" name="__codelineno-10-26" href="#__codelineno-10-26"></a>
+</span><span id="__span-10-27"><a id="__codelineno-10-27" name="__codelineno-10-27" href="#__codelineno-10-27"></a>    <span class="k">if</span> <span class="n">perintah</span> <span class="o">==</span> <span class="mi">1</span><span class="p">:</span>
+</span><span id="__span-10-28"><a id="__codelineno-10-28" name="__codelineno-10-28" href="#__codelineno-10-28"></a>        <span class="n">posisi_robot</span> <span class="o">=</span> <span class="n">maju</span><span class="p">(</span><span class="n">posisi_robot</span><span class="p">)</span>
+</span><span id="__span-10-29"><a id="__codelineno-10-29" name="__codelineno-10-29" href="#__codelineno-10-29"></a>        <span class="nb">print</span><span class="p">(</span><span class="n">posisi_robot</span><span class="p">)</span>
+</span><span id="__span-10-30"><a id="__codelineno-10-30" name="__codelineno-10-30" href="#__codelineno-10-30"></a>    <span class="k">elif</span> <span class="n">perintah</span> <span class="o">==</span> <span class="mi">2</span><span class="p">:</span>
+</span><span id="__span-10-31"><a id="__codelineno-10-31" name="__codelineno-10-31" href="#__codelineno-10-31"></a>        <span class="n">posisi_robot</span> <span class="o">=</span> <span class="n">mundur</span><span class="p">(</span><span class="n">posisi_robot</span><span class="p">)</span>
+</span><span id="__span-10-32"><a id="__codelineno-10-32" name="__codelineno-10-32" href="#__codelineno-10-32"></a>        <span class="nb">print</span><span class="p">(</span><span class="n">posisi_robot</span><span class="p">)</span>
+</span><span id="__span-10-33"><a id="__codelineno-10-33" name="__codelineno-10-33" href="#__codelineno-10-33"></a>    <span class="k">elif</span> <span class="n">perintah</span> <span class="o">==</span> <span class="mi">3</span><span class="p">:</span>
+</span><span id="__span-10-34"><a id="__codelineno-10-34" name="__codelineno-10-34" href="#__codelineno-10-34"></a>        <span class="n">posisi_robot</span> <span class="o">=</span> <span class="n">belok_kanan</span><span class="p">(</span><span class="n">posisi_robot</span><span class="p">)</span>
+</span><span id="__span-10-35"><a id="__codelineno-10-35" name="__codelineno-10-35" href="#__codelineno-10-35"></a>        <span class="nb">print</span><span class="p">(</span><span class="n">posisi_robot</span><span class="p">)</span>
+</span><span id="__span-10-36"><a id="__codelineno-10-36" name="__codelineno-10-36" href="#__codelineno-10-36"></a>    <span class="k">elif</span> <span class="n">perintah</span> <span class="o">==</span> <span class="mi">4</span><span class="p">:</span>
+</span><span id="__span-10-37"><a id="__codelineno-10-37" name="__codelineno-10-37" href="#__codelineno-10-37"></a>        <span class="n">posisi_robot</span> <span class="o">=</span> <span class="n">belok_kanan</span><span class="p">(</span><span class="n">posisi_robot</span><span class="p">)</span>
+</span><span id="__span-10-38"><a id="__codelineno-10-38" name="__codelineno-10-38" href="#__codelineno-10-38"></a>        <span class="nb">print</span><span class="p">(</span><span class="n">posisi_robot</span><span class="p">)</span>
+</span><span id="__span-10-39"><a id="__codelineno-10-39" name="__codelineno-10-39" href="#__codelineno-10-39"></a>    <span class="k">elif</span> <span class="n">perintah</span> <span class="o">==</span> <span class="mi">5</span><span class="p">:</span>
+</span><span id="__span-10-40"><a id="__codelineno-10-40" name="__codelineno-10-40" href="#__codelineno-10-40"></a>        <span class="n">selesai</span> <span class="o">=</span> <span class="kc">True</span>
+</span><span id="__span-10-41"><a id="__codelineno-10-41" name="__codelineno-10-41" href="#__codelineno-10-41"></a>        <span class="nb">print</span><span class="p">(</span><span class="n">posisi_robot</span><span class="p">)</span>
+</span></code></pre></div>
+<hr />
+<p><strong>4.</strong> Ubahlah Kode 5.11. Jadikan 4 fungsi <code>maju()</code>, <code>mundur()</code>, <code>belok_kanan()</code>, dan <code>belok_kiri()</code> ke dalam satu fungsi. Akan tetapi, 1 fungsi ini menerima masukan tambahan berupa petunjuk apakah robot harus maju, mundur, belok kanan, atau belok kiri.</p>
+<hr />
+<p><strong>5.</strong> Fungsi rekursif adalah fungsi yang memanggil dirinya sendiri. Contohnya adalah fungsi di Kode 5.12. Menurut anda, apa yang akan terjadi jika Kode 5.12 dijalankan?</p>
+<p><strong>Kode 5.12: Fungsi rekursif</strong></p>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-11-1"><a id="__codelineno-11-1" name="__codelineno-11-1" href="#__codelineno-11-1"></a><span class="k">def</span><span class="w"> </span><span class="nf">rekursif</span><span class="p">():</span>
+</span><span id="__span-11-2"><a id="__codelineno-11-2" name="__codelineno-11-2" href="#__codelineno-11-2"></a>    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;x&quot;</span><span class="p">)</span>
+</span><span id="__span-11-3"><a id="__codelineno-11-3" name="__codelineno-11-3" href="#__codelineno-11-3"></a>    <span class="n">rekursif</span><span class="p">()</span>
+</span><span id="__span-11-4"><a id="__codelineno-11-4" name="__codelineno-11-4" href="#__codelineno-11-4"></a>
+</span><span id="__span-11-5"><a id="__codelineno-11-5" name="__codelineno-11-5" href="#__codelineno-11-5"></a><span class="n">rekursif</span><span class="p">()</span>
+</span></code></pre></div>
+<hr />
+<p><strong>6.</strong> Buat program untuk menyimpan data nama dan nilai. Simpan data nama dan nilai tersebut di dalam file.</p>
+<hr />
+<p><strong>7.</strong> Buat program kalkulator dengan menu seperti berikut:</p>
+<ul>
+<li>(a) Tambah</li>
+<li>(b) Kurang</li>
+<li>(c) Kali</li>
+<li>(d) Bagi</li>
+<li>(e) Keluar</li>
+</ul>
+<hr />
+<p><strong>8.</strong> Buat program tebak kata. Baca daftar kata yang ada di dalam file (buat dulu file-nya, misal 20 kata. Tulis setiap kata per baris dalam file tersebut). Lalu baca filenya. Simpan kata-kata tersebut ke dalam list. Lalu buat komputer untuk memilih secara acak satu kata. User hanya dapat menebak huruf-huruf yang ada dalam kata tersebut 10 kali. Setiap kali satu huruf berhasil ditebak, tampilkan kata dengan huruf-huruf yang sudah ditebak dalam posisi yang benar.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "..", "features": ["search.suggest", "search.highlight", "content.code.copy"], "search": "../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.79ae519e.min.js"></script>
+      
+    
+  </body>
+</html>
