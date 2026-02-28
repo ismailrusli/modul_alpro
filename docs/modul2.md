@@ -23,7 +23,7 @@ Program komputer memiliki input dan output. Ke dalam input, dimasukkan data. Dar
 Oleh karena program berkaitan erat dengan data, kita mulai juga dengan data. Ada 3 istilah penting dalam pemrograman terkait data, yaitu:
 
 1. Literal
-1. Tipe literal
+1. Jenis literal
 1. Operator
 
 ---
@@ -61,7 +61,7 @@ print(2)
 ```
 ---
 
-### **Tipe Literal**
+### **Jenis Literal**
 
 Data tentu bermacam-macam.
 Ada data berupa bilangan bulat (Contoh `5`).
@@ -312,7 +312,7 @@ Tanda sama dengan `=` ini disebut sebagai **assignment operator**.
 Fungsinya adalah meng-*assign* suatu data ke variabel.
 
 ```python
-num = 5  # Variabel dengan nama a diisi data (literal) 5
+num = 5  # Variabel dengan nama a diisi data (literal 5)
 print(num)
 ```
 Nama sebuah variabel tidak bisa bebas. Ada aturannya.
