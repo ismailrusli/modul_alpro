@@ -22,8 +22,6 @@ Jika fungsi `print` mengirimkan data ke terminal,
 ![If blok ](https://raw.githubusercontent.com/ismailrusli/modul_alpro/refs/heads/master/gambar/input-print.png)
 <br> <br>
 
-
-
 **Coba**
 
 1. Ketikkan program berikut lalu jalankan. Saat dijalankan, apa
@@ -213,7 +211,7 @@ sebagai berikut.
 <br> <br>
 
 !!! Catatan
-    Saat membuat percabangan, semua pilihan kemungkinan harus dibuat.
+    Saat membuat percabangan, semua kemungkinan pilihan harus dibuat.
     Untuk contoh di atas, terdapat dua pilihan, yaitu
 
     1. `pagi`
