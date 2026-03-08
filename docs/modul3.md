@@ -267,7 +267,7 @@ Flowchart dari kode ini adalah sebagai berikut.
 
 !!! Catatan
     Perhatikan kembali karena ini sangat penting.
-    Saat membuat percabangan, semua pilihan kemungkinan harus dibuat.
+    Saat membuat percabangan, semua kemungkinan pilihan  harus dibuat.
     Untuk contoh di atas, terdapat tiga pilihan, yaitu
 
     1. `pagi`
