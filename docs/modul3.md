@@ -18,6 +18,12 @@ Sekarang, kita belajar satu fungsi lagi, yaitu `input`.
 Jika fungsi `print` mengirimkan data ke terminal,
 `input` menerima data dari user lewat terminal.
 
+<br> <br>
+![If blok ](https://raw.githubusercontent.com/ismailrusli/modul_alpro/refs/heads/master/gambar/input-print.png)
+<br> <br>
+
+
+
 **Coba**
 
 1. Ketikkan program berikut lalu jalankan. Saat dijalankan, apa
@@ -150,7 +156,6 @@ luas_kotak = panjang_kotak * lebar_kotak
 
 print("Luas kotak adalah " + str(luas_kotak))
 ```
-
 ---
 
 ### **Percabangan**
