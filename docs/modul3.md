@@ -273,7 +273,8 @@ Flowchart dari kode ini adalah sebagai berikut.
 
     Jika pilihan yang dibuat tidak menampung semua kemungkinan,
     program dapat berjalan tidak sesuai dengan yang kita ingingkan.
-    Terutama saat user melakukan sesuatu yang tidak tidak kita harapkan.
+    Terutama saat user melakukan sesuatu yang tidak diantisipasi
+    programer.
 
 
 **Coba**
