@@ -16,7 +16,7 @@ percabangan, dan pengulangan untuk membuat algoritma sederhana.
 ### **Iterabel**
 Kita sudah mengenal berbagai macam tipe data, misalnya
 `int`, `float`, dan `string`.
-Setiap data tersebut hanya menampung satu value.
+Setiap data tersebut menampung hanya satu value.
 Ada juga data yang menampung banyak value sekaligus. 
 Contohnya adalah `list`, `tuple`, `set`, dan `dictionary`.
 Berikut contohnya.
