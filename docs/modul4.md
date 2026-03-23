@@ -1,468 +1,534 @@
-# Modul 4: Pengulangan
+# Modul 4: Iterabel dan Pengulangan
 
-![Status](https://img.shields.io/badge/Status-On_Progress-yellow?style=flat-square)
-<!-- ![Status](https://img.shields.io/badge/Status-Finish-brightgreen?style=flat-square) -->
+<!-- ![Status](https://img.shields.io/badge/Status-On_Progress-yellow?style=flat-square) -->
+![Status](https://img.shields.io/badge/Status-Finish-brightgreen?style=flat-square)
 
-## Capaian
 
-Mampu menggunakan elemen-elemen dasar pemrograman, seperti inisialisasi variabel untuk berbagai macam tipe data, menggunakan percabangan, menggunakan pengulangan, membuat dan menggunakan fungsi, serta membuat dan menggunakan tipe data bentukan sendiri.
+## **Capaian Pembelajaran Mata Kuliah**
 
-## Alat dan Bahan
+Mampu menggunakan elemen-elemen pemrograman, yaitu variabel,
+percabangan, dan pengulangan untuk membuat algoritma sederhana.
 
-1. Laptop/komputer
-2. Internet
-3. Python 3.8+
-4. Visual Studio Code (atau editor sejenis)
+---
 
-## Materi
+## **Materi**
 
-### Pengulangan Menggunakan `for .. in range()`
+### **Iterabel**
+Kita sudah mengenal berbagai macam tipe data, misalnya
+`int`, `float`, dan `string`.
+Setiap data tersebut hanya menampung satu value.
+Ada juga data yang menampung banyak value sekaligus. 
+Contohnya adalah `list`, `tuple`, `set`, dan `dictionary`.
+Berikut contohnya.
+```python linenums="1" 
+daftar_nama = ["Budi", "Wati", "Dudi"]        # list
+koordinat = (1,3)                             # tuple
+buah_buahan = {"apel", "semangka", "jeruk"}   # set
+data_mahasiswa = {"nama": "Budi", umur: 21}   # dictionary
+```
 
-Satu fitur penting dalam pemrograman adalah pengulangan.
-Pengulangan digunakan untuk mengulangi baris-baris kode secara berulang-ulang.
+Di modul ini, kita tidak membahas detail tipe-tipe data tersebut.
+Kita hanya menunjukkan data tersebut dalam kaitannya sebagai sebuah iterabel.
+Iterabel adalah
 
+1. Data yang dapat menampung banyak value
+2. Yang setiap datanya dapat dibaca satu per satu
+    atau dengan kata lain kita dapat melakukan iterasi
+    ke setiap data di dalamnya.
+
+`list`, `tuple`, `set`, dan `dictionary` adalah iterabel.
+Tapi selain itu, ada juga satu iterabel penting, yaitu 
+data yang dihasilkan fungsi `range()`.
+
+`range()` adalah fungsi yang dapat menerima tiga argumen.
+```
+range(awal, akhir, step) ->  ini akan menghasilkan urutan yang
+                             dimulai dari awal,
+                             berakhir di bilangan sebelum akhir,
+                             dan loncat sebesar step.
+```
+
+Sebagai contoh:
+```python linenums="1"
+data = range(1,10,2)
+
+data = list(data) # ubah ke list untuk diprint
+print(data)
+```
+
+Hasilnya adalah
+```
+[1, 3, 5, 7, 9]
+```
+
+Kita juga bisa hanya memasukkan satu atau dua argumen ke
+dalam `range`
+```python linenums="1"
+data1 = range(10)    # mulai = 0 (default), akhir = 9, step = 1 (default)
+data2 = range(1,10)  # mulai = 1, akhir = 9, step = 1 (default)
+
+data1 = list(data1)
+data2 = list(data2)
+
+print(data1)
+print(data2)
+```
+
+yang masing-masing hasilnya adalah sebagai berikut.
+
+```
+[0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+[1, 2, 3, 4, 5, 6, 7, 8, 9]
+```
+
+**Coba**
+
+1. Berikut adalah program untuk mencetak hasil dari fungsi `range`.
+    ```python
+    data = range(# kode di sini)
+    data = list(range)
+    print(data)
+    ```
+
+    Buatlah agar program tersebut menghasilkan
+    urutan-urutan bilangan berikut.
+    Ubah kode hanya di dalam kurung fungsi `range`. 
+
+    ``` linenums="1"
+    [1, 2, 3, 4, 5]
+    [0, 2, 4, 6, 8, 10]
+    [4, 5, 6, 7, 8, 9]
+    [20, 40, 60, 80, 100]
+    [-2, -1, 0, 1, 2]
+
+    [9, 8, 7, 6, 5, 4, 3, 2]    # Gunakan step = -1
+    [100, 90, 80, 70, 60]
+    [3, 2, 1, 0, -1, -2]
+    [0, -5, -10, -15, -20]
+    ```
+
+1. Buatlah iterabel menggunakan fungsi `range()` dengan
+    ketentuan sebagai berikut.
+    -  Terdiri dari 10 elemen (awal, akhir, dan step bebas)
+    -  Terdiri dari 8 elemen, awal di -2, dan loncat 3
+    -  Terdiri dari 10 elemen, mulai dari 9, mundur 1 step = [9, 8, ...]
+
+---
+
+### **Pengulangan**
+Perhatikan kode berikut.
+```python linenums="1"
+print("Budi")
+print("Budi")
+print("Budi")
+print("Budi")
+print("Budi")
+print("Budi")
+print("Budi")
+print("Budi")
+print("Budi")
+print("Budi")
+```
+
+Program tersebut, menuliskan kata `Budi` sebanyak 10 baris.
+Ada cara yang lebih baik untuk itu, yaitu dengan
+menggunakan pengulangan.
+
+
+#### **Pengulangan Menggunakan `for`** 
+Jika kita ingin mengulang-ulang suatu baris kode dalam Python, kita
+harus 'membungkusnya' dalam suatu blok pengulangan.
+Di kode berikut, `print("Budi")` diulang 10 kali.
 ```python
-# Pengulangan 10 kali
-
 for i in range(10):
-    print("ini diprint 10 x")
+    print("Budi")
 ```
 
-Di Kode 4.1, baris 1 adalah perintah untuk melakukan pengulangan sebanyak 10 kali. Apa yang diulang? Yang diulang adalah baris 2 (baris yang menjorok ke dalam). Coba kerjakan Kode 4.2.
-
-**Kerjakan**
-```python
-# Minta user memasukkan angka
-# Lalu print "Kalimat ini diprint berulang"
-# sebanyak angka yang dimasukkan user
+Secara umum, sintaks untuk pengulangan menggunakan `for`
+adalah:
 ```
+for <variabel> in <iterabel>:
+    kode yang akan dijalankan
+    berulang-ulang
+```
+
+<br> <br>
+![for loop](https://raw.githubusercontent.com/ismailrusli/modul_alpro/refs/heads/master/gambar/for_sintaks.png)
+<br> <br>
+
+Secara detail, proses pengulangan adalah sebagai berikut.
+
+<br> <br>
+![for loop](https://raw.githubusercontent.com/ismailrusli/modul_alpro/refs/heads/master/gambar/for_detail.png)
+<br> <br>
+
+!!! Catatan
+    Setelah statement `for <variabel> in <iterabel>:`
+    Python mewajibkan kita menuliskan kode yang akan diulang.
+    Jika tidak, program akan error.
+    Jika kita belum mau menuliskan kode namun
+    ingin mencoba menjalankan program yang kita buat,
+    gunakan kata kunci `pass` yang artinya perintah
+    kosong (tidak melakukan apa-apa).
+
+    ```python
+    for i in range(10):
+        pass
+    ```
+
+
+**Coba**
+
+1. Tulis kode berikut dan jalankan. Apa yang terjadi?
+
+    ```python
+    for i in range(10):
+        print(i)
+    ```
+
+    ```python
+    for i in range(10):
+        print(i, end = ' ')
+    ```
+
+    ```python
+    for i in range(10, 0, -1):
+        print(i)
+    ```
+
+    ```python
+    for i in range(1, 20, 2):
+        print(i)
+    ```
+
+1. Oleh karena `list` adalah iterabel, sintaks berikut valid.
+    ```  
+    for <variabel> in range <list>:
+        kode
+    ```
+    Sebagai contoh:
+
+    ```python linenums="1"
+    data = ['bandung', 'jakarta', 'surabaya']
+
+    for kota in data:
+        print(kota)
+    ```
+
+1. Contoh iterabel yang sudah pernah kita temui namun belum
+    kita sebutkan sebagai iterabel adalah `string`.
+    Perhatikan kode berikut.
+
+    ```python
+    matakuliah = "algoritma dan pemrograman"
+
+    for huruf in matakuliah:
+        print(huruf)
+    ```
+
+    Bandingkan dengan kode berikut.
+
+    ```python
+    matakuliah = "algoritma dan pemrograman"
+
+    for huruf in matakuliah:
+        print(huruf, end = ' ')
+    ```
 
 ---
 
-### 4.3.2 Counter
+#### **Pengulangan Menggunakan `while`**
 
-Di Kode 4.1, variabel `i` adalah variabel counter yang nilainya akan berubah setiap kali pengulangan. Untuk jelasnya, perhatikan Kode 4.3.
+Selain menggunakan perintah `for`, pengulangan dalam Python
+juga dapat menggunakan `while`.
+Sintaks pengulangan menggunakan `while` adalah sebagai berikut.
 
-**Kode 4.3: Variabel i berfungsi sebagai counter**
-```python
-pengulangan = 10
-
-for i in range(pengulangan):
-    print(i)
 ```
+while (<ekspresi boolean>):
+    # kode yang akan diulang-ulang
+    # selama ekspresi boolean bernilai True
+```
+
+!!! Catatan
+    Tanda kurung dalam `(<ekspresi boolean>)`
+    adalah opsional.
+
+Berikut adalah contoh pengulangan menggunakan `while`.
+
+```python
+while (True):
+    print("*", end = "")
+```
+
+Program tersebut akan terus-terusan menuliskan bintang.
+Untuk menghentikannya, tekan Ctrl-c. 
+
+Tidak seperti pengulangan menggunakan `for`, pengulangan menggunakan `while`
+tidak memiliki kendali jumlah pengulangan.
+Akan tetapi, kita dapat membuat sebuah variabel kendali
+untuk menentukan jumlah pengulangan menggunakan `while`.
+Perhatikan kode berikut.
+
+```python linenums="1"
+pengulangan = 0
+
+while (pengulangan < 10):
+    print("*", end = "")
+    pengulangan = pengulangan + 1
+```
+
+Dalam kode tersebut, variabel `pengulangan` akan terus bertambah 1
+setiap iterasi melalui baris
+```python
+pengulangan = pengulangan + 1
+```
+
+Pengulangan akan berhenti ketika variabel `pengulangan`
+mencapai 10. Mengapa? Karena ketika variabel `pengulangan` mencapai
+10, ekspresi boolean `pengulangan < 10` menjadi `False` sehingga
+pengulangan berhenti.
+
+
+**Coba**
+
+1. Kode berikut mencetak angka 1-10, ke samping menggunakan
+    `for` dan `while`. Mana yang kamu pilih?
+    ```python linenums="1"
+    for i in range(10):
+        print(i + 1, end = " ")
+    ```
+
+    ```python linenums="1"
+    angka = 1
+
+    while (angka < 11):
+        print (angka, end = " ")
+        angka = angka + 1
+    ```
+
+1. Jalankan kode berikut dan pahami kodenya.
+    ```python linenums="1"
+    import random
+
+    angka_acak = random.randint(1,6)
+    tebakan = 0
+
+    while (tebakan != angka_acak):
+        tebakan = int(input("Masukkan tebakan kamu: "))
+
+    print ("Selamat, tebakan kamu benar")
+    ```
 
 ---
 
-### 4.3.3 Variasi Fungsi `range()`
+#### **Kata Kunci `break` dan `continue`**
 
-Fungsi `range()` dapat diikuti dengan 1 angka, 2 angka, atau 3 angka (data yang mengikuti fungsi disebut argumen atau parameter).
-
-- Jika diisi **1 parameter** (`range(x)`) maka counter akan bergerak dari `0` sampai `x`.
-- Jika diisi **2 parameter** (`range(x, y)`) maka counter akan bergerak dari `x` sampai `y`.
-- Jika diisi **3 parameter** (`range(x, y, z)`) maka counter akan bergerak dari `x` sampai `y` dengan counter loncat sebesar `z`.
-
-Perhatikan Kode 4.4 dan Kode 4.5 untuk lebih jelasnya.
-
-**Kode 4.4: Variasi dalam `for .. in range()`**
-```python
-for i in range(10, 0, -1):  # (awal, akhir, step)
-    print(i)
-```
-
-**Kode 4.5: Variasi dalam `for .. in range()`**
-```python
-for i in range(1, 20, 2):
-    print(i)
-```
-
-**Kode 4.6: Kerjakan**
-```python
-for i in range(10):
-    # Print angka 1 sampai 10
-```
-
-**Kode 4.7: Kerjakan**
-```python
-# Buatlah program yang menerima 3 angka dari user
-# Gunakan angka pertama sebagai awal
-# Gunakan angka kedua sebagai akhir
-# Gunakan angka ketiga sebagai langkah (step)
-# Misal: 1, 20, 3
-# Maka program akan mencetak angka 1, 4, 7, 10, 13, 16, 19
-# yang diprint ke bawah
-```
-
----
-
-### 4.3.4 Pengulangan untuk List, Tuple, dan Dictionary
-
-Pengulangan juga dapat digunakan untuk memanggil setiap item yang ada di dalam list, tuple, atau dictionary. Sebagai contoh, perhatikan Kode 4.8–4.10.
-
-**Kode 4.8: Pengulangan dalam list**
-```python
-daftar = [1, 2, 3, 4, 5]
-
-for angka in daftar:
-    print(angka)
-```
-
-**Kode 4.9: Pengulangan dalam tuple**
-```python
-posisi = (1, 2, 3)
-
-for x in posisi:
-    print(x)
-```
-
-**Kode 4.10: Pengulangan dalam dictionary**
-```python
-daftar = {'nama': 'ismail',
-          'umur': 45,
-          'alamat': 'bandung'}
-
-for key, value in daftar.items():
-    print(key, value)
-```
-
-Sebagai latihan, kerjakan Kode 4.11–4.13.
-
-**Kode 4.11: Kerjakan**
-```python
-daftar1 = [1, 2, 3, 4, 5]
-
-for angka in daftar:
-    # buatlah list baru yang isinya adalah
-    # setiap angka di daftar1 + 5
-    # --> [6, 7, 8, 9, 10]
-```
-
-**Kode 4.12: Kerjakan**
-```python
-daftar1 = [1, 2, 3, 4, 5]
-
-for angka in daftar:
-    # buatlah list baru yang isinya
-    # hanyalah 3 item pertama
-    # dari daftar1, yaitu [1, 2, 3]
-    # gunakan 'if'
-```
-
-**Kode 4.13: Kerjakan**
-```python
-daftar1 = [1, 2, 3, 4, 5]
-
-for angka in daftar:
-    # buatlah list baru yang isinya
-    # kata ganjil atau genap
-    # sesuai dengan angka di daftar1:
-    # ['ganjil', 'genap', 'ganjil', 'genap', 'ganjil']
-
-    # gunakan operator modulus
-    # untuk cek ganjil genap
-    # angka % 2 == 0 maka genap
-    # angka % 2 != 0 maka ganjil
-```
-
----
-
-### 4.3.5 Pengulangan untuk String
-
-Pengulangan juga dapat dilakukan untuk string. Perhatikan Kode 4.14–4.15.
-
-**Kode 4.14: Pengulangan**
-```python
-matakuliah = "algoritma dan pemrograman"
-
-for huruf in matakuliah:
-    print(huruf)
-```
-
-**Kode 4.15: Pengulangan**
-```python
-matakuliah = "algoritma dan pemrograman"
-
-for huruf in matakuliah:
-    print(huruf, end=' ')
-```
-
----
-
-### 4.3.6 `break` dan `continue`
-
-Salah satu perintah penting dalam pengulangan adalah `break` dan `continue`.
+Salah satu kata kunci penting dalam pengulangan
+adalah `break` dan `continue`.
 
 - `break` digunakan untuk **keluar dari loop**.
-- `continue` digunakan untuk **lanjut ke iterasi selanjutnya** dalam loop dengan mengabaikan kode di sisa loop.
+- `continue` digunakan untuk **lanjut ke iterasi selanjutnya** dalam loop
+    dengan mengabaikan kode di sisa loop.
 
-Perhatikan Kode 4.16–4.18.
-
-**Kode 4.16: Pengulangan**
-```python
+```python linenums="1"
 matakuliah = "algoritma dan pemrograman"
 
 for karakter in matakuliah:
     if karakter == ' ':
         break
     print(karakter, end=' ')
-
-print('')
 ```
 
-**Kode 4.17: Pengulangan**
-```python
+Kode ini akan menghasilkan output:
+```
+a l g o r i t m a
+```
+Sementara kode ini:
+
+```python linenums="1"
 matakuliah = "algoritma dan pemrograman"
 
 for karakter in matakuliah:
     if karakter == ' ':
         continue
     print(karakter, end=' ')
-
-print('')
 ```
 
-**Kode 4.18: Kerjakan**
-```python
-nama = input("Silakan masukkan nama panjang: ")
-
-vokal = []
-konsonan = []
-
-# lakukan loop
-# kumpulkan vokal ke list vokal
-# kumpulkan konsonan ke list konsonan
-# lalu hitung ada berapa vokal
-# dan ada berapa konsonan
+akan menghasilkan output:
+```
+a l g o r i t m a d a n p e m r o g r a m a n
 ```
 
 ---
 
-### 4.3.7 Pengulangan di Dalam Pengulangan
+#### **Pengulangan di Dalam Pengulangan**
 
-Jika diperlukan, kita bisa membuat suatu pengulangan di dalam pengulangan. Perhatikan Kode 4.19–4.23.
+Jika diperlukan, kita bisa membuat suatu pengulangan di dalam pengulangan.
 
-**Kode 4.19: Pengulangan**
-```python
-angka = [1, 2, 3, 4, 5]
-huruf = ['a', 'b', 'c', 'd', 'e']
+```python linenums="1"
+huruf = "ABC"
+angka = "123"
 
-for x in angka:
-    for y in huruf:
-        karakter = str(x) + y
+for x in huruf:
+    for y in angka:
+        karakter = x + y
         print(karakter, end=' ')
+```
+Kode ini akan menghasilkan output:
 
-    print('')
+```
+A1 A2 A3 B1 B2 B3 C1 C2 C3
 ```
 
-**Kode 4.20: Pengulangan**
-```python
+Contoh lain adalah sebagai berikut.
+
+```python linenums="1"
 bintang = '*'
 
-for i in range(1, 11):
+for i in range(1, 6):
     for j in range(i):
-        print(bintang, end=' ')
+        print(bintang, end='')
     print('')
 ```
 
-**Kode 4.21: Pengulangan**
-```python
-bintang = '*'
-baris_max = 11
-
-for i in range(1, 11):
-    for j in range(baris_max - i):
-        print(bintang, end=' ')
-    print('')
+Kode ini akan menghasilkan output sebagai berikut.
 ```
-
-**Kode 4.22: Pengulangan**
-```python
-bintang = '*'
-baris = 10
-
-for i in range(1, baris):
-    if i < 6:
-        for j in range(i):
-            print(bintang, end=' ')
-    else:
-        for j in range(baris - i):
-            print(bintang, end=' ')
-
-    print('')
-```
-
-**Kode 4.23: Pengulangan**
-```python
-bintang = '*'
-baris = 10
-
-for i in range(1, baris):
-    if i < 6:
-        for j in range(6 - i):
-            print(bintang, end=' ')
-    else:
-        for j in range(i - 4):
-            print(bintang, end=' ')
-
-    print('')
-```
-
-Sebagai latihan, kerjakan Kode 4.24.
-
-**Kode 4.24: Kerjakan**
-```python
-# tambahkan kode berikut sehingga di setiap baris
-# terdapat nomor barisnya
-# 1 *
-# 2 **
-# 3 ***
-# dst.
-
-bintang = '*'
-
-for i in range(1, 11):
-    for j in range(i):
-        print(bintang, end=' ')
-    print('')
-```
-
-**Kode 4.25: Kerjakan**
-```python
-bintang = '*'
-plus = '+'
-
-for i in range(1, 8):
-    if i < 5:
-        for j in range(5 - i):
-            print(bintang, end=' ')
-        for j in range(i):
-            print(plus, end=' ')
-    else:
-        # lengkapi bagian else ini
-        # sehingga outputnya seperti berikut
-        # ****+
-        # ***++
-        # **+++
-        # *++++
-        # **+++
-        # ***++
-        # ****+
-
-    print('')
-```
-
----
-
-### 4.3.8 Pengulangan Menggunakan `while`
-
-Selain menggunakan perintah `for`, pengulangan dalam Python juga dapat menggunakan perintah `while`. Perhatikan Kode 4.26.
-
-**Kode 4.26: Pengulangan menggunakan perintah `while`**
-```python
-iterasi = 1
-while iterasi < 5:
-    print("***")
-    iterasi = iterasi + 1
-```
-
----
-
-### 4.3.9 Kerjakan
-
-**1. Program Menu Interaktif**
-
-Buat program yang menampilkan menu seperti berikut:
-
-```
-#######################
-1. Pilihan 1
-2. Pilihan 2
-3. Pilihan 3
-4. Keluar
-#######################
-Masukkan pilihan Anda:
-```
-
-Jika user menekan `1`, keluar tulisan *"Anda memilih angka 1. Tekan Enter untuk melanjutkan"*. Setelah menekan Enter, layar kembali ke menu utama. Jika user menekan `4` (keluar), tuliskan *"Terima kasih"*.
-
-**Kode 4.28: Kerangka program**
-```python
-import os
-
-# perintah untuk membersihkan layar
-os.system('clear')
-
-# untuk Windows, ganti 'clear' dengan 'cls'
-
-print('#######################')
-print('1. Pilihan 1')
-print('2. Pilihan 2')
-print('3. Pilihan 3')
-print('4. Keluar')
-print('#######################')
-
-pilihan = input("Masukkan pilihan Anda: ")
-
-if pilihan == '1':
-    pass
-    # print sesuatu
-    input()  # program berhenti sebentar menunggu user menekan enter
-elif pilihan == '2':
-    pass
-    # print sesuatu
-elif pilihan == '3':
-    pass
-    # print sesuatu
-elif pilihan == '4':
-    print("Keluar")
-else:
-    print("Anda tidak memilih dengan benar")
-```
-
----
-
-**2. Program Kelompokkan Nama**
-
-Buat program yang meminta input 10 nama dari user, lalu kelompokkan berdasarkan huruf awalnya.
-
-**Kode 4.29: Kerangka program**
-```python
-daftar_nama = {}
-
-for i in range(10):
-    nama = input("Masukkan nama ke-" + str(i + 1) + ": ")
-    huruf_awal = nama[0]
-
-    if huruf_awal in daftar_nama:
-        # jika sudah ada nama berawalan huruf_awal
-        # gunakan append
-    else:
-        # jika belum ada nama berawalan huruf_awal
-        daftar_nama[huruf_awal] = [nama]
-
-# print hasilnya dengan rapi (gunakan pengulangan)
-```
-
----
-
-**3. Program Pola Bintang dan Dollar**
-
-Buat program yang outputnya seperti berikut:
-
-**Kode 4.30: Output**
-```
-*****
-****
-***
-**
 *
-$$
-$$$
-$$$$
-$$$$$
+**
+***
+****
+*****
+```
+Output yang sama bisa didapatkan dengan memanfaatkan
+operator `*` pada string.
+```python linenums="1"
+bintang = '*'
+
+for i in range(1, 6):
+    print(bintang * i, end='')
+    print('')
+```
+
+**Coba**
+
+Jalankan kode-kode berikut dan pahami algoritmanya.
+
+```python linenums="1"
+bintang = '*'
+
+for i in range(5, 0, -1):
+    print(bintang * i, end='')
+    print('')
+```
+
+```python linenums="1"
+bintang = '*'
+
+for i in range(1, 10):
+    if i < 6: jumlah_bintang = i
+    else: jumlah_bintang = 10 - i
+
+    print(bintang * jumlah_bintang, end = '')
+    print('')
+```
+
+```python linenums="1"
+bintang = '*'
+
+for i in range(1, 10):
+    if i < 6: jumlah_bintang = 6 - i
+    else: jumlah_bintang = i - 4
+
+    print(bintang * jumlah_bintang, end='')
+    print('')
 ```
 
 ---
 
-**4. Program Tebak Angka**
+### **Kerjakan**
 
-Buat program menebak angka acak antara 1–100. User boleh menebak secara berulang-ulang. Setiap kali menebak, program memberi respon *"terlalu besar"* atau *"terlalu kecil"*. Jika benar, program mengeluarkan pesan *"Tepat!"*.
+1. Buat program yang outputnya seperti berikut:
+    ```
+    *****
+    ****
+    ***
+    **
+    *
+    $$
+    $$$
+    $$$$
+    $$$$$
+    ```
+
+1. Cetak kalimat `Saya senang belajar pemrograman`
+    sebanyak `n` kali dengan `n` adalah angka
+    yang dimasukkan oleh user.
+    Gunakan kerangka program berikut dan hanya ubah
+    kode di bagian bertanda `#`.
+
+    ```python linenums="1"
+    n = # kode agar user memasukkan input angka
+
+    for # buat statement untuk melakukan loop sebanyak n
+        print("Saya senang belajar pemrograman")
+    ```
+
+1. Buat program menebak angka acak antara 1–100. User boleh menebak secara berulang-ulang. Setiap kali menebak, program memberi respon **Terlalu besar!** atau **Terlalu kecil!**. Jika benar, program mengeluarkan pesan **Tepat!**. Berikut adalah kerangka programmnya. Ubah kode di bagian yang ditandai tanda `#`.
+
+    ```python linenums="1"
+    import random
+
+    angka_acak = random.randint(1,100)
+
+    while (angka_acak != angka_tebakan):
+        angka_tebakan =  # Buat input untuk user memasukkan angka
+
+        if # angka_tebakan lebih besar:
+            print ("Terlalu besar!")
+        elif # angka_tebakan lebih kecil:
+            print ("Terlalu kecil!")
+
+    print ("Tepat!")
+    ```
+
+1. Tambahkan di kode berikut sehingga di setiap baris terdapat nomor barisnya.
+    ```
+    1 *
+    2 **
+    3 ***
+    dst.
+    ```
+
+    ```python
+    bintang = '*'
+
+    for i in range(1, 11):
+        print(bintang * i, end = '')
+        print('')
+    ```
+
+1. Lengkapi program berikut sehingga outpunya seperti berikut.
+    Lengkapi dengan menghapus `pass` dan menggantinya
+    dengan blok kode yang benar.
+    ```
+    # ****+
+    # ***++
+    # **+++
+    # *++++
+    # **+++
+    # ***++
+    # ****+
+    ```
+
+    ```python
+    bintang = '*'
+    plus = '+'
+
+    for i in range(1, 8):
+        if i < 5:
+            print(bintang * (5 - i), end='')
+            print(plus * i, end='')
+        else:
+            pass
+        print('')
+    ```
