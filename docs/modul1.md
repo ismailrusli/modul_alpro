@@ -20,7 +20,7 @@ Bisa juga, tuliskan di suatu file teks.
 Simpan sebagai `halo.py`.
 Lalu, di terminal, ketikkan `python halo.py`, Enter.
 
-``` python
+```python
 print("Halo, Dunia!")
 ```
 
