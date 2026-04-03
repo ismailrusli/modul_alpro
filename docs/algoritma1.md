@@ -89,6 +89,15 @@ Dari pengetahuan ini, kita bisa membuat suatu pola.
 1. Jika `i + 1` ganjil, kita berada di baris ganjil
   dan jika `i + 1` genap, kita berada di baris genap.
 
+Jika kita ingin nilai `i` benar-benar sama dengan posisi barisnya,
+kita bisa menggunakan `range(1, bilangan + 1)` daripada `range(bilangan)`.
+Dengan demikian, iterabel yang dihasilkan sama dengan posisi barisnya
+(untuk contoh `bilangan` = 8).
+
+```  
+1, 2, 3, 4, 5, 6, 7, 8
+```
+
 **Ketiga** kita lakukan abstraksi:
 Kita cari persamaan dari setiap baris dengan mengabaikan detail.
 Dalam hal ini, untuk setiap baris, kita pasti punya variabel, `i` yang isinya
@@ -106,7 +115,7 @@ Terhadap `i` bisa kita cek ganjil/genapnya.
 ```python linenums="1"
 bilangan = int(input("Masukkan angka: "))
 
-for i in range(bilangan):
+for i in range(1, bilangan + 1):
   if (i % 2 == 0):
     print("genap")
   else:
@@ -233,19 +242,18 @@ pola output ditentukan bilangan yang dimasukkan user.
   # Jika user input angka ganjil,
   # program mencetak 5 baris berikut  
   1 ganjil
-  2 ganjil
   3 ganjil
-  4 ganjil
   5 ganjil
+  7 ganjil
+  9 ganjil
 
   # Jika user input angka genap, 
-  # program mencetak 6 baris berikut
-  1 genap
+  # program mencetak 5 baris berikut
   2 genap
-  3 genap
   4 genap
-  5 genap
   6 genap
+  8 genap
+  10 genap
   ```
 
 1. 
