@@ -203,7 +203,7 @@ Secara detail, proses pengulangan adalah sebagai berikut.
 
 1. Oleh karena `list` adalah iterabel, sintaks berikut valid.
     ```  
-    for <variabel> in range <list>:
+    for <variabel> in <list>:
         kode
     ```
     Sebagai contoh:
