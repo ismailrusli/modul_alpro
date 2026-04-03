@@ -1,7 +1,7 @@
 # **Modul A1: Latihan Asesmen 1**
 
-![Status](https://img.shields.io/badge/Status-On_Progress-yellow?style=flat-square)
-<!-- ![Status](https://img.shields.io/badge/Status-Finish-brightgreen?style=flat-square) -->
+<!-- ![Status](https://img.shields.io/badge/Status-On_Progress-yellow?style=flat-square) -->
+![Status](https://img.shields.io/badge/Status-Finish-brightgreen?style=flat-square)
 
 ## **Capaian Pembelajaran Mata Kuliah**
 
