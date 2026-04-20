@@ -3,22 +3,20 @@
 ![Status](https://img.shields.io/badge/Status-On_Progress-yellow?style=flat-square)
 <!-- ![Status](https://img.shields.io/badge/Status-Finish-brightgreen?style=flat-square) -->
 
-## 5.1 Capaian
+## **Capaian Pembelajaran Mata Kuliah**
 
-Mampu menggunakan elemen-elemen dasar pemrograman, seperti inisialisasi variabel untuk berbagai macam tipe data, menggunakan percabangan, menggunakan pengulangan, membuat dan menggunakan fungsi, serta membuat dan menggunakan tipe data bentukan sendiri.
-
----
-
-## 5.2 Alat dan Bahan
-
-1. Laptop/komputer
-2. Internet
-3. Python 3.8+
-4. Visual Studio Code (atau editor sejenis)
+Mampu menggunakan elemen-elemen pemrograman, yaitu fungsi, I/O, dan tipe data buatan sendiri untuk membuat program sederhana berbasis teks.
 
 ---
+## Materi
+Fungsi adalah sebuah program kecil yang menerima input dan menghasilkan output.
+Kita memasukkan nilai (value) sebagai input ke dalam fungsi dan sebaliknya
+juga mendapatkan nilai (value) sebagai output.
 
-## 5.3 Materi
+Sebuah program dapat menerima nol, satu, atau banyak input berupa nilai (value).
+Sebuah program 
+Input yang masuk ke dalam sebuah fungsi adalah nol, satu, atau lebih dari satu nilai (value).
+Output yang keluar dari sebuah fungsi adalah nol, satu, atau lebih dari satu nilai (value).
 
 Perhatikan Kode 5.1 berikut. Kode 5.1 adalah program yang mencetak 10 baris keluaran. Setiap baris mencetak karakter bintang sebanyak posisi barisnya. Jadi, misalnya baris ke-1, akan mencetak karakter `*`. Baris ke-2 mencetak `**`. Baris ke-3, `***`, dan seterusnya.
 
