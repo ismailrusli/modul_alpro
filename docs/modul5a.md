@@ -1,7 +1,7 @@
 # **Modul 5: Fungsi**
 
-![Status](https://img.shields.io/badge/Status-On_Progress-yellow?style=flat-square)
-<!-- ![Status](https://img.shields.io/badge/Status-Finish-brightgreen?style=flat-square) -->
+<!-- ![Status](https://img.shields.io/badge/Status-On_Progress-yellow?style=flat-square) -->
+![Status](https://img.shields.io/badge/Status-Finish-brightgreen?style=flat-square)
 
 ## **Capaian Pembelajaran Mata Kuliah**
 
@@ -21,125 +21,218 @@ Kita sudah menggunakan beberapa fungsi di modul-modul sebelumnya, yaitu
 1. `type()`
 1. `range()`
 
-Perhatikan gambar berikut untuk melihat contoh input dan output untuk setiap fungsi tersebut. Untuk saat ini, istilah seperti `side effect` dan `standard input (stdin)` boleh diabaikan.
+Contohnya, dalam gambar berikut, fungsi `print()` menerima 2 input dan menghasilkan 1 output,
+yaitu `None`. 
 
+<br />
+
+![Fungsi print](https://raw.githubusercontent.com/ismailrusli/modul_alpro/refs/heads/master/gambar/fungsi_print2.png)
+
+<br />
+
+!!! Catatan
+    Fungsi `print()` menghasilkan output berupa nilai yang disebut `None`.
+    `None` artinya tidak ada nilai.
+
+!!! Catatan
+    Di gambar terlihat ada yang namanya `side effect`.
+    Ini adalah efek yang dilakukan sebuah fungsi ketika mengubah atau melakukan sesuatu
+    di luar dirinya. Dalam hal ini, fungsi `print()` mencetak string ke terminal
+    
+Sebuah fungsi, dapat menerima nol, satu, atau lebih dari satu input. 
+Sementara, sebuah fungsi hanya dapat mengeluarkan satu output.
+Jika kita ingin sebuah fungsi mengeluarkan beberapa nilai,
+nilai-nilai tersebut harus kita bungkus dalam data yang bisa menampung banyak data, seperti
+menggunakan list.
+
+Secara umum, untuk menggunakan sebuah fungsi, kita tuliskan seperti berikut.
 
 ![Anatomi fungsi dalam Python](https://raw.githubusercontent.com/ismailrusli/modul_alpro/refs/heads/master/gambar/anatomi_fungsi.png)
 
-Kita memasukkan nilai (*value*) sebagai input ke dalam fungsi dan sebaliknya
-juga mendapatkan nilai (*value*) sebagai output.
+Simbol `arg1` dan `arg2` disebut sebagai argumen.
+**Argumen** adalah nilai yang kita masukkan ke fungsi sebagai input.
+Selain argumen, ada juga istilah parameter.
+**Parameter** adalah variabel yang menampung argumen.
+Urutan argumen harus sesuai urutan parameter. 
 
-Input yang masuk ke dalam sebuah fungsi adalah nol, satu, atau lebih dari satu nilai.
-Output yang keluar dari sebuah fungsi juga nol, satu, atau lebih dari satu nilai.
+---
 
-Perhatikan Kode 5.1 berikut. Kode 5.1 adalah program yang mencetak 10 baris keluaran.
-Setiap baris mencetak karakter bintang sebanyak posisi barisnya.
-Jadi, baris ke-1 mencetak `*`, baris ke-2 mencetak `**`, baris ke-3 mencetak `***`, dan seterusnya.
+### **Dari mana fungsi berasal?**
+Fungsi berasal dari 3 sumber.
 
-**Kode 5.1: Mencetak 10 baris bintang menggunakan loop**
+1. Bawaan Python, contohnya fungsi `print()` dan juga `type()` 
+1. Berasal dari modul yang kita import. Misalnya fungsi `randint()` dari modul `random`
+1. Kita buat sendiri
 
-```python linenums="1"
-for i in range(1, 11):
-    x = ""
-    for j in range(i):
-        x = x + "*"
-    print(x)
-```
+Misalkan, kita ingin membuat suatu fungsi yang tugasnya
+menentukan sebuah integer itu ganjil atau genap.
+Spesifikasinya sebagai berikut.
 
-Baris 2, 3, dan 4 dalam kode tersebut berfungsi untuk membuat string dengan karakter bintang
-sebanyak posisi baris, lalu menyimpannya di variabel `x`.
-Kita bisa memisahkan ketiga baris kode ini, memberinya nama sesuai tugasnya,
-dan membungkusnya menjadi sebuah fungsi. Perhatikan Kode 5.2.
+1. **Nama fungsi**: `genap`
+1. **Input**: integer
+1. **Output**: `True` atau `False` 
+1. **Fungsi**: 
+     - Jika input genap, output = `True`
+     - Jika input ganjil, output = `False`
 
-**Kode 5.2: Mendefinisikan fungsi `buat_bintang`**
-
-```python linenums="1"
-def buat_bintang(n):
-    x = ""
-    for i in range(n):
-        x = x + "*"
-    return x
-```
-
-Fungsi dapat dianggap sebagai sebuah mesin yang menerima input, memprosesnya,
-dan mengeluarkan output. Dalam fungsi `buat_bintang`:
-
-- Kata kunci `def` menandai awal definisi fungsi.
-- `buat_bintang` adalah nama fungsi.
-- `n` dalam tanda kurung adalah **parameter**, yaitu variabel yang menampung input.
-- Kata kunci `return` pada baris 5 menandai nilai yang dikeluarkan fungsi sebagai output.
-
-Dengan fungsi `buat_bintang`, kode pada Kode 5.1 menjadi lebih sederhana, rapi, dan mudah dibaca.
-Perhatikan Kode 5.3, terutama baris 7–9.
-
-**Kode 5.3: Kode 5.1 yang lebih mudah dibaca dengan bantuan fungsi**
+Untuk membuatnya, kita tuliskan kode berikut.
 
 ```python linenums="1"
-def buat_bintang(n):
-    x = ""
-    for i in range(n):
-        x = x + "*"
-    return x
-
-for i in range(1, 11):
-    bintang = buat_bintang(i)
-    print(bintang)
+def genap(angka):
+    if angka % 2 == 0:
+        return True
+    else:
+        return False
 ```
+
+Sintaks pembuatan suatu fungsi adalah sebagai berikut.
+
+- Diawali dengan Kata kunci `def`. 
+- `genap` adalah nama fungsi.
+- `angka` dalam tanda kurung adalah **parameter**, yaitu variabel yang menampung input.
+- Kata kunci `return` menandai nilai yang dikeluarkan fungsi sebagai output.
+
+![Definisi fungsi](https://raw.githubusercontent.com/ismailrusli/modul_alpro/refs/heads/master/gambar/def_fungsi.png)
+
+Setelah membuat fungsi `genap`, cara menggunakannya adalah sebagai berikut.
+Misal kita diminta membuat program yang outputnya seperti berikut.
+
+![Soal 1](https://raw.githubusercontent.com/ismailrusli/modul_alpro/refs/heads/master/gambar/soal1.png)
+
+Maka, kita buat programmnya seperti berikut.
+Pertama, kita buat dulu definisi fungsinya.
+
+```python linenums="1"
+def genap(angka):
+    if angka % 2 == 0:
+        return True
+    else:
+        return False
+```
+
+Selanjutnya, kita gunakan atau panggil fungsi tersebut
+di program utama kita.
+Di program berikut, fungsi `genap` kita panggil di baris 8.
+
+```python linenums="6"
+n = int(input("Masukkan angka: "))
+
+if genap(n):
+    kata = "genap"
+else:
+    kata = "ganjil"
+
+for i in range(1, n + 1):
+    print(i, kata)
+```
+
+Ekspresi `genap(n)` di baris 8 disederhanakan menjadi `True` jika `n` genap
+sehingga statemen `if genap(n):` berubah menjadi `if True:`.
 
 !!! Catatan
-    Fungsi harus **didefinisikan** terlebih dahulu sebelum **dipanggil**.
-    Definisi fungsi ditulis dengan kata kunci `def`.
-    Pemanggilan fungsi dilakukan dengan menuliskan nama fungsi diikuti tanda kurung berisi argumen.
+    Fungsi harus didefinisikan sebelum digunakan.
 
 ---
 
 **Coba**
 
-1. Jalankan Kode 5.3 dan amati outputnya.
+1. Buatlah fungsi yang spesifikasinya sebagai berikut.
 
-1. Lengkapi kode berikut sehingga program mencetak 5 bintang ke layar
-   dengan memanfaatkan fungsi `buat_bintang`.
+    - **Nama**: `kata`
+    - **Input**: integer
+    - **Output**: "ganjil" atau "genap"
+    - **Fungsi**:
+        - Jika input ganjil, output = "ganjil" (string). 
+        - Jika input genap, output = "genap" (string). 
 
-    **Kode 5.4: Lengkapi kode ini**
+1. Gunakan fungsi `kata` untuk membuat program yang outputnya seperti berikut.
 
-    ```python linenums="1"
-    def buat_bintang(n):
-        x = ""
-        for i in range(n):
-            x = x + "*"
-        return x
+![Soal 2](https://raw.githubusercontent.com/ismailrusli/modul_alpro/refs/heads/master/gambar/soal2.png)
 
-    # printlah bintang sebanyak 5 bintang
-    # dengan menggunakan fungsi buat_bintang
-    ```
+---
 
-1. Apa yang terjadi jika baris `return x` dihapus dari Kode 5.2? Coba jalankan dan amati.
+### **Fungsi dengan Banyak Parameter**
 
-    !!! Catatan
-        Fungsi tanpa `return` akan mengembalikan nilai `None`.
-        `None` adalah nilai khusus di Python yang berarti "tidak ada nilai".
+Masih ingat dengan istilah positional argument dan keyword argument di
+pembahasan [Modul 1](modul1.md#fungsi-print-dengan-banyak-argumen)?
+Saat menggunakan atau memanggil fungsi, kita dapat menuliskan argumennya sebagai
+berikut (baris 11 dan 12).
+
+```python linenums="1"
+def pitagoras(a, b):
+    c = a*a + b*b
+    print("parameter a = ", a)
+    print("parameter b = ", b)
+    print("sisi miring = ", c)
+    print()
+
+sisi_tegak = 5
+sisi_datar = 7
+sisi_miring = pitagoras(5, 7)
+sisi_miring = pitagoras(a = 5, b = 7)
+sisi_miring = pitagoras(b = 7, a = 5)
+```
+
+Angka 5 dan 7 di baris 11 dan 12 disebut sebagai keyword argument
+karena kita input dengan menuliskan parameternya (keyword).
+Sementara, di baris 10, angka 5 dan 7 kita inputkan sebagai positional argument
+karena kita tuliskan tanpa disertai parameternya (posisi menentukan
+bahwa 5 masuk ke `a` dan 7 masuk ke `b`).
+
+Kita bisa membuat argumen default untuk sebuah fungsi sehingga
+saat memanggil fungsi tersebut, kita tidak perlu menuliskan argumennya.
+
+```python linenums="1"
+def luas_segitiga(alas, tinggi, satuan = "cm2"):
+    luas = (alas * tinggi) / 2
+    print(luas, satuan)
+
+alas = 5
+tinggi = 3
+luas_segitiga(5, 3)
+luas_segitiga(5, 3, "m2")
+luas_segitiga(5, 3, satuan = "m2")
+```
+
+Di kode tersebut, `"cm2"` adalah default argument sehingga saat memanggil
+fungsi `luas_segitiga`, kita tidak perlu menginputkan argument-nya (baris 7).
+Masih ingat dengan parameter `end` dan `sep` dalam fungsi `print()`?
+Yap, betul, keduanya adalah parameter dengan default argument.
+Argumen defaultnya masing-masing adalah `end="\n"` dan `sep=" "`.
+
+
+**Coba**
+
+Buatlah fungsi dengan spesifikasi sebagai berikut.
+
+- **Nama**: `print_karakter`
+- **Input**: `n` (integer), karakter `s` (string)
+- **Output**: string
+- **Fungsi**: mengeluarkan string yang terdiri dari karakter `s` sebanyak `n`  
+
+Contoh, jika dipanggil `print_karakter(5, "%")` akan mengoutputkan data
+berupa string `"%%%%%"`.
+
+!!! Catatan
+    Fungsi ini mengoutputkan data dan bukan mencetaknya ke terminal.
+    Jika ingin mencetak ke terminal, outputnya harus disimpan dalam variabel
+    dan variabel ini diinputkan ke fungsi `print`.
 
 ---
 
 ### **Mengimpor Fungsi dari File Lain**
 
-Kita bisa menyimpan fungsi di file terpisah sehingga fungsi tersebut dapat digunakan
-oleh program lain. Misalkan kita simpan fungsi `buat_bintang` di file bernama `bintang.py`.
-Untuk menggunakannya dari file lain, fungsi tersebut harus diimpor terlebih dahulu.
-Perhatikan Kode 5.5.
+Kita bisa menulis definisi fungsi di file tersendiri sehingga fungsi tersebut dapat digunakan
+program lain. Misalkan kita simpan fungsi `print_karakter` di file bernama `karakter.py`.
+Untuk menggunakannya dari file lain, fungsi `print_karakter` harus diimpor terlebih dahulu.
 
-**Kode 5.5: Menggunakan `buat_bintang` dari file `bintang.py`**
+```python
+from karakter import print_karakter
 
-```python linenums="1"
-from bintang import buat_bintang
+cetak = print_karakter(5, "%")
+print(cetak)
 
-for i in range(1, 11):
-    bintang = buat_bintang(i)
-    print(bintang)
 ```
-
-Baris 1 menyatakan bahwa kita mengimpor fungsi `buat_bintang` dari file `bintang.py`.
-Setelah diimpor, fungsi `buat_bintang` dapat digunakan seperti biasa.
 
 !!! Catatan
     Sintaks untuk mengimpor fungsi dari sebuah file adalah:
@@ -148,79 +241,118 @@ Setelah diimpor, fungsi `buat_bintang` dapat digunakan seperti biasa.
     ```
     File yang diimpor harus berada di direktori yang sama dengan file yang mengimpor.
 
----
-
 **Coba**
 
-1. Buat file `bintang.py` berisi fungsi `buat_bintang` dari Kode 5.2.
-   Lalu buat file kedua dan tulis Kode 5.5 di dalamnya. Jalankan file kedua tersebut.
+Tuliskan dua fungsi berikut di satu file dengan nama `aritmatika.py`.
+```python linenums="1" title="aritmatika.py"
+def tambah(a, b):
+    hasil = a + b
+    return hasil
 
-1. Lengkapi program berikut sehingga outputnya seperti di bawah ini.
-   Gunakan fungsi `buat_bintang` yang diimpor dari `bintang.py`.
+def kali(a, b):
+    hasil = a * b
+    return hasil
+```
 
-    **Kode 5.6: Lengkapi kode ini**
+Buat file baru dengan nama `kalkulator.py`. Lalu lengkapi
+program penjumalahan berikut.
 
-    ```python linenums="1"
-    from bintang import buat_bintang
+```python linenums="1" title="kalkulator.py"
+angka1 = 14
+angka2 = 15
+angka3 = 21
+angka4 = 3
 
-    # tulis kode di sini
-    ```
+# gunakan fungsi tambah untuk menambahkan angka1 dan angka2
+# gunakan fungsi kali untuk mengalikan angka3 dan angka4
+# cetak kedua hasilnya ke terminal
 
-    Output yang diharapkan:
-    ```
-    *
-    **
-    ***
-    ****
-    ***
-    **
-    *
-    ```
+```
 
 ---
 
-### **Fungsi dengan Banyak Parameter**
-
-Kita dapat menambah fitur pada fungsi `buat_bintang` dengan membiarkan pemanggil
-memilih karakter yang akan dicetak. Dengan demikian, nama fungsinya kita ubah menjadi
-`buat_n_karakter`. Perhatikan Kode 5.7.
-
-**Kode 5.7: Fungsi `buat_n_karakter` dengan dua parameter**
+### **Variable Scopes**
+Salah satu aspek yang sangat penting dalam pembuatan fungsi adalah
+cakupan sebuah variabel. Sebagai contoh, tuliskan kode berikut
+dan jalankan.
 
 ```python linenums="1"
-def buat_n_karakter(karakter, n):
-    x = ""
-    for i in range(n):
-        x = x + karakter
-    return x
-
-print(buat_n_karakter("*", 2))
-print(buat_n_karakter("+", 4))
-print(buat_n_karakter("%", 6))
+def aneh():
+    print(x)
 ```
 
-Output dari Kode 5.7 adalah:
+Adakah yang aneh? Variabel `x` tidak pernah didefinisikan.
+Akan tetapi, ketika kita menjalankan program tersebut, tidak
+terjadi error. Kenapa?
+
+Bandingkan dengan program berikut.
+
+```python linenums="1"
+def aneh():
+    print(x)
+
+aneh()
 ```
-**
-++++
-%%%%%%
+Apakah program ini error?
+
+Bagaimana dengan program berikut.
+
+```python linenums="1"
+def aneh():
+    print(x)
+
+x = 10
+aneh()
 ```
 
-!!! Catatan
-    **Argumen** adalah nilai yang kita masukkan saat **memanggil** fungsi.
-    **Parameter** adalah variabel yang menampung argumen di dalam **definisi** fungsi.
-    Pada Kode 5.7, `"*"` dan `2` adalah argumen, sedangkan `karakter` dan `n` adalah parameter.
-    Urutan argumen saat memanggil fungsi harus sesuai dengan urutan parameter saat mendefinisikannya.
+Bagian kode yang merupakan definisi sebuah fungsi, tidak akan dieksekusi sebelum
+fungsi itu dipanggil. Oleh karena itu, variabel `x` yang belum didefinisikan
+tidak menyebabkan error, karena memang bagian kode tersebut belum dijalankan.
+
+Di kode terakhir, program tidak error karena definisi `x` ada di baris 4
+meskipun `x` pertama kali dituliskan di baris 2.
+Dengan kata lain, variabel `x` yang berasal dari luar fungsi dapat dibaca di dalam
+fungsi.
+
+!!! Penting
+    Variabel yang didefinisikan di luar fungsi, dapat dibaca di dalam fungsi.
+
+Sekarang, perhatikan kode berikut.
+
+```py linenums="1"
+def aneh():
+    x = 5
+
+print(x)
+```
+
+Apa yang terjadi saat program dijalankan?
+
+!!! Penting
+    Variabel yang didefinisikan di dalam fungsi, tidak dapat dibaca dari luar fungsi.
+
+Terakhir, coba perhatikan kode berikut.
+
+```py linenums="1"
+def aneh():
+    x = 5
+    print("nilai x di dalam fungsi = ", x)
+
+x = 10
+aneh()
+```
+
+!!! Penting
+    Variabel di luar fungsi, dapat dibaca dari dalam fungsi.
+    Akan tetapi, jika di dalam fungsi ada variabel dengan nama yang sama,
+    variabel di luar fungsi itu akan tertutupi (shadowed).
+    Hal ini disebut dengan variable shadowing.
 
 ---
 
-**Coba**
-
-1. Jalankan Kode 5.7 dan amati outputnya.
+## **Tugas Praktikum**
 
 1. Lengkapi kode berikut sehingga fungsi `kuadrat` mengembalikan nilai kuadrat dari argumennya.
-
-    **Kode 5.8: Lengkapi fungsi `kuadrat`**
 
     ```python linenums="1"
     def kuadrat(angka):
@@ -233,41 +365,19 @@ Output dari Kode 5.7 adalah:
     print(b)  # hasilnya 25
     ```
 
-1. Buat fungsi `luas_persegi_panjang(panjang, lebar)` yang mengembalikan luas persegi panjang.
-   Panggil fungsi tersebut dengan beberapa nilai berbeda dan cetak hasilnya.
-
----
-
-## **Tugas Praktikum**
-
-1. Buatlah fungsi yang menerima karakter dan jumlah karakter,
-   lalu mengembalikan string yang berisi rentetan karakter sebanyak jumlah yang dimasukkan.
-
-    **Kode 5.9: Kerangka kode untuk soal no. 1**
-
-    ```python linenums="1"
-    def nkarakter(karakter, jumlah):
-        # tulis kode di sini
-        pass
-
-    # contoh penggunaan
-    x = nkarakter("#", 5)
-
-    # perintah ini mencetak ##### ke layar
-    print(x)
-    ```
-
 1. Buatlah fungsi yang menerima sebuah string lalu mengembalikan jumlah karakter dalam string tersebut.
    **Jangan** gunakan fungsi bawaan `len()`.
 
-    **Kode 5.10: Kerangka kode untuk soal no. 2**
-
     ```python linenums="1"
     def jumlah_karakter(input_string):
-        n_karakter = 0
-        # tulis kode di sini
+        n = 0
+        for huruf in input_string:
+            if huruf = " ":
+                # break atau continue?
+                
+            n = # tambahkan kode di sini
 
-        return n_karakter
+        return n
 
     # contoh penggunaan
     x = jumlah_karakter("multimedia")
@@ -276,85 +386,61 @@ Output dari Kode 5.7 adalah:
     print(x)
     ```
 
-1. Sebuah robot berada di koordinat (0, 0). Buatlah 4 fungsi:
+1. Sebuah robot berada di koordinat x = 0 dan y = 0. Buatlah 4 fungsi:
    `maju()` untuk menambah x satu satuan, `mundur()` untuk mengurangi x satu satuan,
-   `belok_kanan()` untuk menambah y satu satuan, dan `belok_kiri()` untuk mengurangi y satu satuan.
+   `kanan()` untuk menambah y satu satuan, dan `kiri()` untuk mengurangi y satu satuan.
    Gunakan kerangka program berikut.
 
-    **Kode 5.11: Kerangka kode untuk soal no. 3**
-
     ```python linenums="1"
-    def maju(posisi):
-        # kode di sini
-        pass
+    def maju(x, y):
+        x = x + 1
+        y = y
+        return x, y
 
-    def mundur(posisi):
+    def mundur(x, y):
         # kode di sini
-        pass
 
-    def belok_kanan(posisi):
+    def kanan(x, y):
         # kode di sini
-        pass
 
-    def belok_kiri(posisi):
+    def kiri(x, y):
         # kode di sini
-        pass
 
     selesai = False
-    posisi_robot = (0, 0)
+    x = 0
+    y = 0
 
     while selesai == False:
         print("---------------")
         print("Pilih perintah untuk robot.")
         print("1. maju")
         print("2. mundur")
-        print("3. belok kanan")
-        print("4. belok kiri")
+        print("3. kanan")
+        print("4. kiri")
         print("5. selesai")
         print("---------------")
         perintah = int(input("Masukkan perintah: "))
 
         if perintah == 1:
-            posisi_robot = maju(posisi_robot)
-            print(posisi_robot)
+            x, y = maju(x, y)
+            print(x, y)
         elif perintah == 2:
-            posisi_robot = mundur(posisi_robot)
-            print(posisi_robot)
+            x, y = mundur(x, y)
+            print(x, y)
         elif perintah == 3:
-            posisi_robot = belok_kanan(posisi_robot)
-            print(posisi_robot)
+            x, y = kanan(x, y)
+            print(x, y)
         elif perintah == 4:
-            posisi_robot = belok_kiri(posisi_robot)
-            print(posisi_robot)
+            x, y = kiri(x, y)
+            print(x, y)
         elif perintah == 5:
             selesai = True
-            print(posisi_robot)
+            print(x, y)
     ```
 
-1. Ubahlah Kode 5.11. Jadikan keempat fungsi menjadi **satu fungsi** bernama `gerak_robot(posisi, arah)`
-   yang menerima posisi robot dan arah gerak sebagai argumen.
-
-1. Fungsi rekursif adalah fungsi yang memanggil dirinya sendiri.
-   Perhatikan Kode 5.12. Menurut kamu, apa yang akan terjadi jika kode ini dijalankan?
-   Coba jalankan dan amati.
-
-    **Kode 5.12: Fungsi rekursif**
-
-    ```python linenums="1"
-    def rekursif():
-        print("x")
-        rekursif()
-
-    rekursif()
-    ```
-
-    !!! Catatan
-        Python membatasi kedalaman rekursi untuk mencegah program menghabiskan memori.
-        Saat batas tersebut tercapai, Python akan mengeluarkan error `RecursionError`.
-
-1. Buat program untuk menyimpan data nama dan nilai mahasiswa.
-   Simpan data tersebut ke dalam sebuah file teks, dengan setiap baris berisi satu data
-   dalam format `nama,nilai`.
+1. Ubahlah kode di nomor sebelumnya. Jadikan keempat fungsi menjadi **satu fungsi**
+    bernama `gerak(x, y, arah)` yang menerima posisi robot dan arah gerak sebagai argumen.
+    Misal, cara memanggilnya adalah `gerak(x, y, "maju")`
 
 1. Buat program kalkulator dengan menu sebagai berikut.
    Setiap operasi dibuat sebagai fungsi tersendiri.
@@ -366,11 +452,3 @@ Output dari Kode 5.7 adalah:
     (d) Bagi
     (e) Keluar
     ```
-
-1. Buat program tebak kata dengan ketentuan berikut.
-    - Buat file teks berisi minimal 20 kata (satu kata per baris).
-    - Baca file tersebut dan simpan kata-katanya ke dalam sebuah list.
-    - Komputer memilih satu kata secara acak dari list.
-    - User menebak huruf-huruf dalam kata tersebut, maksimal 10 kali tebakan.
-    - Setiap kali huruf berhasil ditebak, tampilkan kata dengan huruf-huruf
-      yang sudah ditebak di posisi yang benar (huruf yang belum ditebak diganti `_`).
