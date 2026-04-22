@@ -36,13 +36,13 @@ yaitu `None`.
 
 !!! Catatan
     Di gambar terlihat ada yang namanya `side effect`.
-    Ini adalah efek yang dilakukan sebuah fungsi ketika mengubah atau melakukan sesuatu
+    Ini adalah efek yang disebabkan fungsi ketika mengubah atau melakukan sesuatu
     di luar dirinya. Dalam hal ini, fungsi `print()` mencetak string ke terminal
     
 Sebuah fungsi, dapat menerima nol, satu, atau lebih dari satu input. 
 Sementara, sebuah fungsi hanya dapat mengeluarkan satu output.
 Jika kita ingin sebuah fungsi mengeluarkan beberapa nilai,
-nilai-nilai tersebut harus kita bungkus dalam data yang bisa menampung banyak data, seperti
+nilai-nilai tersebut harus kita bungkus dalam data yang bisa menampung banyak nilai, seperti
 menggunakan list.
 
 Secara umum, untuk menggunakan sebuah fungsi, kita tuliskan seperti berikut.
