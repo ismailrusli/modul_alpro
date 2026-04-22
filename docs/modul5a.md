@@ -87,7 +87,7 @@ def genap(angka):
 
 Sintaks pembuatan suatu fungsi adalah sebagai berikut.
 
-- Diawali dengan Kata kunci `def`. 
+- Diawali dengan kata kunci `def`. 
 - `genap` adalah nama fungsi.
 - `angka` dalam tanda kurung adalah **parameter**, yaitu variabel yang menampung input.
 - Kata kunci `return` menandai nilai yang dikeluarkan fungsi sebagai output.
