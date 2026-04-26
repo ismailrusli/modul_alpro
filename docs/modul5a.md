@@ -255,7 +255,7 @@ def kali(a, b):
 ```
 
 Buat file baru dengan nama `kalkulator.py`. Lalu lengkapi
-program penjumalahan berikut.
+program penjumlahan berikut.
 
 ```python linenums="1" title="kalkulator.py"
 angka1 = 14
