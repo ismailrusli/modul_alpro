@@ -372,7 +372,7 @@ aneh()
     def jumlah_karakter(input_string):
         n = 0
         for huruf in input_string:
-            if huruf = " ":
+            if huruf == " ":
                 # break atau continue?
                 
             n = # tambahkan kode di sini
