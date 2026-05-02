@@ -3,30 +3,23 @@
 ![Status](https://img.shields.io/badge/Status-On_Progress-yellow?style=flat-square)
 <!-- ![Status](https://img.shields.io/badge/Status-Finish-brightgreen?style=flat-square) -->
 
-## 6.1 Capaian
+## **Capaian Pembelajaran Mata Kuliah**
 
-Mampu menggunakan elemen-elemen dasar pemrograman, seperti inisialisasi variabel untuk berbagai macam tipe data, menggunakan percabangan, menggunakan pengulangan, membuat dan menggunakan fungsi, serta membuat dan menggunakan tipe data bentukan sendiri.
+Mampu menggunakan elemen-elemen pemrograman, yaitu fungsi, I/O, dan tipe data buatan sendiri untuk membuat program sederhana berbasis teks.
 
-## 6.2 Alat dan Bahan
 
-1. Laptop/komputer
-2. Internet
-3. Python 3.8+
-4. Visual Studio Code (atau editor sejenis)
-
-## 6.3 Materi
+## **Materi**
 
 Sebuah program, kadang butuh menyimpan data dalam bentuk file. Beberapa aktivitas terkait file di antaranya adalah cek keberadaan file, membuat/menghapus file, membuka/menutup file, membaca data file, dan menulis data ke file.
 
----
+### **Cek File**
 
-### 6.3.1 Cek File
+Untuk menangani file, tentu kita harus memastikan bahwa file tersebut ada.
+Misalkan kita ingin cek bahwa di folder yang sama dengan folder source code kita,
+terdapat file dengan nama `file.txt`.
+Untuk itu, kita tuliskan kode berikut.
 
-Untuk menangani file, tentu kita harus memastikan bahwa file tersebut ada. Kode 6.1 menunjukkan kode untuk cek keberadaan `file.txt` di folder yang sama dengan folder kode python-nya.
-
-**Kode 6.1: Cek keberadaan file**
-
-```python
+```py linenums="1" 
 import os
 
 if os.path.exists("file.txt"):
@@ -35,13 +28,12 @@ else:
     print("file.txt tidak ada")
 ```
 
----
+1. `import os` artinya kita memanggil modul `os`. Modul inilah yang memiliki
+    fungsi-fungsi yang akan kita gunakan untuk berinteraksi dengan file.
+1. `os.path.exist("file.txt")` artinya kita memanggil fungsi `exist` yang ada di
+    modul os
 
-### 6.3.2 Membuat/Menghapus File
-
-Untuk membuat file, perhatikan Kode 6.2.
-
-**Kode 6.2: buat-file.py**
+### **Membuat/Menghapus File**
 
 ```python
 import os
@@ -64,9 +56,7 @@ else:
     print("file.txt tidak ada")
 ```
 
-Untuk menghapus file, perhatikan Kode 6.3.
-
-**Kode 6.3: hapus-file.py**
+Untuk menghapus file, perhatikan Kode berikut.
 
 ```python
 import os
@@ -78,13 +68,9 @@ else:
     print("file.txt tidak ada")
 ```
 
----
-
-### 6.3.3 Membuka/Menutup File
+### **Membuka/Menutup File**
 
 Untuk membuka sebuah file, kita tuliskan kode seperti yang ditampilkan di Kode 6.4.
-
-**Kode 6.4: buka-file.py**
 
 ```python
 import os
@@ -100,8 +86,6 @@ else:
 
 Setelah suatu file dibuka, dan kita selesai bekerja dengan file tersebut (misalnya selesai menulis atau membaca file), ada baiknya kita menutup file tersebut agar dibersihkan dari memori. Cara menutup file adalah dengan fungsi `close`. Perhatikan Kode 6.5.
 
-**Kode 6.5: tutup-file.py**
-
 ```python
 import os
 
@@ -115,8 +99,6 @@ else:
 ```
 
 Fungsi `open` digunakan baik untuk membuka file maupun untuk membuat file. Beberapa variasinya adalah seperti yang ditunjukkan di Kode 6.6.
-
-**Kode 6.6: Variasi penggunaan perintah open**
 
 ```python
 namafile = "file.txt"
@@ -138,13 +120,9 @@ f = open(namafile, 'r')
 f = open(namafile, 'x')
 ```
 
----
-
-### 6.3.4 Membaca File
+### **Membaca File**
 
 Setelah dibuka, kita tentu ingin membaca isi file. Misalkan saya memiliki file dengan nama `file.txt` yang isinya seperti di Kode 6.7.
-
-**Kode 6.7: file.txt**
 
 ```
 ini adalah file
@@ -152,8 +130,6 @@ file ini berisi teks
 ```
 
 Cara membuka dan membaca file tersebut adalah seperti yang ditunjukkan di Kode 6.8. Hasilnya dapat dilihat di Kode 6.9.
-
-**Kode 6.8: baca-file.py**
 
 ```python
 import os
@@ -170,8 +146,6 @@ else:
     print(namafile, "tidak ada")
 ```
 
-**Kode 6.9: Hasil dari baca-file.py**
-
 ```
 ini adalah file
 
@@ -179,8 +153,6 @@ file ini isinya teks
 ```
 
 Fungsi `readline` di Kode 6.8 membaca isi file setiap baris. Setelah dibaca, isi baris tersebut disimpan dalam variabel `text1`. Baris yang disimpan di `text1`, mengandung karakter newline (baris baru). Jika kita gunakan fungsi `print(text1)`, kita jadi memiliki 2 karakter newline, yaitu dari isi file yang dibaca dan dari fungsi `print`. Itulah kenapa hasil di Kode 6.9 terdapat baris kosong. Untuk menghindarinya, kita ingin menghilangkan karakter newline di setiap baris yang kita baca dari file. Caranya adalah dengan menggunakan fungsi `strip()`. Perhatikan Kode 6.10.
-
-**Kode 6.10: baca-file-strip.py**
 
 ```python
 import os
@@ -199,8 +171,6 @@ else:
 
 Kode 6.10 tidaklah efisien karena kita terus-terusan menuliskan fungsi `readline` sebanyak baris yang ingin kita baca. Bagaimana jika kita ingin membaca semua baris dalam file tapi kita tidak tahu berapa baris ada di dalam file tersebut? Untuk itu, kita sebaiknya menggunakan perulangan seperti di Kode 6.11.
 
-**Kode 6.11: baca-file-loop.py**
-
 ```python
 import os
 
@@ -217,8 +187,6 @@ else:
 
 Jika kita ingin membagi setiap baris yang dibaca dari suatu file ke dalam kata-kata, kita bisa gunakan perintah `split`. Perhatikan Kode 6.12 dan hasilnya di Kode 6.13.
 
-**Kode 6.12: split-baris.py**
-
 ```python
 import os
 
@@ -233,19 +201,15 @@ else:
     print(namafile, "tidak ada")
 ```
 
-**Kode 6.13: Hasil dari split-baris.py**
-
 ```
 ['ini', 'adalah', 'file']
 ```
 
 ---
 
-### 6.3.5 Menulis File
+### **Menulis File**
 
 Untuk menulis teks ke file, kita bisa menggunakan fungsi `open` dengan parameter `w` atau `a`. Gunakan `w` jika ingin menimpa isi file dan gunakan `a` jika ingin menambahkan baris ke file. Perhatikan Kode 6.14.
-
-**Kode 6.14: tulis-file.py**
 
 ```python
 import os
