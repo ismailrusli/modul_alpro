@@ -422,7 +422,7 @@ data_baru = {
 
 
 with open('data.json', 'r') as f:
-    data = [json.load(file)]  # kita ubah menjadi list
+    data = [json.load(f)]  # kita ubah menjadi list
 
 data.append(data_baru)  # append digunakan untuk menambah data di list
 
