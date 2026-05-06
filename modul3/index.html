@@ -1,0 +1,1203 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+        <link rel="canonical" href="https://ismailrusli.github.io/modul_alpro/modul3/">
+      
+      
+        <link rel="prev" href="../modul2/">
+      
+      
+        <link rel="next" href="../modul4/">
+      
+      
+        
+      
+      
+      <link rel="icon" href="../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.6">
+    
+    
+      
+        <title>Modul 3: Input dan Percabangan - Modul Algoritma dan Pemrograman</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.484c7ddc.min.css">
+      
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.ab4e12ef.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#modul-3-input-dan-percabangan" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href=".." title="Modul Algoritma dan Pemrograman" class="md-header__button md-logo" aria-label="Modul Algoritma dan Pemrograman" data-md-component="logo">
+      
+  <img src="../assets/logo.png" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Modul Algoritma dan Pemrograman
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Modul 3: Input dan Percabangan
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12s-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="Modul Algoritma dan Pemrograman" class="md-nav__button md-logo" aria-label="Modul Algoritma dan Pemrograman" data-md-component="logo">
+      
+  <img src="../assets/logo.png" alt="logo">
+
+    </a>
+    Modul Algoritma dan Pemrograman
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../modul0/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Modul 0: Instalasi
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../modul1/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Modul 1: Halo, Dunia!
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../modul2/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Modul 2: Literal dan Variabel
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Modul 3: Input dan Percabangan
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Modul 3: Input dan Percabangan
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#capaian-pembelajaran-mata-kuliah" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Capaian Pembelajaran Mata Kuliah
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#materi" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Materi
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Materi">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#input" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        input
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#percabangan" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Percabangan
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#tugas-praktikum" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Tugas Praktikum
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../modul4/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Modul 4: Iterabel dan Pengulangan
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../algoritma1/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Modul A1: Latihan Asesmen 1
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../modul5a/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Modul 5: Fungsi
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../modul6a/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Modul 6: File
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../modul7/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Modul 7: Tipe Data Kustom
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../modul8/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Modul 8: Modul Open Source
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#capaian-pembelajaran-mata-kuliah" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Capaian Pembelajaran Mata Kuliah
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#materi" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Materi
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Materi">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#input" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        input
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#percabangan" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Percabangan
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#tugas-praktikum" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Tugas Praktikum
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<h1 id="modul-3-input-dan-percabangan">Modul 3: Input dan Percabangan</h1>
+<!-- ![Status](https://img.shields.io/badge/Status-On_Progress-yellow?style=flat-square) -->
+<p><img alt="Status" src="https://img.shields.io/badge/Status-Finish-brightgreen?style=flat-square" /></p>
+<h2 id="capaian-pembelajaran-mata-kuliah"><strong>Capaian Pembelajaran Mata Kuliah</strong></h2>
+<p>Mampu menggunakan elemen-elemen pemrograman, yaitu variabel,
+percabangan, dan pengulangan untuk membuat algoritma sederhana.</p>
+<hr />
+<h2 id="materi"><strong>Materi</strong></h2>
+<h3 id="input"><strong>input</strong></h3>
+<p>Sejauh ini kita sudah mengenal tiga fungsi.
+yaitu, <code>print</code>, <code>type</code>, dan <code>round</code>.
+Sekarang, kita belajar satu fungsi lagi, yaitu <code>input</code>.
+Jika fungsi <code>print</code> mengirimkan data ke terminal,
+<code>input</code> menerima data dari user lewat terminal.</p>
+<p><br> <br>
+<img alt="If blok " src="https://raw.githubusercontent.com/ismailrusli/modul_alpro/refs/heads/master/gambar/input-print.png" />
+<br> <br></p>
+<p><strong>Coba</strong></p>
+<ol>
+<li>
+<p>Ketikkan program berikut lalu jalankan. Saat dijalankan, apa
+yang terjadi?
+<div class="language-python highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="nb">input</span><span class="p">()</span> 
+</span></code></pre></div></p>
+<div class="admonition catatan">
+<p class="admonition-title">Catatan</p>
+<p>Setelah program dijalankan, program akan berhenti untuk menunggu
+sesuatu diinputkan user. Setelah diinputkan, tekan Enter untuk
+mengirimkan sesuatu yang diinputkan tersebut ke program.</p>
+</div>
+</li>
+<li>
+<p>Fungsi <code>input</code> dapat menerima 1 argumen. Ketikkan program berikut lalu jalankan.
+Apa yang terjadi?
+<div class="language-python highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="nb">input</span><span class="p">(</span><span class="s2">&quot;Siapa nama kamu?&quot;</span><span class="p">)</span> 
+</span></code></pre></div></p>
+</li>
+<li>
+<p>Apa beda kode berikut dengan kode sebelumnya?
+<div class="language-python highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="nb">input</span><span class="p">(</span><span class="s2">&quot;Siapa nama kamu? &quot;</span><span class="p">)</span> 
+</span></code></pre></div></p>
+</li>
+<li>
+<p>Agar data yang diketikkan user tidak hilang, 
+    harus disimpan di sebuah  variabel.
+<div class="language-python highlight"><pre><span></span><code><span id="__span-3-1"><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a><span class="n">nama</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s2">&quot;Siapa nama kamu? &quot;</span><span class="p">)</span> 
+</span><span id="__span-3-2"><a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a><span class="nb">print</span><span class="p">(</span><span class="n">nama</span><span class="p">)</span>
+</span></code></pre></div></p>
+<div class="admonition catatan">
+<p class="admonition-title">Catatan</p>
+<p>Setelah user memasukkan nama dan menekan Enter, program
+menerima nama tersebut dan dikonversi menjadi sebuah string.</p>
+</div>
+<div class="admonition catatan">
+<p class="admonition-title">Catatan</p>
+<p>Potongan kode berikut, <code>input("Siapa nama kamu? ")</code>, adalah sebuah
+ekspresi. Dengan demikian, baris pertama valid karena mengikuti sintaks
+assignment, yaitu <code>&lt;variabel&gt; = &lt;ekspresi&gt;</code>.
+Ekspresi tersebut dapat disederhanakan menjadi sebuah value.
+Apa valuenya? String yang diketikkan user.</p>
+</div>
+<div class="admonition cek">
+<p class="admonition-title">Cek</p>
+<p>Cara menulis (sintaks) fungsi <code>print</code> dengan satu argumen adalah <code>print(&lt;ekspresi&gt;)</code>.
+Oleh karena <code>input("Siapa nama kamu? ")</code> adalah suatu ekspresi, berarti kode berikut
+valid. Coba cek!
+<div class="language-python highlight"><pre><span></span><code><span id="__span-4-1"><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a><span class="nb">print</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="s2">&quot;Siapa nama kamu?&quot;</span><span class="p">))</span>
+</span></code></pre></div></p>
+</div>
+</li>
+<li>
+<p>Coba jalankan kode berikut. Apa yang terjadi?
+<div class="language-python highlight"><pre><span></span><code><span id="__span-5-1"><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a><span class="n">nama</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s2">&quot;Siapa nama kamu? &quot;</span><span class="p">)</span>
+</span><span id="__span-5-2"><a id="__codelineno-5-2" name="__codelineno-5-2" href="#__codelineno-5-2"></a><span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Halo&quot;</span><span class="p">,</span> <span class="n">nama</span><span class="p">,</span> <span class="s2">&quot;Senang bertemu dengan kamu!&quot;</span><span class="p">)</span>
+</span></code></pre></div></p>
+</li>
+<li>
+<p>Coba jalankan kode berikut. Apa yang terjadi?
+<div class="language-python highlight"><pre><span></span><code><span id="__span-6-1"><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a><span class="n">angka1</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s2">&quot;Masukkan angka ke-1: &quot;</span><span class="p">)</span>
+</span><span id="__span-6-2"><a id="__codelineno-6-2" name="__codelineno-6-2" href="#__codelineno-6-2"></a><span class="n">angka2</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s2">&quot;Masukkan angka ke-2: &quot;</span><span class="p">)</span>
+</span><span id="__span-6-3"><a id="__codelineno-6-3" name="__codelineno-6-3" href="#__codelineno-6-3"></a><span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Jumlah&quot;</span><span class="p">,</span> <span class="n">angka1</span><span class="p">,</span> <span class="s2">&quot;dan&quot;</span><span class="p">,</span> <span class="n">angka2</span><span class="p">,</span> <span class="s2">&quot;adalah&quot;</span><span class="p">,</span> <span class="n">angka1</span> <span class="o">+</span> <span class="n">angka2</span><span class="p">)</span>
+</span></code></pre></div></p>
+<div class="admonition catatan">
+<p class="admonition-title">Catatan</p>
+<p>Ekspresi <code>input("Masukkan angka ke-1: ")</code> selalu disederhanakan menjadi sebuah string.
+Jadi, setelah user mengetikkan angka 2, ekspresi tersebut berubah
+menjadi nilai "2" (string) bukan 2 (integer).<br />
+Dengan demikian, ketika dijumlahkan, terjadi penjumlahan string.
+Untuk mengubah input user menjadi integer, gunakan fungsi typecasting <code>int()</code>.</p>
+</div>
+</li>
+<li>
+<p>Coba jalankan kode berikut. Apa yang terjadi?
+<div class="language-python highlight"><pre><span></span><code><span id="__span-7-1"><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a><span class="n">angka1</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s2">&quot;Masukkan angka ke-1: &quot;</span><span class="p">)</span>
+</span><span id="__span-7-2"><a id="__codelineno-7-2" name="__codelineno-7-2" href="#__codelineno-7-2"></a><span class="n">angka1</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="n">angka1</span><span class="p">)</span>
+</span><span id="__span-7-3"><a id="__codelineno-7-3" name="__codelineno-7-3" href="#__codelineno-7-3"></a>
+</span><span id="__span-7-4"><a id="__codelineno-7-4" name="__codelineno-7-4" href="#__codelineno-7-4"></a><span class="n">angka2</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s2">&quot;Masukkan angka ke-2: &quot;</span><span class="p">)</span>
+</span><span id="__span-7-5"><a id="__codelineno-7-5" name="__codelineno-7-5" href="#__codelineno-7-5"></a><span class="n">angka2</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="n">angka2</span><span class="p">)</span>
+</span><span id="__span-7-6"><a id="__codelineno-7-6" name="__codelineno-7-6" href="#__codelineno-7-6"></a>
+</span><span id="__span-7-7"><a id="__codelineno-7-7" name="__codelineno-7-7" href="#__codelineno-7-7"></a><span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Jumlah&quot;</span><span class="p">,</span> <span class="n">angka1</span><span class="p">,</span> <span class="s2">&quot;dan&quot;</span><span class="p">,</span> <span class="n">angka2</span><span class="p">,</span> <span class="s2">&quot;adalah&quot;</span><span class="p">,</span> <span class="n">angka1</span> <span class="o">+</span> <span class="n">angka2</span><span class="p">)</span>
+</span></code></pre></div></p>
+<div class="admonition cek">
+<p class="admonition-title">Cek</p>
+<p>Sintaks untuk fungsi <code>int()</code> adalah <code>int(&lt;ekspresi&gt;)</code>.
+Oleh karena <code>input("Masukkan angka ke-1: ")</code> adalah ekspresi, kode berikut valid.
+Coba cek!
+<div class="language-python highlight"><pre><span></span><code><span id="__span-8-1"><a id="__codelineno-8-1" name="__codelineno-8-1" href="#__codelineno-8-1"></a><span class="n">angka1</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="s2">&quot;Masukkan angka ke-1: &quot;</span><span class="p">))</span>
+</span></code></pre></div></p>
+</div>
+</li>
+<li>
+<p>Apa bedanya program penjumlahan angka sebelumnya, dengan program berikut?
+<div class="language-python highlight"><pre><span></span><code><span id="__span-9-1"><a id="__codelineno-9-1" name="__codelineno-9-1" href="#__codelineno-9-1"></a><span class="n">angka1</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s2">&quot;Masukkan angka ke-1: &quot;</span><span class="p">)</span>
+</span><span id="__span-9-2"><a id="__codelineno-9-2" name="__codelineno-9-2" href="#__codelineno-9-2"></a><span class="n">angka2</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s2">&quot;Masukkan angka ke-2: &quot;</span><span class="p">)</span>
+</span><span id="__span-9-3"><a id="__codelineno-9-3" name="__codelineno-9-3" href="#__codelineno-9-3"></a>
+</span><span id="__span-9-4"><a id="__codelineno-9-4" name="__codelineno-9-4" href="#__codelineno-9-4"></a><span class="n">angka1</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="n">angka1</span><span class="p">)</span>
+</span><span id="__span-9-5"><a id="__codelineno-9-5" name="__codelineno-9-5" href="#__codelineno-9-5"></a><span class="n">angka2</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="n">angka2</span><span class="p">)</span>
+</span><span id="__span-9-6"><a id="__codelineno-9-6" name="__codelineno-9-6" href="#__codelineno-9-6"></a>
+</span><span id="__span-9-7"><a id="__codelineno-9-7" name="__codelineno-9-7" href="#__codelineno-9-7"></a><span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Jumlah&quot;</span><span class="p">,</span> <span class="n">angka1</span><span class="p">,</span> <span class="s2">&quot;dan&quot;</span><span class="p">,</span> <span class="n">angka2</span><span class="p">,</span> <span class="s2">&quot;adalah&quot;</span><span class="p">,</span> <span class="n">angka1</span> <span class="o">+</span> <span class="n">angka2</span><span class="p">)</span>
+</span></code></pre></div></p>
+<div class="admonition catatan">
+<p class="admonition-title">Catatan</p>
+<p>Ingat, program adalah urutan perintah-perintah.
+Urutan perintah penting ketika urutan itu mengandung hubungan logis.
+Perintah dapat ditukar-tukar urutannya selama hubungan logisnya tetap sama.</p>
+</div>
+</li>
+<li>
+<p>Coba program berikut. Isi panjang dengan 2.5 dan lebar dengan 4.1. Apa yang terjadi? Apa fungsi <code>float()</code>?
+<div class="language-python highlight"><pre><span></span><code><span id="__span-10-1"><a id="__codelineno-10-1" name="__codelineno-10-1" href="#__codelineno-10-1"></a><span class="n">panjang_kotak</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s2">&quot;Berapakah panjang kotak? &quot;</span><span class="p">)</span>
+</span><span id="__span-10-2"><a id="__codelineno-10-2" name="__codelineno-10-2" href="#__codelineno-10-2"></a><span class="n">panjang_kotak</span> <span class="o">=</span> <span class="nb">float</span><span class="p">(</span><span class="n">panjang_kotak</span><span class="p">)</span>
+</span><span id="__span-10-3"><a id="__codelineno-10-3" name="__codelineno-10-3" href="#__codelineno-10-3"></a>
+</span><span id="__span-10-4"><a id="__codelineno-10-4" name="__codelineno-10-4" href="#__codelineno-10-4"></a><span class="n">lebar_kotak</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s2">&quot;Berapakah lebar kota? &quot;</span><span class="p">)</span>
+</span><span id="__span-10-5"><a id="__codelineno-10-5" name="__codelineno-10-5" href="#__codelineno-10-5"></a><span class="n">lebar_kotak</span> <span class="o">=</span> <span class="nb">float</span><span class="p">(</span><span class="n">lebar_kotak</span><span class="p">)</span>
+</span><span id="__span-10-6"><a id="__codelineno-10-6" name="__codelineno-10-6" href="#__codelineno-10-6"></a>
+</span><span id="__span-10-7"><a id="__codelineno-10-7" name="__codelineno-10-7" href="#__codelineno-10-7"></a><span class="n">luas_kotak</span> <span class="o">=</span> <span class="n">panjang_kotak</span> <span class="o">*</span> <span class="n">lebar_kotak</span>
+</span><span id="__span-10-8"><a id="__codelineno-10-8" name="__codelineno-10-8" href="#__codelineno-10-8"></a>
+</span><span id="__span-10-9"><a id="__codelineno-10-9" name="__codelineno-10-9" href="#__codelineno-10-9"></a><span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Luas kotak adalah&quot;</span><span class="p">,</span> <span class="n">luas_kotak</span><span class="p">)</span>
+</span></code></pre></div></p>
+</li>
+<li>
+<p>Selain <code>int()</code> dan <code>float()</code>, Python juga memiliki <code>str()</code>,
+yaitu suatu fungsi untuk mengubah data menjadi string.
+Apa perbedaan program berikut dengan program sebelumnya?
+<div class="language-python highlight"><pre><span></span><code><span id="__span-11-1"><a id="__codelineno-11-1" name="__codelineno-11-1" href="#__codelineno-11-1"></a><span class="n">panjang_kotak</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s2">&quot;Berapakah panjang kotak? &quot;</span><span class="p">)</span>
+</span><span id="__span-11-2"><a id="__codelineno-11-2" name="__codelineno-11-2" href="#__codelineno-11-2"></a><span class="n">panjang_kotak</span> <span class="o">=</span> <span class="nb">float</span><span class="p">(</span><span class="n">panjang_kotak</span><span class="p">)</span>
+</span><span id="__span-11-3"><a id="__codelineno-11-3" name="__codelineno-11-3" href="#__codelineno-11-3"></a>
+</span><span id="__span-11-4"><a id="__codelineno-11-4" name="__codelineno-11-4" href="#__codelineno-11-4"></a><span class="n">lebar_kotak</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s2">&quot;Berapakah lebar kota? &quot;</span><span class="p">)</span>
+</span><span id="__span-11-5"><a id="__codelineno-11-5" name="__codelineno-11-5" href="#__codelineno-11-5"></a><span class="n">lebar_kotak</span> <span class="o">=</span> <span class="nb">float</span><span class="p">(</span><span class="n">lebar_kotak</span><span class="p">)</span>
+</span><span id="__span-11-6"><a id="__codelineno-11-6" name="__codelineno-11-6" href="#__codelineno-11-6"></a>
+</span><span id="__span-11-7"><a id="__codelineno-11-7" name="__codelineno-11-7" href="#__codelineno-11-7"></a><span class="n">luas_kotak</span> <span class="o">=</span> <span class="n">panjang_kotak</span> <span class="o">*</span> <span class="n">lebar_kotak</span>
+</span><span id="__span-11-8"><a id="__codelineno-11-8" name="__codelineno-11-8" href="#__codelineno-11-8"></a>
+</span><span id="__span-11-9"><a id="__codelineno-11-9" name="__codelineno-11-9" href="#__codelineno-11-9"></a><span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Luas kotak adalah &quot;</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">luas_kotak</span><span class="p">))</span>
+</span></code></pre></div></p>
+</li>
+</ol>
+<hr />
+<h3 id="percabangan"><strong>Percabangan</strong></h3>
+<p>Misalkan kita diminta untuk membuat program seperti berikut.</p>
+<ol>
+<li>
+<p>User diminta input kata <code>pagi</code>. 
+    <div class="language-python highlight"><pre><span></span><code><span id="__span-12-1"><a id="__codelineno-12-1" name="__codelineno-12-1" href="#__codelineno-12-1"></a><span class="n">waktu</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s2">&quot;Masukkan kata pagi: &quot;</span><span class="p">)</span>
+</span></code></pre></div></p>
+</li>
+<li>
+<p>Jika user memasukkan kata <code>pagi</code>, program mencetak <code>Selamat datang</code>.
+Jika tidak, program tidak mencetak apa-apa dan selesai.
+    <div class="language-text highlight"><pre><span></span><code><span id="__span-13-1"><a id="__codelineno-13-1" name="__codelineno-13-1" href="#__codelineno-13-1"></a>Untuk membuat dua pilihan seperti ini, kita menggunakan
+</span><span id="__span-13-2"><a id="__codelineno-13-2" name="__codelineno-13-2" href="#__codelineno-13-2"></a>percabangan.
+</span></code></pre></div></p>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-14-1"><a id="__codelineno-14-1" name="__codelineno-14-1" href="#__codelineno-14-1"></a><span class="k">if</span> <span class="p">(</span><span class="n">waktu</span> <span class="o">==</span> <span class="s2">&quot;pagi&quot;</span><span class="p">):</span>
+</span><span id="__span-14-2"><a id="__codelineno-14-2" name="__codelineno-14-2" href="#__codelineno-14-2"></a>    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Selamat datang&quot;</span><span class="p">)</span>
+</span><span id="__span-14-3"><a id="__codelineno-14-3" name="__codelineno-14-3" href="#__codelineno-14-3"></a><span class="k">else</span><span class="p">:</span>
+</span><span id="__span-14-4"><a id="__codelineno-14-4" name="__codelineno-14-4" href="#__codelineno-14-4"></a>    <span class="nb">print</span><span class="p">()</span>
+</span></code></pre></div>
+</li>
+</ol>
+<p>Sintaks dari percabangan adalah sebagai berikut.</p>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-15-1"><a id="__codelineno-15-1" name="__codelineno-15-1" href="#__codelineno-15-1"></a>if (&lt;ekspresi boolean&gt;):
+</span><span id="__span-15-2"><a id="__codelineno-15-2" name="__codelineno-15-2" href="#__codelineno-15-2"></a>    # kode yang akan dijalankan jika &lt;ekspresi boolean&gt; bernilai True
+</span><span id="__span-15-3"><a id="__codelineno-15-3" name="__codelineno-15-3" href="#__codelineno-15-3"></a>else:
+</span><span id="__span-15-4"><a id="__codelineno-15-4" name="__codelineno-15-4" href="#__codelineno-15-4"></a>    # kode yang akan dijalankan jika &lt;ekspresi boolean&gt; bernilai False
+</span></code></pre></div>
+<p><br> <br>
+<img alt="If blok " src="https://raw.githubusercontent.com/ismailrusli/modul_alpro/refs/heads/master/gambar/if_else_sintaks.png" />
+<br> <br></p>
+<ol>
+<li>
+<p>Dalam program tersebut, jika user mengetikkan <code>pagi</code>, variabel <code>waktu</code>
+isinya sekarang adalah string <code>"pagi"</code>.</p>
+</li>
+<li>
+<p>Ekspresi <code>waktu == "pagi"</code> bernilai <code>True</code>.</p>
+</li>
+<li>
+<p>Karena <code>True</code>, statement percabangan menjadi <code>if(True)</code> sehingga blok kode di bawahnya
+(bagian yang menjorok ke dalam) dijalankan.</p>
+</li>
+<li>
+<p>Jika user mengetikkan selain <code>pagi</code>, misalnya <code>sore</code>, ekspresi <code>waktu == "pagi"</code> menjadi <code>False</code> 
+sehingga statement percabangan menjadi <code>if(False)</code>.
+Jika demikian, blok kode di bahwa statement <code>else</code> yang akan dijalankan.</p>
+</li>
+</ol>
+<p>Percabangan seperti ini, biasanya digambarkan dalam diagram alur (flowchart)
+sebagai berikut.</p>
+<p><br> <br>
+<img alt="If blok " src="https://raw.githubusercontent.com/ismailrusli/modul_alpro/refs/heads/master/gambar/if_else_flowchart.png" />
+<br> <br></p>
+<div class="admonition catatan">
+<p class="admonition-title">Catatan</p>
+<p>Saat membuat percabangan, semua kemungkinan pilihan harus dibuat.
+Untuk contoh di atas, terdapat dua pilihan, yaitu</p>
+<ol>
+<li><code>pagi</code></li>
+<li>lainnya</li>
+</ol>
+<p>Kedua pilihan ini sudah mencakup semua kemungkinan yang ada.</p>
+</div>
+<p>Bagaimana jika pilihannya lebih dari 2?
+Misalnya jika user mengetikkan:</p>
+<ol>
+<li><code>pagi</code></li>
+<li><code>sore</code></li>
+<li>lainnya</li>
+</ol>
+<p>Output yang diharapkan adalah:</p>
+<ol>
+<li><code>Selamat datang</code></li>
+<li><code>Sampai jumpa</code></li>
+<li>Tidak mencetak apa-apa</li>
+</ol>
+<p>Secara umum, komputer hanya bisa memiliki dua percabangan, yaitu
+saat <code>if(True)</code> dan saat <code>if(False)</code>.
+Untuk menyiasati pilihan yang lebih dari dua, kita membuat
+percabangan lagi di blok <code>if(False)</code>. 
+Dengan demikian, pilihannya menjadi seperti berikut.</p>
+<ol>
+<li><code>pagi</code></li>
+<li>lainnya<ol>
+<li><code>sore</code></li>
+<li>lainnya</li>
+</ol>
+</li>
+</ol>
+<p>Untuk itu, kita harus menambahkan blok <code>if</code> ke dalam blok <code>else</code> sehingga menjadi <code>elif</code>. </p>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-16-1"><a id="__codelineno-16-1" name="__codelineno-16-1" href="#__codelineno-16-1"></a><span class="n">waktu</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s2">&quot;Masukkan kata &#39;pagi&#39; atau &#39;sore&#39;: &quot;</span><span class="p">)</span>
+</span><span id="__span-16-2"><a id="__codelineno-16-2" name="__codelineno-16-2" href="#__codelineno-16-2"></a>
+</span><span id="__span-16-3"><a id="__codelineno-16-3" name="__codelineno-16-3" href="#__codelineno-16-3"></a><span class="k">if</span> <span class="p">(</span><span class="n">waktu</span> <span class="o">==</span> <span class="s2">&quot;pagi&quot;</span><span class="p">):</span>
+</span><span id="__span-16-4"><a id="__codelineno-16-4" name="__codelineno-16-4" href="#__codelineno-16-4"></a>    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Selamat datang&quot;</span><span class="p">)</span>
+</span><span id="__span-16-5"><a id="__codelineno-16-5" name="__codelineno-16-5" href="#__codelineno-16-5"></a><span class="k">elif</span> <span class="p">(</span><span class="n">waktu</span> <span class="o">==</span> <span class="s2">&quot;sore&quot;</span><span class="p">):</span>
+</span><span id="__span-16-6"><a id="__codelineno-16-6" name="__codelineno-16-6" href="#__codelineno-16-6"></a>    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Sampai jumpa&quot;</span><span class="p">)</span>
+</span><span id="__span-16-7"><a id="__codelineno-16-7" name="__codelineno-16-7" href="#__codelineno-16-7"></a><span class="k">else</span><span class="p">:</span>
+</span><span id="__span-16-8"><a id="__codelineno-16-8" name="__codelineno-16-8" href="#__codelineno-16-8"></a>    <span class="nb">print</span><span class="p">()</span>
+</span></code></pre></div>
+<p>Flowchart dari kode ini adalah sebagai berikut.</p>
+<p><br> <br>
+<img alt="If blok " src="https://raw.githubusercontent.com/ismailrusli/modul_alpro/refs/heads/master/gambar/if_elif_flowchart.png" />
+<br> <br></p>
+<div class="admonition catatan">
+<p class="admonition-title">Catatan</p>
+<p>Perhatikan kembali karena ini sangat penting.
+Saat membuat percabangan, semua kemungkinan pilihan  harus dibuat.
+Untuk contoh di atas, terdapat tiga pilihan, yaitu</p>
+<ol>
+<li><code>pagi</code></li>
+<li><code>sore</code></li>
+<li>lainnya`</li>
+</ol>
+<p>Jika pilihan yang dibuat tidak menampung semua kemungkinan,
+program dapat berjalan tidak sesuai dengan yang kita ingingkan.
+Terutama saat user melakukan sesuatu yang tidak diantisipasi
+programer.</p>
+</div>
+<p><strong>Coba</strong></p>
+<ol>
+<li>
+<p>Tuliskan kode program berikut dan jalankan.
+    <div class="language-python highlight"><pre><span></span><code><span id="__span-17-1"><a id="__codelineno-17-1" name="__codelineno-17-1" href="#__codelineno-17-1"></a><span class="n">nilai</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="s2">&quot;Masukkan bilangan sembarang: &quot;</span><span class="p">))</span> 
+</span><span id="__span-17-2"><a id="__codelineno-17-2" name="__codelineno-17-2" href="#__codelineno-17-2"></a>
+</span><span id="__span-17-3"><a id="__codelineno-17-3" name="__codelineno-17-3" href="#__codelineno-17-3"></a><span class="k">if</span> <span class="n">nilai</span> <span class="o">&gt;=</span> <span class="mi">100</span><span class="p">:</span>
+</span><span id="__span-17-4"><a id="__codelineno-17-4" name="__codelineno-17-4" href="#__codelineno-17-4"></a>    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Bilangan besar&quot;</span><span class="p">)</span>
+</span><span id="__span-17-5"><a id="__codelineno-17-5" name="__codelineno-17-5" href="#__codelineno-17-5"></a><span class="k">else</span><span class="p">:</span>
+</span><span id="__span-17-6"><a id="__codelineno-17-6" name="__codelineno-17-6" href="#__codelineno-17-6"></a>    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Bilangan kecil&quot;</span><span class="p">)</span>
+</span></code></pre></div></p>
+<div class="admonition catatan">
+<p class="admonition-title">Catatan</p>
+<p>kurung dalam cara penulisan percabangan <code>if(&lt;ekspresi&gt;):</code> adalah opsional.
+Kita bisa juga menuliskannya tanpa kurung <code>if &lt;ekspresi&gt;:</code>.</p>
+</div>
+</li>
+<li>
+<p>Jalankan kode berikut.
+    <div class="language-python highlight"><pre><span></span><code><span id="__span-18-1"><a id="__codelineno-18-1" name="__codelineno-18-1" href="#__codelineno-18-1"></a><span class="n">nilai</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s2">&quot;Berapa nilai total? &quot;</span><span class="p">)</span>
+</span><span id="__span-18-2"><a id="__codelineno-18-2" name="__codelineno-18-2" href="#__codelineno-18-2"></a><span class="n">nilai</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="n">nilai</span><span class="p">)</span>
+</span><span id="__span-18-3"><a id="__codelineno-18-3" name="__codelineno-18-3" href="#__codelineno-18-3"></a>
+</span><span id="__span-18-4"><a id="__codelineno-18-4" name="__codelineno-18-4" href="#__codelineno-18-4"></a><span class="k">if</span> <span class="n">nilai</span> <span class="o">&gt;=</span> <span class="mi">80</span><span class="p">:</span>   <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;A&quot;</span><span class="p">)</span>
+</span><span id="__span-18-5"><a id="__codelineno-18-5" name="__codelineno-18-5" href="#__codelineno-18-5"></a><span class="k">elif</span> <span class="n">nilai</span> <span class="o">&gt;=</span> <span class="mi">70</span><span class="p">:</span> <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;AB&quot;</span><span class="p">)</span>
+</span><span id="__span-18-6"><a id="__codelineno-18-6" name="__codelineno-18-6" href="#__codelineno-18-6"></a><span class="k">elif</span> <span class="n">nilai</span> <span class="o">&gt;=</span> <span class="mi">65</span><span class="p">:</span> <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;B&quot;</span><span class="p">)</span>
+</span><span id="__span-18-7"><a id="__codelineno-18-7" name="__codelineno-18-7" href="#__codelineno-18-7"></a><span class="k">elif</span> <span class="n">nilai</span> <span class="o">&gt;=</span> <span class="mi">60</span><span class="p">:</span> <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;BC&quot;</span><span class="p">)</span>
+</span><span id="__span-18-8"><a id="__codelineno-18-8" name="__codelineno-18-8" href="#__codelineno-18-8"></a><span class="k">elif</span> <span class="n">nilai</span> <span class="o">&gt;=</span> <span class="mi">50</span><span class="p">:</span> <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;C&quot;</span><span class="p">)</span>
+</span><span id="__span-18-9"><a id="__codelineno-18-9" name="__codelineno-18-9" href="#__codelineno-18-9"></a><span class="k">elif</span> <span class="n">nilai</span> <span class="o">&gt;=</span> <span class="mi">40</span><span class="p">:</span> <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;D&quot;</span><span class="p">)</span>
+</span><span id="__span-18-10"><a id="__codelineno-18-10" name="__codelineno-18-10" href="#__codelineno-18-10"></a><span class="k">else</span><span class="p">:</span>             <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;E&quot;</span><span class="p">)</span>
+</span></code></pre></div></p>
+<div class="admonition catatan">
+<p class="admonition-title">Catatan</p>
+<p>Jika blok kode untuk <code>if</code>, <code>elif</code>, ataupun <code>else</code> hanya terdiri dari
+satu baris, kita bisa menuliskannya langsung dalam satu baris.</p>
+</div>
+</li>
+<li>
+<p>Jalankan kode berikut.
+    <div class="language-python highlight"><pre><span></span><code><span id="__span-19-1"><a id="__codelineno-19-1" name="__codelineno-19-1" href="#__codelineno-19-1"></a><span class="n">nama</span>   <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s2">&quot;Siapa nama Anda? &quot;</span><span class="p">)</span>
+</span><span id="__span-19-2"><a id="__codelineno-19-2" name="__codelineno-19-2" href="#__codelineno-19-2"></a><span class="n">umur</span>   <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="s2">&quot;Berapa umur Anda? &quot;</span><span class="p">))</span>
+</span><span id="__span-19-3"><a id="__codelineno-19-3" name="__codelineno-19-3" href="#__codelineno-19-3"></a><span class="n">gender</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s2">&quot;Anda Laki-laki atau perempuan (L/P)?&quot;</span><span class="p">)</span>
+</span><span id="__span-19-4"><a id="__codelineno-19-4" name="__codelineno-19-4" href="#__codelineno-19-4"></a>
+</span><span id="__span-19-5"><a id="__codelineno-19-5" name="__codelineno-19-5" href="#__codelineno-19-5"></a><span class="k">if</span> <span class="p">(</span><span class="n">nama</span> <span class="o">==</span> <span class="s2">&quot;Budi&quot;</span><span class="p">):</span>
+</span><span id="__span-19-6"><a id="__codelineno-19-6" name="__codelineno-19-6" href="#__codelineno-19-6"></a>    <span class="nb">print</span><span class="p">(</span><span class="n">nama</span><span class="p">)</span>
+</span><span id="__span-19-7"><a id="__codelineno-19-7" name="__codelineno-19-7" href="#__codelineno-19-7"></a>    <span class="nb">print</span><span class="p">(</span><span class="n">umur</span><span class="p">)</span>
+</span><span id="__span-19-8"><a id="__codelineno-19-8" name="__codelineno-19-8" href="#__codelineno-19-8"></a>    <span class="nb">print</span><span class="p">(</span><span class="n">gender</span><span class="p">)</span>
+</span><span id="__span-19-9"><a id="__codelineno-19-9" name="__codelineno-19-9" href="#__codelineno-19-9"></a><span class="k">else</span><span class="p">:</span>
+</span><span id="__span-19-10"><a id="__codelineno-19-10" name="__codelineno-19-10" href="#__codelineno-19-10"></a>    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;nama tidak dikenal&quot;</span><span class="p">)</span>
+</span><span id="__span-19-11"><a id="__codelineno-19-11" name="__codelineno-19-11" href="#__codelineno-19-11"></a>    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;umur tidak dikenal&quot;</span><span class="p">)</span>
+</span><span id="__span-19-12"><a id="__codelineno-19-12" name="__codelineno-19-12" href="#__codelineno-19-12"></a>    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;gender tidak diketahui&quot;</span><span class="p">)</span>
+</span></code></pre></div></p>
+</li>
+<li>
+<p>Jalan program berikut.
+    <div class="language-python highlight"><pre><span></span><code><span id="__span-20-1"><a id="__codelineno-20-1" name="__codelineno-20-1" href="#__codelineno-20-1"></a><span class="n">angka1</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="s2">&quot;Masukkan angka pertama: &quot;</span><span class="p">))</span>
+</span><span id="__span-20-2"><a id="__codelineno-20-2" name="__codelineno-20-2" href="#__codelineno-20-2"></a><span class="n">angka2</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="s2">&quot;Masukkan angka kedua: &quot;</span><span class="p">))</span>
+</span><span id="__span-20-3"><a id="__codelineno-20-3" name="__codelineno-20-3" href="#__codelineno-20-3"></a>
+</span><span id="__span-20-4"><a id="__codelineno-20-4" name="__codelineno-20-4" href="#__codelineno-20-4"></a><span class="k">if</span> <span class="n">angka1</span> <span class="o">&gt;</span> <span class="n">angka2</span><span class="p">:</span>
+</span><span id="__span-20-5"><a id="__codelineno-20-5" name="__codelineno-20-5" href="#__codelineno-20-5"></a>    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Angka pertama lebih besar dari angka kedua.&quot;</span><span class="p">)</span>
+</span><span id="__span-20-6"><a id="__codelineno-20-6" name="__codelineno-20-6" href="#__codelineno-20-6"></a><span class="k">elif</span> <span class="n">angka1</span> <span class="o">&lt;</span> <span class="n">angka2</span><span class="p">:</span>
+</span><span id="__span-20-7"><a id="__codelineno-20-7" name="__codelineno-20-7" href="#__codelineno-20-7"></a>    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Angka pertama lebih besar dari angka kedua.&quot;</span><span class="p">)</span>
+</span><span id="__span-20-8"><a id="__codelineno-20-8" name="__codelineno-20-8" href="#__codelineno-20-8"></a><span class="k">else</span><span class="p">:</span>
+</span><span id="__span-20-9"><a id="__codelineno-20-9" name="__codelineno-20-9" href="#__codelineno-20-9"></a>    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Angka pertama sama dengan angka kedua.&quot;</span><span class="p">)</span>
+</span></code></pre></div></p>
+</li>
+<li>
+<p>Program tebak angka.
+    <div class="language-python highlight"><pre><span></span><code><span id="__span-21-1"><a id="__codelineno-21-1" name="__codelineno-21-1" href="#__codelineno-21-1"></a><span class="kn">import</span><span class="w"> </span><span class="nn">random</span>
+</span><span id="__span-21-2"><a id="__codelineno-21-2" name="__codelineno-21-2" href="#__codelineno-21-2"></a>
+</span><span id="__span-21-3"><a id="__codelineno-21-3" name="__codelineno-21-3" href="#__codelineno-21-3"></a><span class="n">angka</span>   <span class="o">=</span> <span class="n">random</span><span class="o">.</span><span class="n">randint</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">5</span><span class="p">)</span>
+</span><span id="__span-21-4"><a id="__codelineno-21-4" name="__codelineno-21-4" href="#__codelineno-21-4"></a><span class="n">tebakan</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="s2">&quot;Tebak angka yang di-generate komputer: &quot;</span><span class="p">))</span>
+</span><span id="__span-21-5"><a id="__codelineno-21-5" name="__codelineno-21-5" href="#__codelineno-21-5"></a>
+</span><span id="__span-21-6"><a id="__codelineno-21-6" name="__codelineno-21-6" href="#__codelineno-21-6"></a><span class="k">if</span> <span class="p">(</span><span class="n">tebakan</span> <span class="o">==</span> <span class="n">angka</span><span class="p">):</span>
+</span><span id="__span-21-7"><a id="__codelineno-21-7" name="__codelineno-21-7" href="#__codelineno-21-7"></a>    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Anda hebat, tebakan anda benar!!&quot;</span><span class="p">)</span>
+</span><span id="__span-21-8"><a id="__codelineno-21-8" name="__codelineno-21-8" href="#__codelineno-21-8"></a><span class="k">else</span><span class="p">:</span>
+</span><span id="__span-21-9"><a id="__codelineno-21-9" name="__codelineno-21-9" href="#__codelineno-21-9"></a>    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Tebakan anda tidak tepat&quot;</span><span class="p">)</span>
+</span><span id="__span-21-10"><a id="__codelineno-21-10" name="__codelineno-21-10" href="#__codelineno-21-10"></a>    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Angka yang benar adalah &quot;</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">angka</span><span class="p">))</span>
+</span></code></pre></div></p>
+<div class="admonition catatan">
+<p class="admonition-title">Catatan</p>
+<p><code>import random</code> adalah suatu baris perintah yang digunakan untuk meng-import modul <code>random</code>.
+Di dalam modul <code>random</code>, terdapat fungsi <code>randint()</code> yang dapat digunakan untuk menghasilkan
+bilangan acak.</p>
+<p><code>random.randint(1,5)</code> adalah contoh penggunaan fungsi <code>randint()</code>.
+Ekspresi <code>random.randint(1,5)</code> disederhanakan menjadi bilangan bulat
+acak antara 1-5.`</p>
+</div>
+</li>
+</ol>
+<hr />
+<h2 id="tugas-praktikum"><strong>Tugas Praktikum</strong></h2>
+<ol>
+<li>
+<p>Lengkapi program berikut.
+    <div class="language-python highlight"><pre><span></span><code><span id="__span-22-1"><a id="__codelineno-22-1" name="__codelineno-22-1" href="#__codelineno-22-1"></a><span class="c1"># Buat agar user mengetikkan suatu nilai float dan masukkan ke variabel a</span>
+</span><span id="__span-22-2"><a id="__codelineno-22-2" name="__codelineno-22-2" href="#__codelineno-22-2"></a><span class="c1"># Buat agar user mengetikkan suatu nilai float dan masukkan ke variabel b</span>
+</span><span id="__span-22-3"><a id="__codelineno-22-3" name="__codelineno-22-3" href="#__codelineno-22-3"></a>
+</span><span id="__span-22-4"><a id="__codelineno-22-4" name="__codelineno-22-4" href="#__codelineno-22-4"></a><span class="c1"># cetak hasil a + b</span>
+</span><span id="__span-22-5"><a id="__codelineno-22-5" name="__codelineno-22-5" href="#__codelineno-22-5"></a><span class="c1"># cetak hasil a - b</span>
+</span><span id="__span-22-6"><a id="__codelineno-22-6" name="__codelineno-22-6" href="#__codelineno-22-6"></a><span class="c1"># cetak hasil a * b</span>
+</span><span id="__span-22-7"><a id="__codelineno-22-7" name="__codelineno-22-7" href="#__codelineno-22-7"></a><span class="c1"># cetak hasil a / b</span>
+</span><span id="__span-22-8"><a id="__codelineno-22-8" name="__codelineno-22-8" href="#__codelineno-22-8"></a>
+</span><span id="__span-22-9"><a id="__codelineno-22-9" name="__codelineno-22-9" href="#__codelineno-22-9"></a><span class="nb">print</span><span class="p">(</span><span class="s2">&quot;</span><span class="se">\n</span><span class="s2">Sekian, Terima Kasih&quot;</span><span class="p">)</span>
+</span></code></pre></div></p>
+</li>
+<li>
+<p>Lengkapi program berikut.
+    <div class="language-python highlight"><pre><span></span><code><span id="__span-23-1"><a id="__codelineno-23-1" name="__codelineno-23-1" href="#__codelineno-23-1"></a><span class="n">umur</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="s2">&quot;Berapa umur Anda? &quot;</span><span class="p">))</span>
+</span><span id="__span-23-2"><a id="__codelineno-23-2" name="__codelineno-23-2" href="#__codelineno-23-2"></a>
+</span><span id="__span-23-3"><a id="__codelineno-23-3" name="__codelineno-23-3" href="#__codelineno-23-3"></a><span class="c1"># jika umur lebih dari 40 disebut dewasa,</span>
+</span><span id="__span-23-4"><a id="__codelineno-23-4" name="__codelineno-23-4" href="#__codelineno-23-4"></a><span class="c1"># jika antara 20 - 40 disebut muda,</span>
+</span><span id="__span-23-5"><a id="__codelineno-23-5" name="__codelineno-23-5" href="#__codelineno-23-5"></a><span class="c1"># jika antara 10 - 20 disebut remaja</span>
+</span><span id="__span-23-6"><a id="__codelineno-23-6" name="__codelineno-23-6" href="#__codelineno-23-6"></a><span class="c1"># di bawah 10 disebut anak-anak</span>
+</span></code></pre></div></p>
+</li>
+<li>
+<p>Lengkapi program berikut.
+    <div class="language-python highlight"><pre><span></span><code><span id="__span-24-1"><a id="__codelineno-24-1" name="__codelineno-24-1" href="#__codelineno-24-1"></a><span class="n">nilai</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="s2">&quot;Masukkan satu bilangan: &quot;&quot;))</span>
+</span><span id="__span-24-2"><a id="__codelineno-24-2" name="__codelineno-24-2" href="#__codelineno-24-2"></a>
+</span><span id="__span-24-3"><a id="__codelineno-24-3" name="__codelineno-24-3" href="#__codelineno-24-3"></a><span class="c1"># jika nilai lebih dari 100</span>
+</span><span id="__span-24-4"><a id="__codelineno-24-4" name="__codelineno-24-4" href="#__codelineno-24-4"></a><span class="c1"># tulis &quot;nilai lebih dari 100&quot;</span>
+</span><span id="__span-24-5"><a id="__codelineno-24-5" name="__codelineno-24-5" href="#__codelineno-24-5"></a><span class="c1"># jika nilai tidak lebih dari 100</span>
+</span><span id="__span-24-6"><a id="__codelineno-24-6" name="__codelineno-24-6" href="#__codelineno-24-6"></a><span class="c1"># tulis &quot;nilai tidak lebih dari 100&quot;</span>
+</span></code></pre></div></p>
+</li>
+<li>
+<p>Apa beda kode berikut, 
+    <div class="language-python highlight"><pre><span></span><code><span id="__span-25-1"><a id="__codelineno-25-1" name="__codelineno-25-1" href="#__codelineno-25-1"></a><span class="n">kuliah</span> <span class="o">=</span> <span class="s1">&#39;alpro&#39;</span>
+</span><span id="__span-25-2"><a id="__codelineno-25-2" name="__codelineno-25-2" href="#__codelineno-25-2"></a>
+</span><span id="__span-25-3"><a id="__codelineno-25-3" name="__codelineno-25-3" href="#__codelineno-25-3"></a><span class="k">if</span> <span class="n">kuliah</span> <span class="o">==</span> <span class="s1">&#39;alpro&#39;</span><span class="p">:</span>
+</span><span id="__span-25-4"><a id="__codelineno-25-4" name="__codelineno-25-4" href="#__codelineno-25-4"></a>    <span class="nb">print</span><span class="p">(</span><span class="n">kuliah</span><span class="p">)</span>
+</span><span id="__span-25-5"><a id="__codelineno-25-5" name="__codelineno-25-5" href="#__codelineno-25-5"></a><span class="k">elif</span> <span class="n">kuliah</span> <span class="o">==</span> <span class="s1">&#39;pbo&#39;</span><span class="p">:</span>
+</span><span id="__span-25-6"><a id="__codelineno-25-6" name="__codelineno-25-6" href="#__codelineno-25-6"></a>    <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;bukan alpro tapi juga ngoding&#39;</span><span class="p">)</span>
+</span><span id="__span-25-7"><a id="__codelineno-25-7" name="__codelineno-25-7" href="#__codelineno-25-7"></a><span class="k">elif</span> <span class="n">kuliah</span> <span class="o">==</span> <span class="s1">&#39;agama&#39;</span><span class="p">:</span>
+</span><span id="__span-25-8"><a id="__codelineno-25-8" name="__codelineno-25-8" href="#__codelineno-25-8"></a>    <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;sama sekali gak ngoding&#39;</span><span class="p">)</span>
+</span></code></pre></div></p>
+<p>dengan kode ini?</p>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-26-1"><a id="__codelineno-26-1" name="__codelineno-26-1" href="#__codelineno-26-1"></a><span class="n">kuliah</span> <span class="o">=</span> <span class="s1">&#39;alpro&#39;</span>
+</span><span id="__span-26-2"><a id="__codelineno-26-2" name="__codelineno-26-2" href="#__codelineno-26-2"></a>
+</span><span id="__span-26-3"><a id="__codelineno-26-3" name="__codelineno-26-3" href="#__codelineno-26-3"></a><span class="k">if</span> <span class="n">kuliah</span> <span class="o">==</span> <span class="s1">&#39;alpro&#39;</span><span class="p">:</span>
+</span><span id="__span-26-4"><a id="__codelineno-26-4" name="__codelineno-26-4" href="#__codelineno-26-4"></a>    <span class="nb">print</span><span class="p">(</span><span class="n">kuliah</span><span class="p">)</span>
+</span><span id="__span-26-5"><a id="__codelineno-26-5" name="__codelineno-26-5" href="#__codelineno-26-5"></a><span class="k">if</span> <span class="n">kuliah</span> <span class="o">==</span> <span class="s1">&#39;pbo&#39;</span><span class="p">:</span>
+</span><span id="__span-26-6"><a id="__codelineno-26-6" name="__codelineno-26-6" href="#__codelineno-26-6"></a>    <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;bukan alpro tapi juga ngoding&#39;</span><span class="p">)</span>
+</span><span id="__span-26-7"><a id="__codelineno-26-7" name="__codelineno-26-7" href="#__codelineno-26-7"></a><span class="k">if</span> <span class="n">kuliah</span> <span class="o">==</span> <span class="s1">&#39;agama&#39;</span><span class="p">:</span>
+</span><span id="__span-26-8"><a id="__codelineno-26-8" name="__codelineno-26-8" href="#__codelineno-26-8"></a>    <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;sama sekali gak ngoding&#39;</span><span class="p">)</span>
+</span></code></pre></div>
+</li>
+<li>
+<p>Buatlah program tebak angka seperti yang ada di modul.
+Buat agar setelah user menebak, keluar tiga pilihan output
+berikut.</p>
+<ol>
+<li><code>Tepat</code>jika user menjawab tepat</li>
+<li><code>Sedikit lagi</code> jika selisih antara angka acak dan tebakan
+user kurang atau sama dengan 10.</li>
+<li><code>Jauh</code> jika selisih antara angka acak dan tebakan user
+lebih dari 10.</li>
+</ol>
+</li>
+</ol>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "..", "features": ["search.suggest", "search.highlight", "content.code.copy"], "search": "../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.79ae519e.min.js"></script>
+      
+    
+  </body>
+</html>
